@@ -1,0 +1,37 @@
+{
+	"data": [{
+			"年份year": 2017,
+			"装机installed capacity (MW)": 423.39,
+			"座数certified plants": 44
+		},
+		{
+			"年份year": 2018,
+			"装机installed capacity (MW)": 1839.475,
+			"座数certified plants": 165
+		},
+		{
+			"年份year": 2019,
+			"装机installed capacity (MW)": 3036.725,
+			"座数certified plants": 338
+		},
+		{
+			"年份year": 2020,
+			"装机installed capacity (MW)": 5231.86,
+			"座数certified plants": 616
+		},
+		{
+			"年份year": 2021,
+			"装机installed capacity (MW)": 6950.769,
+			"座数certified plants": 870
+		},
+		{
+			"年份year": 2022,
+			"装机installed capacity (MW)": 8281.794,
+			"座数certified plants": 964
+		}
+	],
+	"credit": [{
+		"author": "Ministry of Water Resources, P.R. China",
+		"year": 2022
+	}]
+}
