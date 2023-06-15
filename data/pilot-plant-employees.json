@@ -1,0 +1,153 @@
+{
+	"Sheet1": [{
+			"电站": "冒烟洞二级电站",
+			"原职工人数 Employees before": 17,
+			"改造后职工人数 Employees after": 19,
+			"原职工人数 Female employees before": 5,
+			"改造后职工人数 Female employees after": 5,
+			"原职工人数 Female leaders before": 3,
+			"改造后职工人数 Female leaders after": 3
+		},
+		{
+			"电站": "马脖子电站",
+			"原职工人数 Employees before": 24,
+			"改造后职工人数 Employees after": 17,
+			"原职工人数 Female employees before": 11,
+			"改造后职工人数 Female employees after": 7,
+			"原职工人数 Female leaders before": 0,
+			"改造后职工人数 Female leaders after": 0
+		},
+		{
+			"电站": "杨道河电站",
+			"原职工人数 Employees before": 11,
+			"改造后职工人数 Employees after": 10,
+			"原职工人数 Female employees before": 4,
+			"改造后职工人数 Female employees after": 4,
+			"原职工人数 Female leaders before": 1,
+			"改造后职工人数 Female leaders after": 2
+		},
+		{
+			"电站": "朝天吼电站",
+			"原职工人数 Employees before": 7,
+			"改造后职工人数 Employees after": 7,
+			"原职工人数 Female employees before": 2,
+			"改造后职工人数 Female employees after": 2,
+			"原职工人数 Female leaders before": 2,
+			"改造后职工人数 Female leaders after": 2
+		},
+		{
+			"电站": "石家坝电站",
+			"原职工人数 Employees before": 6,
+			"改造后职工人数 Employees after": 6,
+			"原职工人数 Female employees before": 1,
+			"改造后职工人数 Female employees after": 0,
+			"原职工人数 Female leaders before": 1,
+			"改造后职工人数 Female leaders after": 0
+		},
+		{
+			"电站": "高坑电站",
+			"原职工人数 Employees before": 14,
+			"改造后职工人数 Employees after": 14,
+			"原职工人数 Female employees before": 2,
+			"改造后职工人数 Female employees after": 2,
+			"原职工人数 Female leaders before": 1,
+			"改造后职工人数 Female leaders after": 1
+		},
+		{
+			"电站": "塘坂电站",
+			"原职工人数 Employees before": 55,
+			"改造后职工人数 Employees after": 61,
+			"原职工人数 Female employees before": 11,
+			"改造后职工人数 Female employees after": 17,
+			"原职工人数 Female leaders before": 1,
+			"改造后职工人数 Female leaders after": 1
+		},
+		{
+			"电站": "新坪垭电站",
+			"原职工人数 Employees before": 10,
+			"改造后职工人数 Employees after": 10,
+			"原职工人数 Female employees before": 5,
+			"改造后职工人数 Female employees after": 5,
+			"原职工人数 Female leaders before": 2,
+			"改造后职工人数 Female leaders after": 2
+		},
+		{
+			"电站": "官溪电站",
+			"原职工人数 Employees before": 26,
+			"改造后职工人数 Employees after": 20,
+			"原职工人数 Female employees before": 12,
+			"改造后职工人数 Female employees after": 9,
+			"原职工人数 Female leaders before": 3,
+			"改造后职工人数 Female leaders after": 3
+		},
+		{
+			"电站": "三叠岭电站",
+			"原职工人数 Employees before": 19,
+			"改造后职工人数 Employees after": 17,
+			"原职工人数 Female employees before": 2,
+			"改造后职工人数 Female employees after": 2,
+			"原职工人数 Female leaders before": 0,
+			"改造后职工人数 Female leaders after": 1
+		},
+		{
+			"电站": "峒牌电站",
+			"原职工人数 Employees before": 12,
+			"改造后职工人数 Employees after": 9,
+			"原职工人数 Female employees before": 6,
+			"改造后职工人数 Female employees after": 4,
+			"原职工人数 Female leaders before": 3,
+			"改造后职工人数 Female leaders after": 2
+		},
+		{
+			"电站": "爱布二级电站",
+			"原职工人数 Employees before": 11,
+			"改造后职工人数 Employees after": 11,
+			"原职工人数 Female employees before": 3,
+			"改造后职工人数 Female employees after": 3,
+			"原职工人数 Female leaders before": 2,
+			"改造后职工人数 Female leaders after": 1
+		},
+		{
+			"电站": "爱布三级电站",
+			"原职工人数 Employees before": 10,
+			"改造后职工人数 Employees after": 10,
+			"原职工人数 Female employees before": 2,
+			"改造后职工人数 Female employees after": 2,
+			"原职工人数 Female leaders before": 1,
+			"改造后职工人数 Female leaders after": 1
+		},
+		{
+			"电站": "盘溪二级电站",
+			"原职工人数 Employees before": 11,
+			"改造后职工人数 Employees after": 9,
+			"原职工人数 Female employees before": 5,
+			"改造后职工人数 Female employees after": 3,
+			"原职工人数 Female leaders before": 2,
+			"改造后职工人数 Female leaders after": 1
+		},
+		{
+			"电站": "盘溪三级电站",
+			"原职工人数 Employees before": 12,
+			"改造后职工人数 Employees after": 9,
+			"原职工人数 Female employees before": 4,
+			"改造后职工人数 Female employees after": 2,
+			"原职工人数 Female leaders before": 2,
+			"改造后职工人数 Female leaders after": 2
+		},
+		{
+			"电站": "盘溪四级电站",
+			"原职工人数 Employees before": 11,
+			"改造后职工人数 Employees after": 9,
+			"原职工人数 Female employees before": 3,
+			"改造后职工人数 Female employees after": 4,
+			"原职工人数 Female leaders before": 1,
+			"改造后职工人数 Female leaders after": 1
+		}
+	],
+	"credit": [{
+		"author": "UNIDO-GEF China SHP Capacity Upgrade Project",
+		"year": 2022,
+		"UNIDO Open Data": "https://open.unido.org/projects/CN/projects/140196",
+		"website": "http://www.icshp.org/small-and-green"
+	}]
+}
