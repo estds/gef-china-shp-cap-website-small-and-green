@@ -1,0 +1,139 @@
+{
+	"data": [{
+			"年份year": 2000,
+			"座数plants": 42859,
+			"装机installed capacity (MW)": 24851.721,
+			"年发电annual output (MWh)": 7998.249
+		},
+		{
+			"年份year": 2001,
+			"座数plants": 43027,
+			"装机installed capacity (MW)": 26262.406,
+			"年发电annual output (MWh)": 8714.102
+		},
+		{
+			"年份year": 2002,
+			"座数plants": 42221,
+			"装机installed capacity (MW)": 28489.286,
+			"年发电annual output (MWh)": 9472.446
+		},
+		{
+			"年份year": 2003,
+			"座数plants": 42467,
+			"装机installed capacity (MW)": 30832.992,
+			"年发电annual output (MWh)": 9791.633
+		},
+		{
+			"年份year": 2004,
+			"座数plants": 43809,
+			"装机installed capacity (MW)": 34661.348,
+			"年发电annual output (MWh)": 9779.541
+		},
+		{
+			"年份year": 2005,
+			"座数plants": 44552,
+			"装机installed capacity (MW)": 38534.445,
+			"年发电annual output (MWh)": 12090.34
+		},
+		{
+			"年份year": 2006,
+			"座数plants": 45420,
+			"装机installed capacity (MW)": 43183.551,
+			"年发电annual output (MWh)": 13612.942
+		},
+		{
+			"年份year": 2007,
+			"座数plants": 45317,
+			"装机installed capacity (MW)": 47388.997,
+			"年发电annual output (MWh)": 14370.08
+		},
+		{
+			"年份year": 2008,
+			"座数plants": 44433,
+			"装机installed capacity (MW)": 51274.371,
+			"年发电annual output (MWh)": 16275.901
+		},
+		{
+			"年份year": 2009,
+			"座数plants": 44804,
+			"装机installed capacity (MW)": 55121.211,
+			"年发电annual output (MWh)": 15672.47
+		},
+		{
+			"年份year": 2010,
+			"座数plants": 44815,
+			"装机installed capacity (MW)": 59240.191,
+			"年发电annual output (MWh)": 20444.256
+		},
+		{
+			"年份year": 2011,
+			"座数plants": 45151,
+			"装机installed capacity (MW)": 62123.43,
+			"年发电annual output (MWh)": 17566.867
+		},
+		{
+			"年份year": 2012,
+			"座数plants": 45799,
+			"装机installed capacity (MW)": 65686.071,
+			"年发电annual output (MWh)": 21729.246
+		},
+		{
+			"年份year": 2013,
+			"座数plants": 46849,
+			"装机installed capacity (MW)": 71186.268,
+			"年发电annual output (MWh)": 22327.712
+		},
+		{
+			"年份year": 2014,
+			"座数plants": 47073,
+			"装机installed capacity (MW)": 73221.047,
+			"年发电annual output (MWh)": 22814.457
+		},
+		{
+			"年份year": 2015,
+			"座数plants": 47340,
+			"装机installed capacity (MW)": 75829.591,
+			"年发电annual output (MWh)": 23512.813
+		},
+		{
+			"年份year": 2016,
+			"座数plants": 47529,
+			"装机installed capacity (MW)": 77910.629,
+			"年发电annual output (MWh)": 26821.937
+		},
+		{
+			"年份year": 2017,
+			"座数plants": 47498,
+			"装机installed capacity (MW)": 79269.995,
+			"年发电annual output (MWh)": 24772.495
+		},
+		{
+			"年份year": 2018,
+			"座数plants": 46515,
+			"装机installed capacity (MW)": 80435.263,
+			"年发电annual output (MWh)": 23456.083
+		},
+		{
+			"年份year": 2019,
+			"座数plants": 45445,
+			"装机installed capacity (MW)": 81441.588,
+			"年发电annual output (MWh)": 25331.509
+		},
+		{
+			"年份year": 2020,
+			"座数plants": 43957,
+			"装机installed capacity (MW)": 81338.282,
+			"年发电annual output (MWh)": 24236.893
+		},
+		{
+			"年份year": 2021,
+			"座数plants": 42785,
+			"装机installed capacity (MW)": 76408.945,
+			"年发电annual output (MWh)": 22411.119
+		}
+	],
+	"credit": [{
+		"author": "National Research Institute for Rural Electrification",
+		"year": 2022
+	}]
+}
