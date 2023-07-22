@@ -104,6 +104,16 @@
       #mainMenuGroup .btn:hover {
         background-color: rgba(0, 0, 0, 0.75);
       }
+      
+      .bg-unido-primary {
+      	background-color: #009cdc;
+      	color: #fff;
+      }
+      
+      .bg-unido-secondary {
+      	background-color: #f47a42;
+      	color: #fff;
+      }
 
 
     </style>
@@ -142,7 +152,7 @@
 
     <div id="fullpage">
 
-      <section class="section " id="home">
+      <section class="section" id="home">
         <video id="myVideo" loop muted data-autoplay playsinline>
           <source src="imgs/flowers.mp4" type="video/mp4">
           <source src="imgs/flowers.webm" type="video/webm">
@@ -153,7 +163,7 @@
         </div>
       </section>
 
-      <section class="section" id="project-overview">
+      <section class="section bg-unido-primary" id="project-overview">
         <div class="slide" id="slide1">
           <h1>Slide Backgrounds</h1>
         </div>
@@ -175,7 +185,7 @@
         </div>
       </section>
 
-      <section class="section" id="institutions">
+      <section class="section bg-unido-primary" id="institutions">
         <h1>Policy and institutions</h1>
       </section>
 
@@ -183,7 +193,7 @@
         <h1>Capacity and knowledge</h1>
       </section>
 
-      <section class="section" id="project-stats">
+      <section class="section bg-unido-primary" id="project-stats">
         <h1>Project stats</h1>
       </section>
 
@@ -191,11 +201,11 @@
         <h1>Knwoledge hub</h1>
       </section>
 
-      <section class="section" id="project-partners">
+      <section class="section bg-unido-primary" id="project-partners">
         <h1>Project partners</h1>
       </section>
 
-      <section class="section" id="follow-us">
+      <section class="section bg-dark" id="follow-us">
         <h1>Follow us</h1>
       </section>
 
@@ -208,7 +218,6 @@
     <script type="text/javascript">
       var myFullpage = new fullpage('#fullpage', {
         verticalCentered: true,
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b', '#4BBFC3', '#7BAABE', '#7BAABE', '#1bbc9b', '#4BBFC3', '#7BAABE'],
         licenseKey: 'gplv3-license'
       });
 
