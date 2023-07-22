@@ -83,10 +83,22 @@
       video::-webkit-media-controls {
         display: none !important;
       }
-      
+
       /* override bs5 rounded corners */
       .btn {
-      	border-radius: 0!important;
+        border-radius: 0 !important;
+      }
+
+
+      #mainMenuGroup {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+      }
+
+      #mainMenuGroup .btn-dark {
+        background-color: rgba(0, 0, 0, 0.5);
       }
 
     </style>
@@ -100,9 +112,16 @@
 
   <body>
 
-    <div id="demosMenu" class="btn-group btn-group-lg" role="group" aria-label="Basic outlined example">
-      <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
-      <button type="button" class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+    <div id="mainMenuGroup" class="btn-group btn-group-lg" role="group" aria-label="Basic outlined example">
+      <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg></button>
+      <button type="button" class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg></button>
     </div>
 
 
