@@ -1,156 +1,137 @@
 {
-	"data": [{
-			"电站": "冒烟洞二级电站",
-			"原平均收入 Average income before": 3.91,
-			"改造后平均收入 Average income after": 5.34,
-			"原女职工平均收入 Average income of female employees before": 3.41,
-			"改造后女职工平均收入 Average income of female employees after": 4.67,
-			"原女领导平均收入 Average income of female leaders before": 4.64,
-			"改造后女领导平均收入 Average income of female leaders after": 6.48
-		},
-		{
-			"电站": "马脖子电站",
-			"原平均收入 Average income before": 2.76,
-			"改造后平均收入 Average income after": 3.36,
-			"原女职工平均收入 Average income of female employees before": 2.73,
-			"改造后女职工平均收入 Average income of female employees after": 3.39,
-			"原女领导平均收入 Average income of female leaders before": 0,
-			"改造后女领导平均收入 Average income of female leaders after": 3.66
-		},
-		{
-			"电站": "杨道河电站",
-			"原平均收入 Average income before": 4.39,
-			"改造后平均收入 Average income after": 4.52,
-			"原女职工平均收入 Average income of female employees before": 3.98,
-			"改造后女职工平均收入 Average income of female employees after": 4.15,
-			"原女领导平均收入 Average income of female leaders before": 4.5,
-			"改造后女领导平均收入 Average income of female leaders after": 4.5
-		},
-		{
-			"电站": "朝天吼电站",
-			"原平均收入 Average income before": 5.17,
-			"改造后平均收入 Average income after": 4.63,
-			"原女职工平均收入 Average income of female employees before": 4.5,
-			"改造后女职工平均收入 Average income of female employees after": 4.5,
-			"原女领导平均收入 Average income of female leaders before": 4.5,
-			"改造后女领导平均收入 Average income of female leaders after": 4.5
-		},
-		{
-			"电站": "石家坝电站",
-			"原平均收入 Average income before": 5.05,
-			"改造后平均收入 Average income after": 5.05,
-			"原女职工平均收入 Average income of female employees before": 3.8,
-			"改造后女职工平均收入 Average income of female employees after": 0,
-			"原女领导平均收入 Average income of female leaders before": 3.8,
-			"改造后女领导平均收入 Average income of female leaders after": 0
-		},
-		{
-			"电站": "高坑电站",
-			"原平均收入 Average income before": 6.65,
-			"改造后平均收入 Average income after": 6.84,
-			"原女职工平均收入 Average income of female employees before": 7.27,
-			"改造后女职工平均收入 Average income of female employees after": 7.23,
-			"原女领导平均收入 Average income of female leaders before": 8.02,
-			"改造后女领导平均收入 Average income of female leaders after": 8.32
-		},
-		{
-			"电站": "塘坂电站",
-			"原平均收入 Average income before": 5.89,
-			"改造后平均收入 Average income after": 8.08,
-			"原女职工平均收入 Average income of female employees before": 4.28,
-			"改造后女职工平均收入 Average income of female employees after": 6.31,
-			"原女领导平均收入 Average income of female leaders before": 7.8,
-			"改造后女领导平均收入 Average income of female leaders after": 10.95
-		},
-		{
-			"电站": "新坪垭电站",
-			"原平均收入 Average income before": 5.13,
-			"改造后平均收入 Average income after": 7.19,
-			"原女职工平均收入 Average income of female employees before": 3.81,
-			"改造后女职工平均收入 Average income of female employees after": 6.04,
-			"原女领导平均收入 Average income of female leaders before": 3.71,
-			"改造后女领导平均收入 Average income of female leaders after": 6.45
-		},
-		{
-			"电站": "官溪电站",
-			"原平均收入 Average income before": 6.16,
-			"改造后平均收入 Average income after": 7.21,
-			"原女职工平均收入 Average income of female employees before": 5.67,
-			"改造后女职工平均收入 Average income of female employees after": 6.55,
-			"原女领导平均收入 Average income of female leaders before": 6.17,
-			"改造后女领导平均收入 Average income of female leaders after": 6.56
-		},
-		{
-			"电站": "三叠岭电站",
-			"原平均收入 Average income before": 3.23,
-			"改造后平均收入 Average income after": 5.04,
-			"原女职工平均收入 Average income of female employees before": 3.33,
-			"改造后女职工平均收入 Average income of female employees after": 5.04,
-			"原女领导平均收入 Average income of female leaders before": 0,
-			"改造后女领导平均收入 Average income of female leaders after": 5.04
-		},
-		{
-			"电站": "峒牌电站",
-			"原平均收入 Average income before": 2.88,
-			"改造后平均收入 Average income after": 5.04,
-			"原女职工平均收入 Average income of female employees before": 2.54,
-			"改造后女职工平均收入 Average income of female employees after": 5.04,
-			"原女领导平均收入 Average income of female leaders before": 3.01,
-			"改造后女领导平均收入 Average income of female leaders after": 5.04
-		},
-		{
-			"电站": "爱布二级电站",
-			"原平均收入 Average income before": 3.75,
-			"改造后平均收入 Average income after": 5.04,
-			"原女职工平均收入 Average income of female employees before": 3.65,
-			"改造后女职工平均收入 Average income of female employees after": 5.04,
-			"原女领导平均收入 Average income of female leaders before": 3.85,
-			"改造后女领导平均收入 Average income of female leaders after": 5.04
-		},
-		{
-			"电站": "爱布三级电站",
-			"原平均收入 Average income before": 3.23,
-			"改造后平均收入 Average income after": 5.04,
-			"原女职工平均收入 Average income of female employees before": 3.13,
-			"改造后女职工平均收入 Average income of female employees after": 5.04,
-			"原女领导平均收入 Average income of female leaders before": 3.53,
-			"改造后女领导平均收入 Average income of female leaders after": 5.04
-		},
-		{
-			"电站": "盘溪二级电站",
-			"原平均收入 Average income before": 6.23,
-			"改造后平均收入 Average income after": 5.39,
-			"原女职工平均收入 Average income of female employees before": 5.98,
-			"改造后女职工平均收入 Average income of female employees after": 5.17,
-			"原女领导平均收入 Average income of female leaders before": 7.3,
-			"改造后女领导平均收入 Average income of female leaders after": 5.33
-		},
-		{
-			"电站": "盘溪三级电站",
-			"原平均收入 Average income before": 6.53,
-			"改造后平均收入 Average income after": 5.75,
-			"原女职工平均收入 Average income of female employees before": 6.28,
-			"改造后女职工平均收入 Average income of female employees after": 5.33,
-			"原女领导平均收入 Average income of female leaders before": 7.3,
-			"改造后女领导平均收入 Average income of female leaders after": 5.33
-		},
-		{
-			"电站": "盘溪四级电站",
-			"原平均收入 Average income before": 6.46,
-			"改造后平均收入 Average income after": 5.41,
-			"原女职工平均收入 Average income of female employees before": 5.93,
-			"改造后女职工平均收入 Average income of female employees after": 5.17,
-			"原女领导平均收入 Average income of female leaders before": 7.3,
-			"改造后女领导平均收入 Average income of female leaders after": 5.09
-		}
-	],
-	"comments": [{
-		"unit": "x10,000 CNY"
-	}],
-	"credit": [{
-		"author": "UNIDO-GEF China SHP Capacity Upgrade Project",
-		"year": 2022,
-		"UNIDO Open Data": "https://open.unido.org/projects/CN/projects/140196",
-		"website": "http://www.icshp.org/small-and-green"
-	}]
+  "data": [
+    {
+      "Item": "原平均收入",
+      "Item-en": "Average income before",
+      "冒烟洞二级": 3.91,
+      "马脖子": 2.76,
+      "杨道河": 4.39,
+      "朝天吼": 5.17,
+      "石家坝": 5.05,
+      "高坑": 6.65,
+      "塘坂": 5.89,
+      "新坪垭": 5.13,
+      "官溪": 6.16,
+      "三叠岭": 3.23,
+      "峒牌": 2.88,
+      "爱布二级": 3.75,
+      "爱布三级": 3.23,
+      "盘溪二级": 6.23,
+      "盘溪三级": 6.53,
+      "盘溪四级": 6.46
+    },
+    {
+      "Item": "改造后平均收入",
+      "Item-en": "Average income after",
+      "冒烟洞二级": 5.34,
+      "马脖子": 3.36,
+      "杨道河": 4.52,
+      "朝天吼": 4.63,
+      "石家坝": 5.05,
+      "高坑": 6.84,
+      "塘坂": 8.08,
+      "新坪垭": 7.19,
+      "官溪": 7.21,
+      "三叠岭": 5.04,
+      "峒牌": 5.04,
+      "爱布二级": 5.04,
+      "爱布三级": 5.04,
+      "盘溪二级": 5.39,
+      "盘溪三级": 5.75,
+      "盘溪四级": 5.41
+    },
+    {
+      "Item": "原女职工平均收入",
+      "Item-en": "Average income of female employees before",
+      "冒烟洞二级": 3.41,
+      "马脖子": 2.73,
+      "杨道河": 3.98,
+      "朝天吼": 4.5,
+      "石家坝": 3.8,
+      "高坑": 7.27,
+      "塘坂": 4.28,
+      "新坪垭": 3.81,
+      "官溪": 5.67,
+      "三叠岭": 3.33,
+      "峒牌": 2.54,
+      "爱布二级": 3.65,
+      "爱布三级": 3.13,
+      "盘溪二级": 5.98,
+      "盘溪三级": 6.28,
+      "盘溪四级": 5.93
+    },
+    {
+      "Item": "改造后女职工平均收入",
+      "Item-en": "Average income of female employees after",
+      "冒烟洞二级": 4.67,
+      "马脖子": 3.39,
+      "杨道河": 4.15,
+      "朝天吼": 4.5,
+      "石家坝": 0,
+      "高坑": 7.23,
+      "塘坂": 6.31,
+      "新坪垭": 6.04,
+      "官溪": 6.55,
+      "三叠岭": 5.04,
+      "峒牌": 5.04,
+      "爱布二级": 5.04,
+      "爱布三级": 5.04,
+      "盘溪二级": 5.17,
+      "盘溪三级": 5.33,
+      "盘溪四级": 5.17
+    },
+    {
+      "Item": "原女领导平均收入",
+      "Item-en": "Average income of female leaders before",
+      "冒烟洞二级": 4.64,
+      "马脖子": 0,
+      "杨道河": 4.5,
+      "朝天吼": 4.5,
+      "石家坝": 3.8,
+      "高坑": 8.02,
+      "塘坂": 7.8,
+      "新坪垭": 3.71,
+      "官溪": 6.17,
+      "三叠岭": 0,
+      "峒牌": 3.01,
+      "爱布二级": 3.85,
+      "爱布三级": 3.53,
+      "盘溪二级": 7.3,
+      "盘溪三级": 7.3,
+      "盘溪四级": 7.3
+    },
+    {
+      "Item": "改造后女领导平均收入",
+      "Item-en": "Average income of female leaders after",
+      "冒烟洞二级": 6.48,
+      "马脖子": 3.66,
+      "杨道河": 4.5,
+      "朝天吼": 4.5,
+      "石家坝": 0,
+      "高坑": 8.32,
+      "塘坂": 10.95,
+      "新坪垭": 6.45,
+      "官溪": 6.56,
+      "三叠岭": 5.04,
+      "峒牌": 5.04,
+      "爱布二级": 5.04,
+      "爱布三级": 5.04,
+      "盘溪二级": 5.33,
+      "盘溪三级": 5.33,
+      "盘溪四级": 5.09
+    }
+  ],
+  "comments": [
+    {
+      "unit": "x10,000 CNY"
+    }
+  ],
+  "credit": [
+    {
+      "author": "UNIDO-GEF China SHP Capacity Upgrade Project",
+      "year": 2022,
+      "UNIDO Open Data": "https://open.unido.org/projects/CN/projects/140196",
+      "website": "http://www.icshp.org/small-and-green"
+    }
+  ]
 }
