@@ -965,7 +965,7 @@ function createSectionKnohub(json) {
 
   var sectionSelector = '[data-anchor="' + json.id + '"]';
   var sectionElement = document.querySelector(sectionSelector);
-  sectionElement.innerHTML = `<div class="container"><div class="kh-wrap" id="${json.id}-wrap"></div></div>`;
+  sectionElement.innerHTML = `<div class="container container-limited"><div class="kh-wrap" id="${json.id}-wrap"></div></div>`;
 
   let treeHTML = `<h2 class="text-unido-blue">${json.name}</h2><div class="bs-tree normalScroll mb-3"><ul id="knwoledge-tree" class="list-group list-group-flush small">`;
 
