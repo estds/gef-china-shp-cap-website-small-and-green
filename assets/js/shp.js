@@ -1015,7 +1015,7 @@ function createSectionPartners(json) {
   let projPartnerLogos = json.children;
   partnersHTML += `<h2 class="text-white text-center">${json.name}</h2><div class="row">`;
   for (const obj of projPartnerLogos) {
-    partnersHTML += `<div id="logo-${obj.id}" class="col-4 col-md-3 ${obj.type} text-center col-lg-2 px-1 mb-2 ${obj.type}" title="${obj.name}"><div class="bg-white"><img src="${assetsURL+obj.img}" class="img-fluid ${obj.type}" alt="${obj.name}"></div></div>`;
+    partnersHTML += `<div id="logo-${obj.id}" class="col-4 col-md-3 ${obj.type} text-center px-1 mb-2 ${obj.type}" title="${obj.name}"><div class="bg-white"><img src="${assetsURL+obj.img}" class="img-fluid ${obj.type}" alt="${obj.name}"></div></div>`;
   }
   partnersHTML += `</div><p class="text-white text-center small">${json.desc}</p>`;
 
