@@ -374,6 +374,10 @@
   .img-fluid.partner-logo {
     max-height: 80px;
   }
+  
+  .asr-fixed {
+    padding-bottom: 50%;
+  }
 
 }
 
