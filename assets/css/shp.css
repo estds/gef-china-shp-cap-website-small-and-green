@@ -186,15 +186,15 @@
 }
 
 .video-in-background .layer{
-		position: absolute;
-		z-index: 5;
-		width: 100%;
-		left: 0;
-		top: 43%;
-		-webkit-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-	}
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  left: 0;
+  top: 43%;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
 
 /* ----------- Map ----------- */
 
@@ -369,6 +369,10 @@
 
   .container-limited {
     max-width: 992px;
+  }
+
+  .img-fluid.partner-logo {
+    max-height: 80px;
   }
 
 }
