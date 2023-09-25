@@ -1,6 +1,6 @@
 var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
 
-const jsonURL = assetsURL + '/data/all-content-v2.json';
+const jsonURL = assetsURL + '/data/all-content-v3.json';
 
 let translation = {
   "caseStudy": "案例分析",
@@ -329,6 +329,7 @@ function createSectionTechDemo(json) {
                        <button class="btn btn-primary btn-unido-orange" type="button" data-bs-target="#carousel-${json.id}" data-bs-slide="next"><i class="bi bi-caret-right-fill"></i></button>
                      </div>
                    </div>
+                   <p>${json.desc}</p>
                    <div id="carousel-${json.id}" class="carousel carousel-item-elex2 slide">
                      <div class="carousel-inner">` + createTedemoItems(json.children) + `</div>
                    </div>`;
