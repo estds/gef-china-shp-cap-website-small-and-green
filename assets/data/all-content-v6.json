@@ -2791,12 +2791,6 @@
                       "link": "http://www.mwr.gov.cn/zwgk/gknr/202201/t20220105_1558137.html"
                     },
                     {
-                      "id": "entry-1-2-2-4",
-                      "name": "水利部办公厅关于黄河流域小水电清理整改工作进展情况的通报（办水电函〔2022〕746号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202208/t20220815_1591216.html"
-                    },
-                    {
                       "id": "entry-1-2-2-5",
                       "name": "水利部 发展改革委 自然资源部 生态环境部 农业农村部 能源局 林草局关于进一步做好小水电分类整改工作的意见（水电〔2021〕]397号）",
                       "type": "kh-item",
@@ -2807,9 +2801,29 @@
                       "name": "生态环境部 国家发展和改革委员会 最高人民法院 最高人民检察院 科学技术部 工业和信息化部 公安部 财政部 人力资源和社会保障部 自然资源部 住房和城乡建设部 交通运输部 水利部 农业农村部 应急管理部 国家林业和草原局 国家矿山安全监察局 深入打好长江保护修复攻坚战行动方案（环水体〔2022〕55号）",
                       "type": "kh-item",
                       "link": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202209/t20220919_994278.html"
+                    }
+                  ]
+                },
+                {
+                  "id": "folder-1-2-6",
+                  "name": "生态流量",
+                  "type": "kh-folder",
+                  "desc": "清理整改",
+                  "children": [
+                    {
+                      "id": "entry-1-2-6-1",
+                      "name": "水利部办公厅 生态环境部办公厅关于进一步加强小水电站生态流量监督检查工作的通知（办水电〔2021〕382号）",
+                      "type": "kh-item",
+                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202201/t20220105_1558135.html"
                     },
                     {
-                      "id": "entry-1-2-2-7",
+                      "id": "entry-1-2-6-2",
+                      "name": "水利部办公厅关于做好小水电站生态流量泄放评估工作的通知（办水电〔2022〕115号）",
+                      "type": "kh-item",
+                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202204/t20220425_1570855.html"
+                    },
+                    {
+                      "id": "entry-1-2-6-3",
                       "name": "水利部 生态环境部关于加强长江经济带小水电站生态流量监管的通知（水电〔2019〕241号）",
                       "type": "kh-item",
                       "link": "http://www.mwr.gov.cn/zwgk/gknr/201909/t20190902_1440968.html"
@@ -3040,6 +3054,18 @@
                   "name": "2019年度减排项目中国区域电网基准线排放因子",
                   "type": "kh-item",
                   "link": "https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202012/t20201229_815386.shtml"
+                },
+                {
+                  "id": "entry-1-4-5",
+                  "name": "智能化小型水电站技术指南（试行）",
+                  "type": "kh-item",
+                  "link": "http://www.mwr.gov.cn/zwgk/gknr/202307/t20230727_1676161.html"
+                },
+                {
+                  "id": "entry-1-4-6",
+                  "name": "小水电集控中心技术指南（试行）",
+                  "type": "kh-item",
+                  "link": "http://www.mwr.gov.cn/zwgk/gknr/202307/t20230727_1676161.html"
                 }
               ]
             }
@@ -3154,9 +3180,7 @@
                 {
                   "id": "entry-2-3-4",
                   "name": "关于印发广西壮族自治区农村水电站安全生产标准化达标评级实施暂行办法的通知(桂水电〔2015〕19 号)",
-                  "type": "kh-item",
-                  "link": "/docs/guangxi-shp-operational-safety-management-rules.pdf",
-                  "locLink": true
+                  "type": "kh-item"
                 }
               ]
             },
@@ -3249,9 +3273,7 @@
                 {
                   "id": "entry-2-7-1",
                   "name": "重庆市长江经济带小水电清理整改工作实施方案（渝水农水〔2019〕4 号）",
-                  "type": "kh-item",
-                  "link": "/docs/chongqing-plan-remedying-yantze-shp-impacts.pdf",
-                  "locLink": true
+                  "type": "kh-item"
                 },
                 {
                   "id": "entry-2-7-2",
@@ -3261,9 +3283,7 @@
                 {
                   "id": "entry-2-7-3",
                   "name": "重庆市关于加强农村水电建设生态环境保护工作的通知（渝水办电〔2015〕6 号）",
-                  "type": "kh-item",
-                  "link": "/docs/chongqing-plan-protecting-environment-in-shp-development.pdf",
-                  "locLink": true
+                  "type": "kh-item"
                 },
                 {
                   "id": "entry-2-7-4",
@@ -3281,16 +3301,12 @@
                 {
                   "id": "entry-2-8-1",
                   "name": "湖北省长江经济带小水电清理整改工作实施方案",
-                  "type": "kh-item",
-                  "link": "/docs/hubei-plan-remedying-yantze-shp-impacts.pdf",
-                  "locLink": true
+                  "type": "kh-item"
                 },
                 {
                   "id": "entry-2-8-2",
                   "name": "湖北省关于加强水电站生态泄流监督管理的指导意见",
-                  "type": "kh-item",
-                  "link": "/docs/hubei-shp-eflow-regulation-trial.pdf",
-                  "locLink": true
+                  "type": "kh-item"
                 },
                 {
                   "id": "entry-2-8-3",
