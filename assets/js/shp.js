@@ -1,6 +1,6 @@
 var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
 
-const jsonURL = assetsURL + '/data/all-content-v5.json';
+const jsonURL = assetsURL + '/data/all-content-v2.json';
 
 let translation = {
   "caseStudy": "案例分析",
@@ -9,7 +9,7 @@ let translation = {
   "before": "改造前",
   "after": "改造后",
   "kiloWatt": "千瓦",
-  "annualOutput": "年发电",
+  "annualOutput": "年均发电",
   "GWhx100": "亿度",
   "emmCutAnnual": "年均减排",
   "plantList": "试点电站",
@@ -241,7 +241,7 @@ function createSectionDemoPlants(json) {
   demoPlants.forEach(function(item) {
     var plantMarker = L.marker([item.plantLat, item.plantLon], {
       icon: plantIcon
-    }).bindPopup('<h5>' + item.name + '</h5><p class="my-1">' + item.desc + '<a target="_blank" href="' + assetsURL + item.csReport + '">' + translation.caseStudy + '<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p><table cellspacing="0" cellpadding="0" border="0" class="table table-striped table-sm text-end"> <thead> <tr> <th></th> <th>' + translation.before + '</th> <th>' + translation.after + '</th> </tr> </thead> <tbody> <tr> <td class="text-start"><strong>' + translation.installedCap + '</strong> / ' + translation.kiloWatt + '</td> <td>' + item.capBefore.toLocaleString('en') + '</td> <td>' + item.capAfter.toLocaleString('en') + '</td> </tr> <tr> <td class="text-start"><strong>' + translation.annualOutput + '</strong> / ' + translation.GWhx100 + '</td> <td>' + item.outputBefore.toLocaleString('en') + '</td> <td>' + item.outputAfter.toLocaleString('en') + '</td> </tr> <tr> <td colspan="2" class="text-start"><strong>' + item.emNote + translation.emmCutAnnual + '</strong> / ' + translation.ton + '</td> <td>' + item.emCut.toLocaleString('en') + '</td> </tr> </tbody> </table>'); // Use 'desc' as the popup content
+    }).bindPopup('<h5>' + item.name + '</h5><p class="my-1">' + item.desc + '<a target="_blank" href="' + assetsURL + item.csReport + '">' + translation.caseStudy + '<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p><table cellspacing="0" cellpadding="0" border="0" class="table table-striped table-sm text-end mb-0"> <thead> <tr> <th></th> <th>' + translation.before + '</th> <th>' + translation.after + '</th> </tr> </thead> <tbody> <tr> <td class="text-start"><strong>' + translation.installedCap + '</strong> / ' + translation.kiloWatt + '</td> <td>' + item.capBefore.toLocaleString('en') + '</td> <td>' + item.capAfter.toLocaleString('en') + '</td> </tr> <tr> <td class="text-start"><strong>' + translation.annualOutput + '*</strong> / ' + translation.GWhx100 + '</td> <td>' + item.outputBefore.toLocaleString('en') + '</td> <td>' + item.outputAfter.toLocaleString('en') + '</td> </tr> <tr> <td colspan="2" class="text-start"><strong>' + translation.emmCutAnnual + '*</strong> / ' + translation.ton + '</td> <td>' + item.emCut.toLocaleString('en') + '</td> </tr> </tbody> </table><p class="my-0 small">* '+item.emNote+'</p>'); // Use 'desc' as the popup content
 
     plantMarker.addTo(map);
     plantMarkers.push(plantMarker);
