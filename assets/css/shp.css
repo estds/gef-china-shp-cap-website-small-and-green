@@ -90,7 +90,7 @@
   box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
 }
 
-/* ----------- Laoding ----------- */
+/* ----------- Loading ----------- */
 
 #loading-status {
   width: 100%;
@@ -214,7 +214,7 @@
   left: 2.5rem;
   bottom: 0;
   max-height: 80vh;
-  z-index: 900;
+  z-index: 1000;
 }
 
 .map-pin-list .demo-plant-list-toggle {
