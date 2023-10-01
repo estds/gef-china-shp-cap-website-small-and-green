@@ -90,7 +90,7 @@
   box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
 }
 
-/* ----------- Loading ----------- */
+/* ----------- Laoding ----------- */
 
 #loading-status {
   width: 100%;
@@ -202,25 +202,64 @@
   width: 100%;
   height: 100vh;
   background-color: #000;
+  display: flex;
 }
 
 .leaflet-popup-content-wrapper {
   border-radius: 0;
 }
 
+.leaflet-map-fullscreen .demo-plant-list-wrap {
+  width: 16rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  overflow: hidden;
+  z-index: 999;
+}
+
+
+.leaflet-map-fullscreen .demo-plant-list-wrap .demo-plant-list-toggle {
+  background-color: rgba(0, 156, 220, .8);
+  text-align: left;
+  pointer-events: auto;
+}
+
+.demo-plant-list-toggle::after {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\F229';
+}
+
+.demo-plant-list-toggle.collapsed::after {
+  content: '\F231';
+}
+
+.leaflet-map-fullscreen .demo-plant-list-wrap .demo-plant-list-content {
+  overflow-y: auto;
+}
+
+
+/*
 .map-pin-list {
   max-width: 16rem;
   width: 100%;
-  left: 2.5rem;
+  left: 2rem;
   bottom: 0;
   max-height: 80vh;
-  z-index: 1000;
+  z-index: 900;
 }
 
-.map-pin-list .demo-plant-list-toggle {
-  background-color: rgba(0, 156, 220, .8);
-  text-align: left;
-}
+
 
 .map-pin-list .demo-plant-list-toggle.collapsed .bi-caret-down-fill::before {
   content: '\F231';
@@ -229,6 +268,7 @@
 .map-pin-list .demo-plant-list-content {
   overflow-y: auto;
 }
+*/
 
 /* ----------- Tech demo ----------- */
 
@@ -348,10 +388,18 @@
 
 @media (min-width: 992px) {
 
+  .leaflet-map-fullscreen .demo-plant-list-wrap {
+    position: relative;
+  }
+  
+  .leaflet-map-fullscreen .demo-plant-list-wrap .demo-plant-list-content {
+    display: block;
+  }
+  
   .asr-fixed {
     padding-bottom: 50%;
   }
-  
+
   .carousel-item-elex2 .row .carousel-item-ele:last-child {
     display: block;
   }

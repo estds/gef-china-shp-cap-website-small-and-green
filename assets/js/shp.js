@@ -12,6 +12,7 @@ let translation = {
   "annualOutput": "年均发电",
   "GWhx100": "亿度",
   "emmCutAnnual": "年均减排",
+  "pickPlant": "选择电站",
   "plantList": "试点电站",
   "clickItemsKnowMore": "请点击列表中的条目了解详情。",
   "readOn": "继续阅读",
@@ -22,15 +23,32 @@ let translation = {
 };
 
 //***************** Callback for search *****************//
+
+function highlightMatch(text, searchInput) {
+  const escapedSearchInput = searchInput.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const regex = new RegExp(`(${escapedSearchInput})`, 'gi');
+  const highlightedText = text.replace(regex, '<b class="text-unido-orange">$1</b>');
+  return highlightedText;
+}
+
 function type2Search(json, searchBox) {
+
   var searchInput = searchBox.value.toLowerCase();
   var resultBoxID = searchBox.getAttribute('data-result-box');
+  var clearText = searchBox.nextElementSibling;
+  var promptText = ['', '', translation.typeToSearch, 2];
+  
+  clearText.addEventListener('click', function() {
+    searchBox.value = '';
+    clearText.innerHTML = `<i class="bi bi-search"></i>`;
+  });
 
   let searchResults = [];
 
-
   if (searchInput.length > 0) {
-    // Loop through each item in the JSON data
+  	clearText.innerHTML = `<i class="bi bi-x-circle"></i>`;
+
+    // Loop through each item in the JSON data  
     for (let i = 0; i < json.length; i++) {
       const item = json[i];
       const secondElement = item[1].toLowerCase();
@@ -38,18 +56,23 @@ function type2Search(json, searchBox) {
 
       // Check if the search input matches the second or third element
       if (secondElement.includes(searchInput) || thirdElement.includes(searchInput)) {
-        searchResults.push(item);
+        // Highlight the matching words
+        const highlightedSecondElement = highlightMatch(secondElement, searchInput);
+        const highlightedThirdElement = highlightMatch(thirdElement, searchInput);
+
+        // Push the modified item to searchResults      
+        searchResults.push([item[0], highlightedSecondElement, highlightedThirdElement, item[3]]);
       }
     }
-
   } else {
-  	var promptText = ['', '', translation.typeToSearch, 2];
+    clearText.innerHTML = `<i class="bi bi-search"></i>`;
     searchResults.push(promptText);
   }
+
   // Display search results
   const searchResultsContainer = document.querySelector(resultBoxID);
   searchResultsContainer.innerHTML = '';
-  
+
   let listHTML = ``;
 
   if (searchResults.length > 0) {
@@ -60,8 +83,7 @@ function type2Search(json, searchBox) {
     }
     searchResultsContainer.innerHTML = listHTML;
   } else {
-  
-  	searchResultsContainer.innerHTML = `<li class="list-group-item disabled"><a href="#" class="d-block disabled"><h6 class="text-white text-truncate"></h6><p class="small text-truncate text-light mb-0">${translation.noResultFound}</p></a></li>`;
+    searchResultsContainer.innerHTML = `<li class="list-group-item disabled"><a href="#" class="d-block disabled"><h6 class="text-white text-truncate"></h6><p class="small text-truncate text-light mb-0">${translation.noResultFound}</p></a></li>`;
   }
 
 }
@@ -204,11 +226,13 @@ function createSectionDemoPlants(json) {
   var selector = '[data-anchor="' + json.id + '"]';
   var sectionDOM = document.querySelector(selector);
   
-  sectionDOM.innerHTML = `<div id="${json.id}-leaflet-map" class="leaflet-map-fullscreen"></div><div class="position-absolute d-flex align-items-start flex-column small map-pin-list"><div class="w-100 d-grid"><button class="accordion-button rounded-0 p-3 text-white demo-plant-list-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#demo-plant-list-content" aria-expanded="false"><i class="bi bi-caret-down-fill me-2"></i>${translation.plantList}</button></div><div class="collapse demo-plant-list-content bg-white mt-auto w-100 normalScroll" id="demo-plant-list-content"><ul class="list-group list-group-flush"></ul></div></div>`;
+  sectionDOM.innerHTML = `<div class="leaflet-map-fullscreen"><div class="d-flex w-100 h-100"><div class="demo-plant-list-wrap d-flex flex-column align-items-start bg-unido-blue"><h5 class="p-3 text-white mb-0 d-none d-lg-block">${translation.plantList}</h5><button class="demo-plant-list-toggle d-flex align-items-center justify-content-between text-white w-100 collapsed btn btn-link text-decoration-none p-3 fs-5 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#demo-plant-list-content" aria-expanded="false">${translation.plantList}</button><div class="collapse demo-plant-list-content bg-white mt-auto w-100 normalScroll" id="demo-plant-list-content"><ul class="list-group list-group-flush"></ul></div></div><div class="flex-grow-1" id="${json.id}-leaflet-map"></div></div></div>`;
+	//sectionDOM.innerHTML = `<div id="${json.id}-leaflet-map" class="leaflet-map-fullscreen"></div><div class="position-absolute d-flex align-items-start flex-column map-pin-list"><div class="w-100 d-grid"><button class="accordion-button rounded-0 p-3 text-white demo-plant-list-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#demo-plant-list-content" aria-expanded="false"><i class="bi bi-caret-down-fill me-2"></i>${translation.plantList}</button></div><div class="collapse demo-plant-list-content bg-white mt-auto w-100 normalScroll" id="demo-plant-list-content"><ul class="list-group list-group-flush"></ul></div></div>`;
 
   // load map tiles from Autonavi.com
   var mapID = json.id +'-leaflet-map';
   const map = L.map(mapID, {
+  	zoomControl: false,
     scrollWheelZoom: false
   }).setView([30.00, 110.00], 6);
   map.attributionControl.setPrefix('Leaflet.js');
@@ -217,6 +241,9 @@ function createSectionDemoPlants(json) {
     maxZoom: 16,
     attribution: "Basemap &copy; AutoNavi",
   }).addTo(map);
+  
+  //move zoom buttons to bottom right
+  L.control.zoom({position: 'bottomright'}).addTo(map);
 
   // define styles of map pins
   var plantIcon = L.icon({
@@ -239,9 +266,7 @@ function createSectionDemoPlants(json) {
 
   // Loop through the data and create markers
   demoPlants.forEach(function(item) {
-    var plantMarker = L.marker([item.plantLat, item.plantLon], {
-      icon: plantIcon
-    }).bindPopup('<h5>' + item.name + '</h5><p class="my-1">' + item.desc + '<a target="_blank" href="' + assetsURL + item.csReport + '">' + translation.caseStudy + '<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p><table cellspacing="0" cellpadding="0" border="0" class="table table-striped table-sm text-end mb-0"> <thead> <tr> <th></th> <th>' + translation.before + '</th> <th>' + translation.after + '</th> </tr> </thead> <tbody> <tr> <td class="text-start"><strong>' + translation.installedCap + '</strong> / ' + translation.kiloWatt + '</td> <td>' + item.capBefore.toLocaleString('en') + '</td> <td>' + item.capAfter.toLocaleString('en') + '</td> </tr> <tr> <td class="text-start"><strong>' + translation.annualOutput + '*</strong> / ' + translation.GWhx100 + '</td> <td>' + item.outputBefore.toLocaleString('en') + '</td> <td>' + item.outputAfter.toLocaleString('en') + '</td> </tr> <tr> <td colspan="2" class="text-start"><strong>' + translation.emmCutAnnual + '*</strong> / ' + translation.ton + '</td> <td>' + item.emCut.toLocaleString('en') + '</td> </tr> </tbody> </table><p class="my-0 small">* '+item.emNote+'</p>'); // Use 'desc' as the popup content
+    var plantMarker = L.marker([item.plantLat, item.plantLon], {icon: plantIcon}).bindPopup('<h5>' + item.name + '</h5><p class="my-1">' + item.desc + '<a target="_blank" href="' + assetsURL + item.csReport + '">' + translation.caseStudy + '<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p><table cellspacing="0" cellpadding="0" border="0" class="table table-striped table-sm text-end mb-0"> <thead> <tr> <th></th> <th>' + translation.before + '</th> <th>' + translation.after + '</th> </tr> </thead> <tbody> <tr> <td class="text-start"><strong>' + translation.installedCap + '</strong> / ' + translation.kiloWatt + '</td> <td>' + item.capBefore.toLocaleString('en') + '</td> <td>' + item.capAfter.toLocaleString('en') + '</td> </tr> <tr> <td class="text-start"><strong>' + translation.annualOutput + '</strong> / ' + translation.GWhx100 + '</td> <td>' + item.outputBefore.toLocaleString('en') + '</td> <td>' + item.outputAfter.toLocaleString('en') + '*</td> </tr> <tr> <td colspan="2" class="text-start"><strong>' + translation.emmCutAnnual + '</strong> / ' + translation.ton + '</td> <td>' + item.emCut.toLocaleString('en') + '*</td> </tr> </tbody> </table><p class="my-0 small">* '+item.emNote+'</p>'); // Use 'desc' as the popup content
 
     plantMarker.addTo(map);
     plantMarkers.push(plantMarker);
@@ -390,7 +415,7 @@ function showAlertContent() {
     alertDesc += `<br><a class="alert-link" target="_blank" href="${alertLinkURL}">${alertButton}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a>`;
   }
   let alertBox = document.querySelector(targetAlert);
-  alertBox.innerHTML = `<div class="alert alert-warning alert-dismissible rounded-0 fade show shadow-lg" role="alert"><h4 class="alert-heading">${alertTitle}</h4><p class="alert-content mb-0">${alertDesc}</p><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div>`;
+  alertBox.innerHTML = `<div class="alert alert-warning alert-dismissible rounded-0 fade show shadow-lg animate__animated animate__fadeIn" role="alert"><h4 class="alert-heading">${alertTitle}</h4><p class="alert-content mb-0">${alertDesc}</p><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div>`;
 }
 
 //***************** Callback for creating photo walls from JSON data *****************//
@@ -516,7 +541,7 @@ function createStackedBarChart(json) {
   const catArray = Object.keys(plants[0].numbers);
   const seriesArray = []
 
-  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><i class="bi bi-list-check"></i></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"><label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`
+  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><span class="badge rounded-pill bg-danger">${translation.pickPlant}</span></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"><label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`
 
   //console.log(catArray);
   for (const plant of plants) {
@@ -600,7 +625,7 @@ function createLineChart(json) {
   const catArray = Object.keys(plants[0].numbers);
   const seriesArray = []
 
-  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><i class="bi bi-list-check"></i></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"><label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`
+  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><span class="badge rounded-pill bg-danger">${translation.pickPlant}</span></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"><label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`
 
   //console.log(catArray);
   for (const plant of plants) {
@@ -843,7 +868,7 @@ function createComparisonChart(json) {
   var chartContainer = chartWrap.querySelector('.chart-container');
 
 
-  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list-check"></i></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small">`;
+  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false"><span class="badge rounded-pill bg-danger">${translation.pickPlant}</span></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small">`;
 
 
   for (var i = 0; i < plantsData.length; i++) {
