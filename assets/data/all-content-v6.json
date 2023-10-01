@@ -33,9 +33,9 @@
           "desc": "观看UNIDO-GEF 中国小水电增效扩容改造增值项目介绍视频",
           "link": [
             {
-              "src": "/vid/unido-gef-shp-small-and-green-360p.mp4",
+              "src": "/vid/unido-gef-shp-small-and-green-720p.mp4",
               "type": "video/mp4",
-              "label": "360p"
+              "label": "720p"
             },
             {
               "src": "/vid/unido-gef-shp-small-and-green-540p.mp4",
@@ -43,9 +43,9 @@
               "label": "540p"
             },
             {
-              "src": "/vid/unido-gef-shp-small-and-green-720p.mp4",
+              "src": "/vid/unido-gef-shp-small-and-green-360p.mp4",
               "type": "video/mp4",
-              "label": "720p"
+              "label": "360p"
             }
           ]
         },
