@@ -90,6 +90,10 @@
   box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
 }
 
+.old-ie-message {
+  display: none;
+}
+
 /* ----------- Laoding ----------- */
 
 #loading-status {
