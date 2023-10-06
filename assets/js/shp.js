@@ -1,6 +1,6 @@
 var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
 
-const jsonURL = assetsURL + '/data/all-content-v8.json';
+const jsonURL = assetsURL + '/data/all-content-v10.json';
 
 let translation = {
   "caseStudy": "案例分析",
@@ -273,7 +273,7 @@ function createSectionDemoPlants(json) {
 
     // Create a list item for each marker
     var listItem = document.createElement('li');
-    listItem.innerHTML = `<li class="list-group-item"><a class="d-block text-truncate text-decoration-none text-dark" ds-mo-toggle="map-popup" ds-mo-target="$ll-popup-${item.id}" href="#">${item.name}</a></li>`
+    listItem.innerHTML = `<li class="list-group-item p-0"><a class="d-block text-truncate text-decoration-none text-dark px-3 py-2" ds-mo-toggle="map-popup" ds-mo-target="$ll-popup-${item.id}" href="#">${item.name}<br><small class="text-secondary">${item.county}</small></a></li>`
     //
     listItem.addEventListener('click', function() {
       // Close any open popups
@@ -1196,10 +1196,10 @@ fetch(jsonURL)
   const loadingSpin = document.getElementById("loading-status");
   loadingSpin.remove();
 
+	console.log('Everything completed!');
+
 })
   .catch(error => {
   // Handle any errors that occurred during the fetch
   console.error('Error:', error);
 });
-
-console.log('Everything completed!');
