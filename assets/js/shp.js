@@ -306,7 +306,7 @@ function createTedemoItems(items) {
                    <div class="card border-0 rounded-0 bg-transparent">
                      <div class="d-flex">
                        <div class="flex-shrink-0 mt-4 ps-2 pb-4">
-                         <img src="${assetsURL + items[i].img}" alt="${items[i].name}" class="shadow" style="max-height: 180px">
+                         <img src="${assetsURL + items[i].img}" alt="${items[i].name} Cover" class="shadow" style="max-height: 180px">
                        </div>
                        <div class="flex-grow-1">
                          <div class="card-body">
@@ -322,7 +322,7 @@ function createTedemoItems(items) {
                    <div class="card border-0 rounded-0 bg-transparent">
                      <div class="d-flex">
                        <div class="flex-shrink-0 mt-4 ps-2 pb-4">
-                         <img src="${assetsURL + items[i1].img}" alt="${items[i1].name}" class="shadow" style="max-height: 180px">
+                         <img src="${assetsURL + items[i1].img}" alt="${items[i1].name} Cover" class="shadow" style="max-height: 180px">
                        </div>
                        <div class="flex-grow-1">
                          <div class="card-body">
@@ -1054,26 +1054,7 @@ function createSectionPartners(json) {
   targetBox.innerHTML = partnersHTML;
 
 }
-/*
-function createSectionPartners(json) {
 
-  var sectionSelector = '[data-anchor="' + json.id + '"]';
-  var sectionElement = document.querySelector(sectionSelector);
-  sectionElement.innerHTML = `<div id="${json.id}-wrap" class="container container-limited"></div>`;
-
-  let partnersHTML = '';
-  let projPartnerLogos = json.children;
-  partnersHTML += `<h2 class="text-white text-center">${json.name}</h2><div class="row">`;
-  for (const obj of projPartnerLogos) {
-    partnersHTML += `<div id="logo-${obj.id}" class="col-4 col-md-3 ${obj.type} text-center px-1 mb-2 ${obj.type}" title="${obj.name}"><div class="bg-white"><img src="${assetsURL+obj.img}" class="img-fluid ${obj.type}" alt="${obj.name}"></div></div>`;
-  }
-  partnersHTML += `</div><p class="text-white text-center small">${json.desc}</p>`;
-
-  var targetBoxID = json.id + '-wrap';
-  const targetBox = document.getElementById(targetBoxID);
-  targetBox.innerHTML = partnersHTML;
-
-}*/
 
 //***************** Callback for creating follow us from JSON data *****************//
 function createSectionFollow(json) {
@@ -1087,7 +1068,7 @@ function createSectionFollow(json) {
   for (const obj of json.children) {
     const qrCaption = obj.link ? `<a class="text-white text-decoration-none" href="${obj.link}" target="_blank">${obj.name}</a>` : `<span class="text-white">${obj.name}</span>`;
 
-    followUsHTML += `<div class="col-4"><p class="text-center mb-1"><img src="${assetsURL+obj.img}" class="img-fluid img-${obj.type}"></p><p class="text-center text-very-small text-white">${qrCaption}</p></div>`;
+    followUsHTML += `<div class="col-4"><p class="text-center mb-1"><img src="${assetsURL+obj.img}" class="img-fluid img-${obj.type}" alt="${obj.name} QR Code"></p><p class="text-center text-very-small text-white">${qrCaption}</p></div>`;
   }
   followUsHTML += `</div><p class="text-very-small text-secondary px-4 mt-5 mb-0">${json.desc}</p>`;
   
