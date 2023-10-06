@@ -214,9 +214,9 @@
 }
 
 .leaflet-map-fullscreen .demo-plant-list-wrap {
-  width: 16rem;
+  width: 12rem;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   max-height: 100%;
   overflow: hidden;
@@ -251,28 +251,6 @@
 .leaflet-map-fullscreen .demo-plant-list-wrap .demo-plant-list-content {
   overflow-y: auto;
 }
-
-
-/*
-.map-pin-list {
-  max-width: 16rem;
-  width: 100%;
-  left: 2rem;
-  bottom: 0;
-  max-height: 80vh;
-  z-index: 900;
-}
-
-
-
-.map-pin-list .demo-plant-list-toggle.collapsed .bi-caret-down-fill::before {
-  content: '\F231';
-}
-
-.map-pin-list .demo-plant-list-content {
-  overflow-y: auto;
-}
-*/
 
 /* ----------- Tech demo ----------- */
 
@@ -394,6 +372,7 @@
 
   .leaflet-map-fullscreen .demo-plant-list-wrap {
     position: relative;
+    width: 16rem;
   }
   
   .leaflet-map-fullscreen .demo-plant-list-wrap .demo-plant-list-content {
