@@ -3399,12 +3399,14 @@
           "id": "partner-group-donor",
           "name": "资助方",
           "type": "partner-group",
-          "children": {
-            "id": "partner-gef",
-            "name": "全球环境基金",
-            "type": "partner-logo",
-            "img": "/img/partner-logo-gef.jpg"
-          }
+          "children": [
+            {
+              "id": "partner-gef",
+              "name": "全球环境基金",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-gef.jpg"
+            }
+          ]
         },
         {
           "id": "partner-group-implementor",
