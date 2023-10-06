@@ -1041,9 +1041,9 @@ function createSectionPartners(json) {
   let projPartnerGroups = json.children;
   partnersHTML += `<h2 class="text-white text-center">${json.name}</h2>`;
   for (const group of projPartnerGroups) {
-    partnersHTML += `<dl class="row"><dt class="col-sm-3 col-md-2 ${group.type}-name text-white">${group.name}</dt><dd class="col-sm-9 col-md-10"><div class="row">`;
+    partnersHTML += `<dl class="row mb-1"><dt class="col-sm-2 col-lg-1 ${group.type}-name text-white">${group.name}</dt><dd class="col-sm-10 col-lg-11"><div class="row row-cols-4 row-cols-md-5 row-cols-xl-6 g-1">`;
     for (const obj of group.children) {
-      partnersHTML += `<div id="logo-${obj.id}" class="col-3 col-md-2 ${obj.type} text-center px-1 mb-2" title="${obj.name}"><div class="bg-white"><img src="${assetsURL+obj.img}" class="img-fluid ${obj.type}" alt="${obj.name}"></div></div>`
+      partnersHTML += `<div id="logo-${obj.id}" class="col ${obj.type} text-center" title="${obj.name}"><div class="bg-white"><img src="${assetsURL+obj.img}" class="img-fluid ${obj.type}" alt="${obj.name}"></div></div>`
     }
     partnersHTML += `</div></dd></dl>`;
   }
