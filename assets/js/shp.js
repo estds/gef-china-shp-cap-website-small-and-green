@@ -1,6 +1,6 @@
 var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
 
-const jsonURL = assetsURL + '/data/all-content-v6.json';
+const jsonURL = assetsURL + '/data/all-content-v8.json';
 
 let translation = {
   "caseStudy": "案例分析",
@@ -1035,6 +1035,30 @@ function createSectionPartners(json) {
 
   var sectionSelector = '[data-anchor="' + json.id + '"]';
   var sectionElement = document.querySelector(sectionSelector);
+  sectionElement.innerHTML = `<div id="${json.id}-wrap" class="container"></div>`;
+
+  let partnersHTML = '';
+  let projPartnerGroups = json.children;
+  partnersHTML += `<h2 class="text-white text-center">${json.name}</h2>`;
+  for (const group of projPartnerGroups) {
+    partnersHTML += `<dl class="row"><dt class="col-sm-3 col-md-2 ${group.type}-name text-white">${group.name}</dt><dd class="col-sm-9 col-md-10"><div class="row">`;
+    for (const obj of group.children) {
+      partnersHTML += `<div id="logo-${obj.id}" class="col-3 col-md-2 ${obj.type} text-center px-1 mb-2" title="${obj.name}"><div class="bg-white"><img src="${assetsURL+obj.img}" class="img-fluid ${obj.type}" alt="${obj.name}"></div></div>`
+    }
+    partnersHTML += `</div></dd></dl>`;
+  }
+  partnersHTML += `<p class="text-white text-center small">${json.desc}</p>`;
+
+  var targetBoxID = json.id + '-wrap';
+  const targetBox = document.getElementById(targetBoxID);
+  targetBox.innerHTML = partnersHTML;
+
+}
+/*
+function createSectionPartners(json) {
+
+  var sectionSelector = '[data-anchor="' + json.id + '"]';
+  var sectionElement = document.querySelector(sectionSelector);
   sectionElement.innerHTML = `<div id="${json.id}-wrap" class="container container-limited"></div>`;
 
   let partnersHTML = '';
@@ -1049,7 +1073,7 @@ function createSectionPartners(json) {
   const targetBox = document.getElementById(targetBoxID);
   targetBox.innerHTML = partnersHTML;
 
-}
+}*/
 
 //***************** Callback for creating follow us from JSON data *****************//
 function createSectionFollow(json) {
