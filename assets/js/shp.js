@@ -232,7 +232,7 @@ function createSectionDemoPlants(json) {
   // load map tiles from Autonavi.com
   var mapID = json.id +'-leaflet-map';
   const map = L.map(mapID, {
-  	zoomControl: false,
+  	//zoomControl: false,
     scrollWheelZoom: false
   }).setView([30.00, 110.00], 6);
   map.attributionControl.setPrefix('Leaflet.js');
@@ -243,7 +243,7 @@ function createSectionDemoPlants(json) {
   }).addTo(map);
   
   //move zoom buttons to bottom right
-  L.control.zoom({position: 'bottomright'}).addTo(map);
+  //L.control.zoom({position: 'bottomright'}).addTo(map);
 
   // define styles of map pins
   var plantIcon = L.icon({
