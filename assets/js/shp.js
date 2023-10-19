@@ -1,6 +1,6 @@
 var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
 
-const jsonURL = assetsURL + '/data/all-content-v10.json';
+const jsonURL = assetsURL + '/data/all-content-v11.json';
 
 let translation = {
   "caseStudy": "案例分析",
@@ -138,6 +138,48 @@ function getArrayFolder(json, sid) {
   return retArray;
 }
 
+//***************** Callbacks for color gradient generator *****************//
+
+function generateGradient(startColor, endColor, steps) {
+  // Convert start and end colors to RGB format  
+  const startRGB = hexToRgb(startColor);
+  const endRGB = hexToRgb(endColor);
+
+  // Calculate the step size for each color channel  
+  const stepR = (endRGB.r - startRGB.r) / (steps - 1);
+  const stepG = (endRGB.g - startRGB.g) / (steps - 1);
+  const stepB = (endRGB.b - startRGB.b) / (steps - 1);
+
+  // Initialize an array to store the intermediate colors
+  const gradientColors = [];
+
+  // Generate the gradient colors  
+  for (let i = 0; i < steps; i++) {
+    const r = Math.round(startRGB.r + stepR * i);
+    const g = Math.round(startRGB.g + stepG * i);
+    const b = Math.round(startRGB.b + stepB * i);
+    gradientColors.push(rgbToHex(r, g, b));
+  }
+
+  return gradientColors;
+}
+
+// Helper function to convert RGB to hexadecimal color
+function rgbToHex(r, g, b) {
+  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+}
+
+// Helper function to convert hexadecimal color to RGB
+function hexToRgb(hex) {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result
+    ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      }
+    : null;
+}
 
 //***************** Callback for creating FP menu *****************//
 
@@ -345,7 +387,7 @@ function createSectionTechDemo(json) {
 
   var sectionSelector = '[data-anchor="' + json.id + '"]';
   var sectionElement = document.querySelector(sectionSelector);
-  sectionElement.innerHTML = `<div id="${json.id}-wrap" class="container container-limited"></div>`;
+  sectionElement.innerHTML = `<div id="${json.id}-wrap" class="container"></div>`;
   
   let TedemoHTML = `<div class="d-flex">
                      <h2 class="text-center text-unido-blue">${json.name}</h2>
@@ -369,9 +411,9 @@ function createSectionInsOutputs(json) {
 
   var sectionSelector = '[data-anchor="' + json.id + '"]';
   var sectionElement = document.querySelector(sectionSelector);
-  sectionElement.innerHTML = `<div class="container container-limited py-3" id="${json.id}-wrap"></div>`;
+  sectionElement.innerHTML = `<div class="container py-3" id="${json.id}-wrap"></div>`;
 
-  let elementsHTML = `<div class="mx-4 mx-md-0"><h2 class="text-white">${json.name}</h2><p class="text-white">${json.desc}</p></div><div class="row position-relative"><div class="col-12 col-md-6"><div class="accordion accordion-exclusive accordion-flush shadow-sm mx-4 mx-md-0" id="${json.id}-accordion">`;
+  let elementsHTML = `<div class="mx-4 mx-md-0"><h2 class="text-white">${json.name}</h2><p class="text-white">${json.desc}</p></div><div class="row position-relative"><div class="col-12 col-md-6 col-lg-7 col-xxl-4"><div class="accordion accordion-exclusive accordion-flush shadow-sm mx-4 mx-md-0" id="${json.id}-accordion">`;
 
   var childrenInfo = json.children;
   for (var i = 0; i < childrenInfo.length; i++) {
@@ -391,7 +433,7 @@ function createSectionInsOutputs(json) {
     elementsHTML += `</ul></div></div></div>`;
   }
 
-  elementsHTML += `</div></div><div class="col-md-6" id="inst-outputs-expl"><div class="alert alert-warning alert-dismissible rounded-0 fade show shadow-lg" role="alert"><h4 class="alert-heading h4-responsive"><i class="bi bi-info-circle-fill me-1"></i>${translation.knowMore}</h4><p class="alert-content">${translation.clickItemsKnowMore}</p><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div></div>`;
+  elementsHTML += `</div></div><div class="col-md-6 col-lg-5 col-xxl-4" id="inst-outputs-expl"><div class="alert alert-light alert-dismissible rounded-0 fade show shadow-lg d-none d-md-block" role="alert"><h4 class="alert-heading h4-responsive"><i class="bi bi-caret-left-square-fill me-1"></i>${translation.knowMore}</h4><p class="alert-content">${translation.clickItemsKnowMore}</p><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div></div>`;
 
   var targetObjID = json.id + '-wrap';
   const targetObj = document.getElementById(targetObjID);
@@ -415,7 +457,7 @@ function showAlertContent() {
     alertDesc += `<br><a class="alert-link" target="_blank" href="${alertLinkURL}">${alertButton}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a>`;
   }
   let alertBox = document.querySelector(targetAlert);
-  alertBox.innerHTML = `<div class="alert alert-warning alert-dismissible rounded-0 fade show shadow-lg animate__animated animate__fadeIn" role="alert"><h4 class="alert-heading">${alertTitle}</h4><p class="alert-content mb-0">${alertDesc}</p><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div>`;
+  alertBox.innerHTML = `<div class="alert alert-info alert-dismissible rounded-0 fade show shadow-lg animate__animated animate__fadeIn animate__fast" role="alert"><h4 class="alert-heading">${alertTitle}</h4><p class="alert-content mb-0">${alertDesc}</p><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div></div>`;
 }
 
 //***************** Callback for creating photo walls from JSON data *****************//
@@ -427,7 +469,7 @@ function markPhotoLightBox(obj) {
 function createSectionCapakno(json) {
   let elementsHTML = ``;
   for (const item of json.children) {
-    elementsHTML += `<div class="fp-hr-slider" id="cak-slide-${item.id}"><div class="container"><h2>${item.name}</h2><p class="mb-1">${item.desc}</p><div class="row row-cols-3 row-cols-md-4 g-4 mt-0">`;
+    elementsHTML += `<div class="fp-hr-slider" id="cak-slide-${item.id}"><div class="container"><h2>${item.name}</h2><p class="mb-1">${item.desc}</p><div class="row row-cols-3 g-4 mt-0">`;
     for (const obj of item.children) {
       elementsHTML += markPhotoLightBox(obj);
     }
@@ -523,9 +565,9 @@ function markupChartSection(json) {
 
   var items = json.children;
   for (const item of items) {
-  	sectionInnerHTML += `<div class="fp-hr-slider" id="slide-${item.id}"><div class="container container-limited bg-white py-2" id="${item.id}-wrap">`;
+  	sectionInnerHTML += `<div class="fp-hr-slider" id="slide-${item.id}"><div class="container container-limited container-chart bg-white py-2 d-flex flex-column" id="${item.id}-wrap">`;
   	if (item.charType == 'echarts' ) {
-    	sectionInnerHTML += `<div class="asr-fixed"><div class="chart-container"></div></div>`;
+    	sectionInnerHTML += `<header class="chart-header d-flex"></header><div class="flex-grow-1 chart-canva-wrap"><div class="chart-canva h-100 w-100"></div></div><footer classs="chart-footer"></footer>`;
     }
     sectionInnerHTML +=`</div></div>`;
   }
@@ -536,28 +578,37 @@ function createStackedBarChart(json) {
   var plants = json.data;
   var chartWrapID = `${json.id}-wrap`;
   var chartWrap = document.getElementById(chartWrapID);
-  var chartContainer = chartWrap.querySelector('.chart-container');
+  var chartContainer = chartWrap.querySelector('.chart-canva');
+  var chartHeader = chartWrap.querySelector('header');
+  var chartFooter = chartWrap.querySelector('footer');
 
   const catArray = Object.keys(plants[0].numbers);
   const seriesArray = []
+  
+  const startColor = '#006690'; // Darker Blue
+  const endColor = '#009cdc';   // UNIDO Blue
+  const plantNumber = plants.length;
+  
+  var unidoBlueGradient = generateGradient(startColor, endColor, plantNumber);
 
-  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><span class="badge rounded-pill bg-danger">${translation.pickPlant}</span></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"><label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`
+  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span class="badge rounded-pill bg-danger me-1 d-inline-block">${translation.pickPlant}<i class="bi bi-caret-right-fill  animate__animated animate__slower animate__flash animate__infinite"></i></span><i class="bi bi-list-check"></i></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"></div></div></div>`;
+  let menuHTML = `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`;
+  chartHeader.innerHTML = headerHTML;
+  chartFooter.innerHTML = `<p class="text-secondary small mb-0">${json.desc}</p>`;
 
   //console.log(catArray);
-  for (const plant of plants) {
+  for (let i = 0; i < plantNumber; i++) {
     var seriesItem = {
-      name: plant.plant,
-      data: Object.values(plant.numbers),
-      type: plant.type,
-      stack: plant.stack,
-      id: plant.id // Add an ID for series 1  
+      name: plants[i].plant,
+      data: Object.values(plants[i].numbers),
+      type: plants[i].type,
+      stack: plants[i].stack,
+      color: unidoBlueGradient[i], // Color of the bars
+      id: plants[i].id // Add an ID for series 1  
     }
     seriesArray.push(seriesItem);
   }
-
-  //console.log(seriesArray);
-
-
+  
   // Initialize ECharts instance
   var chart = echarts.init(chartContainer);
 
@@ -601,31 +652,30 @@ function createStackedBarChart(json) {
   });
 
   for (const item of seriesArray) {
-    headerHTML += `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-${item.id}">${item.name}<input type="checkbox" id="checkbox-${item.id}" class="form-check-input ms-auto" data-echarts-toggle="series" data-echarts-target="#${chartWrapID}" data-echarts-series="${item.name}" checked></label>`;
+    menuHTML += `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-${item.id}">${item.name}<input type="checkbox" id="checkbox-${item.id}" class="form-check-input ms-auto" data-echarts-toggle="series" data-echarts-target="#${chartWrapID}" data-echarts-series="${item.name}" checked></label>`;
   }
 
-  headerHTML += `</div></div></div>`;
-  const chartHeader = document.createElement('div');
-  const chartFooter = document.createElement('p');
-  chartHeader.classList.add('d-flex');
-  chartHeader.innerHTML = headerHTML;
-  chartWrap.insertBefore(chartHeader, chartWrap.children[0]);
 
-  chartFooter.classList.add('small', 'mb-0', 'text-secondary');
-  chartFooter.innerHTML = json.desc;
-  chartWrap.appendChild(chartFooter);
+  const chartMenu = chartHeader.querySelector('.dropdown-menu .list-group');
+
+  chartMenu.innerHTML = menuHTML;
 }
 
 function createLineChart(json) {
   var plants = json.data;
   var chartWrapID = `${json.id}-wrap`;
   var chartWrap = document.getElementById(chartWrapID);
-  var chartContainer = chartWrap.querySelector('.chart-container');
+  var chartContainer = chartWrap.querySelector('.chart-canva');
+  var chartHeader = chartWrap.querySelector('header');
+  var chartFooter = chartWrap.querySelector('footer');
 
   const catArray = Object.keys(plants[0].numbers);
   const seriesArray = []
 
-  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><span class="badge rounded-pill bg-danger">${translation.pickPlant}</span></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"><label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`
+  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span class="badge rounded-pill bg-danger me-1 d-inline-block">${translation.pickPlant}<i class="bi bi-caret-right-fill animate__animated animate__slower animate__flash animate__infinite"></i></span><i class="bi bi-list-check"></i></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"></div></div></div>`;
+  let menuHTML = `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`;
+  chartHeader.innerHTML = headerHTML;
+  chartFooter.innerHTML = `<p class="text-secondary small mb-0">${json.desc}</p>`;
 
   //console.log(catArray);
   for (const plant of plants) {
@@ -684,19 +734,12 @@ function createLineChart(json) {
   });
 
   for (const item of seriesArray) {
-    headerHTML += `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-${item.id}">${item.name}<input type="checkbox" id="checkbox-${item.id}" class="form-check-input ms-auto" data-echarts-toggle="series" data-echarts-target="#${chartWrapID}" data-echarts-series="${item.name}" checked></label>`;
+    menuHTML += `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-${item.id}">${item.name}<input type="checkbox" id="checkbox-${item.id}" class="form-check-input ms-auto" data-echarts-toggle="series" data-echarts-target="#${chartWrapID}" data-echarts-series="${item.name}" checked></label>`;
   }
 
-  headerHTML += `</div></div></div>`;
-  const chartHeader = document.createElement('div');
-  const chartFooter = document.createElement('p');
-  chartHeader.classList.add('d-flex');
-  chartHeader.innerHTML = headerHTML;
-  chartWrap.insertBefore(chartHeader, chartWrap.children[0]);
+  const chartMenu = chartHeader.querySelector('.dropdown-menu .list-group');
+  chartMenu.innerHTML = menuHTML;
 
-  chartFooter.classList.add('small', 'mb-0', 'text-secondary');
-  chartFooter.innerHTML = json.desc;
-  chartWrap.appendChild(chartFooter);
 }
 
 function updatePieChart(json, plantID) {
@@ -705,7 +748,7 @@ function updatePieChart(json, plantID) {
   var tArray = ['phase'].concat(dataCates)
   var chartWrapID = `${json.id}-wrap`;
   var chartWrap = document.getElementById(chartWrapID);
-  var chartContainer = chartWrap.querySelector('.chart-container');
+  var chartContainer = chartWrap.querySelector('.chart-canva');
 
   var datasetSource = [];
   datasetSource.push(tArray);
@@ -803,7 +846,7 @@ function updateBarChart(json, plantID) {
   var dataPhases = json.phases;
   var chartWrapID = `${json.id}-wrap`;
   var chartWrap = document.getElementById(chartWrapID);
-  var chartContainer = chartWrap.querySelector('.chart-container');
+  var chartContainer = chartWrap.querySelector('.chart-canva');
 
 
   var chosenPlant = json.data.find(function(item) {
@@ -865,15 +908,20 @@ function createComparisonChart(json) {
   var plantsData = json.data;
   var chartWrapID = `${json.id}-wrap`;
   var chartWrap = document.getElementById(chartWrapID);
-  var chartContainer = chartWrap.querySelector('.chart-container');
+  var chartContainer = chartWrap.querySelector('.chart-canva');
 
 
-  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false"><span class="badge rounded-pill bg-danger">${translation.pickPlant}</span></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small">`;
-
+  let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" aria-expanded="false"><span class="badge rounded-pill bg-danger me-1 d-inline-block">${translation.pickPlant}<i class="bi bi-caret-right-fill animate__animated animate__slower animate__flash animate__infinite"></i></span><i class="bi bi-list-check"></i></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"></div></div></div>`;
+  
+  const chartHeader = chartWrap.querySelector('header');
+  const chartFooter = chartWrap.querySelector('footer');
+  var menuHTML = ``;
+  chartHeader.innerHTML = headerHTML;
+  chartFooter.innerHTML = `<p class="text-secondary small mb-0">${json.desc}</p>`;
 
   for (var i = 0; i < plantsData.length; i++) {
     var isChecked = i === 0 ? ' checked' : '';
-    headerHTML += `<label class="list-group-item list-group-item-action d-flex" for="radio-${plantsData[i].id}">${plantsData[i].plant}<input type="radio" name="radio-group-${json.id}" id="radio-${plantsData[i].id}" class="form-check-input ms-auto" data-echarts-data-group-id="${json.id}" data-echarts-toggle="subchart" data-echarts-subchart="${plantsData[i].id}"${isChecked}></label>`;
+    menuHTML += `<label class="list-group-item list-group-item-action d-flex" for="radio-${plantsData[i].id}">${plantsData[i].plant}<input type="radio" name="radio-group-${json.id}" id="radio-${plantsData[i].id}" class="form-check-input ms-auto" data-echarts-data-group-id="${json.id}" data-echarts-toggle="subchart" data-echarts-subchart="${plantsData[i].id}"${isChecked}></label>`;
     if (i === 0) {
       if (json.type == 'pie') {
         updatePieChart(json, plantsData[i].id);
@@ -882,23 +930,16 @@ function createComparisonChart(json) {
       }
     }
   }
-
-  headerHTML += `</div></div></div>`;
-  const chartHeader = document.createElement('div');
-  const chartFooter = document.createElement('p');
-  chartHeader.classList.add('d-flex');
-  chartHeader.innerHTML = headerHTML;
-  chartWrap.insertBefore(chartHeader, chartWrap.children[0]);
-  chartFooter.classList.add('small', 'mb-0', 'text-secondary');
-  chartFooter.innerHTML = json.desc;
-  chartWrap.appendChild(chartFooter);
+  const chartMenu = chartHeader.querySelector('.dropdown-menu .list-group');
+  chartMenu.innerHTML = menuHTML; 
+  
 }
 
 function createAnimatedNumbers(json) {
 
   var chartWrapID = `${json.id}-wrap`;
   var chartWrap = document.getElementById(chartWrapID);
-  var aniNumbersHTML = `<div class="row"><h2>${json.name}</h2><p class="small text-secondary">${json.desc}</p>`;
+  var aniNumbersHTML = `<h2>${json.name}</h2><p class="small text-secondary">${json.desc}</p><div class="row d-flex flex-grow-1 align-content-center flex-wrap">`;
 
   for (const obj of json.data) {
     var ancEnd = obj.number,
@@ -929,7 +970,7 @@ function toggleSeries() {
   var checked = this.checked;
   var targetChartID = this.getAttribute('data-echarts-target');
   var seriesName = this.getAttribute('data-echarts-series');
-  var targetChart = echarts.init(document.querySelector(targetChartID + ' .chart-container'));
+  var targetChart = echarts.init(document.querySelector(targetChartID + ' .chart-canva'));
   targetChart.dispatchAction({
     type: checked ? 'legendSelect' : 'legendUnSelect',
     name: seriesName
@@ -939,7 +980,7 @@ function toggleSeries() {
 function toggleSameGroup() {
   const isChecked = this.checked;
   const targetChartID = this.getAttribute('data-group-target');
-  var targetChart = echarts.init(document.querySelector(targetChartID + ' .chart-container'));
+  var targetChart = echarts.init(document.querySelector(targetChartID + ' .chart-canva'));
   var groupAttribute = '[data-echarts-target="' + this.getAttribute('data-group-target') + '"]';
   var toggleGroup = document.querySelectorAll(groupAttribute);
   toggleGroup.forEach(function(checkbox) {
@@ -1076,6 +1117,9 @@ function createSectionFollow(json) {
   const followUsWrap = document.getElementById(selectorID);
   followUsWrap.innerHTML = followUsHTML;
 }
+
+
+console.log('This website is archived on GitHub at https://github.com/estds/gef-china-shp-cap-website-small-and-green');
 
 
 // Use the fetch() method to make an HTTP GET request to the URL
