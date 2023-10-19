@@ -463,7 +463,7 @@ function showAlertContent() {
 //***************** Callback for creating photo walls from JSON data *****************//
 
 function markPhotoLightBox(obj) {
-  return `<div class="col mt-2"><div class="card border-0 bg-transparent card-${obj.type}"><a href="#" class="photo-lightbox-toggle text-decoration-none" data-bs-toggle="modal" data-bs-target="#photo-lightbox" data-hdsrc="${assetsURL+obj.hdimg}" data-photodesc="${obj.desc}"><img src="${assetsURL+obj.thumb}" class="card-img-top rounded-0 shadow" alt="${obj.name}"><span class="photo-desc d-block p-0 small text-secondary text-truncate">${obj.desc}</span></a></div></div>`;
+  return `<div class="col mt-2"><div class="card border-0 bg-transparent card-${obj.type}"><a href="#" class="photo-lightbox-toggle text-decoration-none" data-bs-toggle="modal" data-bs-target="#photo-lightbox" data-hdsrc="${assetsURL+obj.hdimg}" data-photodesc="${obj.desc}"><img src="${assetsURL+obj.thumb}" class="card-img-top rounded-0 shadow" alt="${obj.name}"><span class="photo-desc d-block p-0 small text-secondary text-truncate">${obj.name}</span></a></div></div>`;
 }
 
 function createSectionCapakno(json) {
