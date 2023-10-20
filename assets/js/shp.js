@@ -347,14 +347,15 @@ function createTedemoItems(items) {
                  <div class="col-lg-6 carousel-item-ele">
                    <div class="card border-0 rounded-0 bg-transparent">
                      <div class="d-flex">
-                       <div class="flex-shrink-0 mt-4 ps-2 pb-4">
-                         <img src="${assetsURL + items[i].img}" alt="${items[i].name} Cover" class="shadow" style="max-height: 180px">
+                       <div class="flex-shrink-0 report-cover-wrap mt-4 ps-2 pb-4">
+                         <img src="${assetsURL + items[i].img}" alt="${items[i].name} Cover" class="shadow report-cover img-fluid">
                        </div>
                        <div class="flex-grow-1">
                          <div class="card-body">
                            <h5 class="card-title">${items[i].name}</h5>
-                           <p class="card-text small">${items[i].desc}<a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i].desc}" data-know-more-link="${assetsURL + items[i].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i].name}">${translation.readOn}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
-                           <p class="card-text d-none d-md-block"><a href="${assetsURL + items[i].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
+                           <p class="card-text small desc-truncate mb-0">${items[i].desc}</p>
+                           <p class="card-text small d-md-none"><a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i].desc}" data-know-more-link="${assetsURL + items[i].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i].name}">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
+                           <p class="card-text d-none d-md-block mt-2"><a href="${assetsURL + items[i].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.readOn}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
                          </div>
                        </div>
                      </div>
@@ -363,14 +364,15 @@ function createTedemoItems(items) {
                  <div class="col-lg-6 carousel-item-ele">
                    <div class="card border-0 rounded-0 bg-transparent">
                      <div class="d-flex">
-                       <div class="flex-shrink-0 mt-4 ps-2 pb-4">
-                         <img src="${assetsURL + items[i1].img}" alt="${items[i1].name} Cover" class="shadow" style="max-height: 180px">
+                       <div class="flex-shrink-0 report-cover-wrap mt-4 ps-2 pb-4">
+                         <img src="${assetsURL + items[i1].img}" alt="${items[i1].name} Cover" class="shadow report-cover img-fluid">
                        </div>
                        <div class="flex-grow-1">
                          <div class="card-body">
                            <h5 class="card-title">${items[i1].name}</h5>
-                           <p class="card-text small">${items[i1].desc}<a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i1].desc}" data-know-more-link="${assetsURL + items[i1].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i1].name}">${translation.readOn}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
-                           <p class="card-text d-none d-md-block"><a href="${assetsURL + items[i1].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
+                           <p class="card-text small desc-truncate mb-0">${items[i1].desc}</p>
+                           <p class="card-text small d-md-none"><a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i1].desc}" data-know-more-link="${assetsURL + items[i1].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i1].name}">${translation.readOn}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
+                           <p class="card-text d-none d-md-block mt-2"><a href="${assetsURL + items[i1].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
                          </div>
                        </div>
                      </div>
@@ -387,18 +389,14 @@ function createSectionTechDemo(json) {
 
   var sectionSelector = '[data-anchor="' + json.id + '"]';
   var sectionElement = document.querySelector(sectionSelector);
-  sectionElement.innerHTML = `<div id="${json.id}-wrap" class="container"></div>`;
+  sectionElement.innerHTML = `<div id="${json.id}-wrap" class="container px-4 px-md-2"></div>`;
   
-  let TedemoHTML = `<div class="d-flex">
-                     <h2 class="text-center text-unido-blue">${json.name}</h2>
-                     <div class="btn-group btn-group-sm ms-auto" role="group">
-                       <button class="btn btn-primary btn-unido-orange" type="button" data-bs-target="#carousel-${json.id}" data-bs-slide="prev"><i class="bi bi-caret-left-fill"></i></button>
-                       <button class="btn btn-primary btn-unido-orange" type="button" data-bs-target="#carousel-${json.id}" data-bs-slide="next"><i class="bi bi-caret-right-fill"></i></button>
-                     </div>
-                   </div>
+  let TedemoHTML = `<h2 class="text-unido-blue">${json.name}</h2>
                    <p>${json.desc}</p>
-                   <div id="carousel-${json.id}" class="carousel carousel-item-elex2 slide">
-                     <div class="carousel-inner">` + createTedemoItems(json.children) + `</div>
+                   <div id="carousel-${json.id}" class="carousel carousel-item-elex2 carousel-unido-orange slide">
+                     <div class="carousel-inner px-4">` + createTedemoItems(json.children) + `</div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${json.id}" data-bs-slide="prev"><i class="bi bi-arrow-left-circle-fill display-4"></i><span class="visually-hidden">Previous</span></button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carousel-${json.id}" data-bs-slide="next"><i class="bi bi-arrow-right-circle-fill display-4"></i><span class="visually-hidden">Next</span></button>
                    </div>`;
 
   const teDemoObj = document.getElementById('tech-demo-wrap');
@@ -1224,6 +1222,7 @@ fetch(jsonURL)
     navigationPosition: 'left',
     slideSelector: '.fp-hr-slider', // avoid conflict with BS5 carousel
     normalScrollElements: '.normalScroll',
+    scrollOverflow: false,
     loopHorizontal: false,
     //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#7BAA32'],
     //continuousVertical: true,
