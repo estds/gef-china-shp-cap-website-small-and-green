@@ -325,18 +325,9 @@
 
 /* ----------- Project stats ----------- */
 
-.asr-fixed {
-  width: 100%;
-  padding-bottom: 60%;
-  position: relative;
-}
-
-.asr-fixed .chart-container {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.container-chart {
+  aspect-ratio: 1/1 auto;
+  max-height: 90vh;
 }
 
 /* ----------- Photo walls ----------- */
@@ -355,18 +346,13 @@
   max-height: 128px;
 }
 
-
-@media (min-width: 1200px) {
-
-  .container-limited {
-    max-width: 992px;
+@media (min-width: 768px) {
+  .container-chart {
+    aspect-ratio: 4/3 auto;
+    max-height: 90vh;
   }
-
-  .img-fluid.partner-logo {
-    max-height: 80px;
-  }
-
 }
+
 
 @media (min-width: 992px) {
 
@@ -408,6 +394,23 @@
   .carousel-item-elex2 .carousel-item-end,
   .carousel-item-elex2 .carousel-item-start {
     transform: translateX(0);
+  }
+  
+  .container-chart {
+    aspect-ratio: 16/9 auto;
+    max-height: 90vh;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .container-limited {
+    max-width: 992px;
+  }
+
+  .img-fluid.partner-logo {
+    max-height: 80px;
   }
 
 }
