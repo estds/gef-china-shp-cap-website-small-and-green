@@ -77,6 +77,8 @@
   right: 2.5rem;
 }
 
+.carousel-unido-orange .carousel-control-prev:hover,
+.carousel-unido-orange .carousel-control-next:hover,
 .fp-arrow.fp-prev:hover,
 .fp-arrow.fp-next:hover {
   opacity: 1;
@@ -259,6 +261,20 @@
   display: none;
 }
 
+.carousel-unido-orange .carousel-control-prev,
+.carousel-unido-orange .carousel-control-next {
+  color: #f47a42;
+  width: auto;
+}
+
+.carousel-unido-orange .report-cover-wrap {
+  max-width: 40%;
+}
+
+.carousel-unido-orange .report-cover-wrap img.report-cover {
+  max-height: 160px;
+}
+
 /* ----------- Knowledge tree ----------- */
 
 .bs-tree {
@@ -396,6 +412,14 @@
     transform: translateX(0);
   }
   
+  .carousel-unido-orange .report-cover-wrap {
+    max-width: unset;
+  }
+  
+  .carousel-unido-orange .report-cover-wrap img.report-cover {
+    max-height: 240px;
+  }
+  
   .container-chart {
     aspect-ratio: 16/9 auto;
     max-height: 90vh;
@@ -423,6 +447,13 @@
     right: 1rem;
     max-width: 80%;
     z-index: 3;
+  }
+  
+  .carousel-unido-orange .desc-truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 
 }
