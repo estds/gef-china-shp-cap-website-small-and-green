@@ -411,7 +411,7 @@ function createSectionInsOutputs(json) {
   var sectionElement = document.querySelector(sectionSelector);
   sectionElement.innerHTML = `<div class="container py-3" id="${json.id}-wrap"></div>`;
 
-  let elementsHTML = `<div class="mx-4 mx-md-0"><h2 class="text-white">${json.name}</h2><p class="text-white">${json.desc}</p></div><div class="row position-relative"><div class="col-12 col-md-6 col-lg-7 col-xxl-4"><div class="accordion accordion-exclusive accordion-flush shadow-sm mx-4 mx-md-0" id="${json.id}-accordion">`;
+  let elementsHTML = `<div class="mx-4 mx-md-0"><h2 class="text-white">${json.name}</h2><p class="text-white">${json.desc}</p></div><div class="row position-relative"><div class="col-12 col-md-6 col-lg-7 col-xxl-8"><div class="accordion accordion-exclusive accordion-flush shadow-sm mx-4 mx-md-0" id="${json.id}-accordion">`;
 
   var childrenInfo = json.children;
   for (var i = 0; i < childrenInfo.length; i++) {
