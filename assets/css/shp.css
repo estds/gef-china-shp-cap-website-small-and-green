@@ -463,6 +463,6 @@
   .leaflet-map-fullscreen .demo-plant-list-wrap,
   .leaflet-control-container .leaflet-top,
   .leaflet-control-container .leaflet-bottom {
-    will-change: transform;
+    transform: translate3d(0, 0, 0);
   }
 }
