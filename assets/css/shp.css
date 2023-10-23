@@ -206,7 +206,7 @@
 
 .leaflet-map-fullscreen {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #000;
   display: flex;
 }
@@ -464,5 +464,6 @@
   .leaflet-control-container .leaflet-top,
   .leaflet-control-container .leaflet-bottom {
     transform: translate3d(0, 0, 0);
+    will-change: transform;
   }
 }
