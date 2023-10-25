@@ -241,7 +241,7 @@ function createSectionProjOverview(json) {
       }
       leftColumnHTML += `</video></div>`;
     } else if (obj.type == 'button') {
-      leftColumnHTML += `<p class="text-center"><a href="${assetsURL + obj.link}" target="_blank" class="btn btn-lg rounded-0 shadow btn-primary btn-unido-orange">${obj.name}</a></p>`;
+      leftColumnHTML += `<p class="text-center"><a href="${assetsURL + obj.link}" target="_blank" class="btn btn-lg rounded-0 shadow btn-primary btn-unido-orange"><i class="bi bi-cloud-arrow-down-fill me-2"></i>${obj.name}</a></p>`;
     }
   }
 
