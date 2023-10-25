@@ -268,7 +268,7 @@ function createSectionDemoPlants(json) {
   var selector = '[data-anchor="' + json.id + '"]';
   var sectionDOM = document.querySelector(selector);
   
-  sectionDOM.innerHTML = `<div class="leaflet-map-fullscreen container-fluid d-flex px-0 overflow-hidden"><div class="demo-plant-list-wrap d-flex flex-column align-items-start bg-unido-blue"><h5 class="p-3 text-white mb-0 d-none d-lg-block">${translation.plantList}</h5><button class="demo-plant-list-toggle d-flex align-items-center justify-content-between text-white w-100 collapsed btn btn-link text-decoration-none p-3 fs-5 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#demo-plant-list-content" aria-expanded="false">${translation.plantList}</button><div class="collapse demo-plant-list-content bg-white mt-auto w-100 normalScroll" id="demo-plant-list-content"><ul class="list-group list-group-flush"></ul></div></div><div class="leaflet-map-canva w-100 vh-100 flex-grow-1" id="${json.id}-leaflet-map"></div></div>`;
+  sectionDOM.innerHTML = `<div class="leaflet-map-fullscreen container-fluid d-flex px-0 overflow-hidden"><div class="demo-plant-list-wrap d-flex flex-column align-items-start bg-unido-blue"><h5 class="p-3 text-white mb-0 d-none d-lg-block">${translation.plantList}</h5><button class="demo-plant-list-toggle d-flex align-items-center justify-content-between text-white w-100 collapsed btn btn-link text-decoration-none p-3 fs-5 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#demo-plant-list-content" aria-expanded="false">${translation.plantList}</button><div class="collapse demo-plant-list-content bg-white mt-auto w-100 normalScroll" id="demo-plant-list-content"><ul class="list-group list-group-flush"></ul></div></div><div class="leaflet-map-canva w-100 vh-100 flex-grow-1" id="${json.id}-leaflet-map"></div><div class="leaflet-map-attribution text-light text-opacity-50 text-very-small"><a href="#" data-term-expl="Powered by Leaflet.js with basemap by AutoNavi." data-bs-toggle="modal" data-bs-target="#kh-term-exp" class="text-white small" title="Attribution"><i class="bi bi-info-circle"></i></a></div></div>`;
 	//sectionDOM.innerHTML = `<div id="${json.id}-leaflet-map" class="leaflet-map-fullscreen"></div><div class="position-absolute d-flex align-items-start flex-column map-pin-list"><div class="w-100 d-grid"><button class="accordion-button rounded-0 p-3 text-white demo-plant-list-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#demo-plant-list-content" aria-expanded="false"><i class="bi bi-caret-down-fill me-2"></i>${translation.plantList}</button></div><div class="collapse demo-plant-list-content bg-white mt-auto w-100 normalScroll" id="demo-plant-list-content"><ul class="list-group list-group-flush"></ul></div></div>`;
 
   // load map tiles from Autonavi.com
@@ -277,11 +277,10 @@ function createSectionDemoPlants(json) {
   	//zoomControl: false,
     scrollWheelZoom: false
   }).setView([30.00, 110.00], 6);
-  map.attributionControl.setPrefix('Leaflet.js');
+  map.attributionControl.remove();
   L.tileLayer('https://webst01.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}', {
     minZoom: 2,
     maxZoom: 16,
-    attribution: "Basemap &copy; AutoNavi",
   }).addTo(map);
   
   //move zoom buttons to bottom right
