@@ -299,6 +299,8 @@ function createSectionDemoPlants(json) {
   });
 
   let demoPlants = json.children;
+  let ramdomPlantNumber = Math.floor(Math.random() * (json.children.length - 1));
+
 
   var plantMarkers = [];
 
@@ -332,7 +334,7 @@ function createSectionDemoPlants(json) {
     plantMarkerList.querySelector('.list-group').appendChild(listItem);
     
     // Open the popup for the first marker by default
-    if (index === 0) {
+    if (index === ramdomPlantNumber) {
       plantMarker.openPopup();
     }
     
