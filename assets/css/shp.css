@@ -465,6 +465,7 @@
 
 /* Safari bug fix for #8068. */
 @supports (-webkit-touch-callout: none) {
+  .leaflet-map-fullscreen .leaflet-map-attribution,
   .leaflet-map-fullscreen .demo-plant-list-wrap,
   .leaflet-control-container .leaflet-top,
   .leaflet-control-container .leaflet-bottom {
