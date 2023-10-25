@@ -306,7 +306,7 @@ function createSectionDemoPlants(json) {
   var plantMarkerList = document.getElementById('demo-plant-list-content');
 
   // Loop through the data and create markers
-  demoPlants.forEach(function(item) {
+  demoPlants.forEach(function(item, index) {
     var plantMarker = L.marker([item.plantLat, item.plantLon], {icon: plantIcon}).bindPopup('<h5>' + item.name + '</h5><p class="my-1">' + item.desc + '<a target="_blank" href="' + assetsURL + item.csReport + '">' + translation.caseStudy + '<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p><table cellspacing="0" cellpadding="0" border="0" class="table table-striped table-sm text-end mb-0"> <thead> <tr> <th></th> <th>' + translation.before + '</th> <th>' + translation.after + '</th> </tr> </thead> <tbody> <tr> <td class="text-start"><strong>' + translation.installedCap + '</strong> / ' + translation.kiloWatt + '</td> <td>' + item.capBefore.toLocaleString('en') + '</td> <td>' + item.capAfter.toLocaleString('en') + '</td> </tr> <tr> <td class="text-start"><strong>' + translation.annualOutput + '</strong> / ' + translation.GWhx100 + '</td> <td>' + item.outputBefore.toLocaleString('en') + '</td> <td>' + item.outputAfter.toLocaleString('en') + '*</td> </tr> <tr> <td colspan="2" class="text-start"><strong>' + translation.emmCutAnnual + '</strong> / ' + translation.ton + '</td> <td>' + item.emCut.toLocaleString('en') + '*</td> </tr> </tbody> </table><p class="my-0 small">* '+item.emNote+'</p>'); // Use 'desc' as the popup content
 
     plantMarker.addTo(map);
@@ -330,6 +330,12 @@ function createSectionDemoPlants(json) {
     });
 
     plantMarkerList.querySelector('.list-group').appendChild(listItem);
+    
+    // Open the popup for the first marker by default
+    if (index === 0) {
+      plantMarker.openPopup();
+    }
+    
   })
 
 }
