@@ -318,7 +318,8 @@ function createSectionDemoPlants(json) {
     var listItem = document.createElement('li');
     listItem.innerHTML = `<li class="list-group-item p-0"><a class="d-block text-truncate text-decoration-none text-dark px-3 py-2" ds-mo-toggle="map-popup" ds-mo-target="$ll-popup-${item.id}" href="#">${item.name}<br><small class="text-secondary">${item.county}</small></a></li>`
     //
-    listItem.addEventListener('click', function() {
+    listItem.addEventListener('click', function(event) {
+    	event.preventDefault();
       // Close any open popups
       plantMarkers.forEach(function(m) {
         m.closePopup();
@@ -452,7 +453,8 @@ function createSectionInsOutputs(json) {
 }
 
 // display alert content
-function showAlertContent() {
+function showAlertContent(event) {
+	event.preventDefault();
   let targetAlert = this.getAttribute('data-mo-target');
   let alertTitle = this.getAttribute('title');
   let alertDesc = this.getAttribute('data-mo-desc');
