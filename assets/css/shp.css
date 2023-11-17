@@ -280,6 +280,28 @@
   max-height: 160px;
 }
 
+/* ----------- Institutional outputs ----------- */
+.ins-output-item::before {
+  display: inline-block;
+  margin-right: .5rem;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\F3B9';
+  color: #009cdc;
+}
+
+.ins-output-item.active::before {
+  content: '\F4EA';
+  color: #f47a42;
+}
+
 /* ----------- Knowledge tree ----------- */
 
 .bs-tree {
