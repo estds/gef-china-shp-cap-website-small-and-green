@@ -434,7 +434,7 @@ function createSectionInsOutputs(json) {
           itemLINK = assetsURL + subItem.link;
         }
       }
-      elementsHTML += `<li class="list-group-item list-group-item-${subItem.type}"><a href="#" data-mo-toggle="alert" data-mo-target="#inst-outputs-expl" data-mo-desc="${subItem.desc}" data-mo-button="${subItem.button}" data-mo-link="${itemLINK}" class="text-dark text-truncate d-block link-underline link-underline-opacity-0" title="${subItem.name}"><i class="bi bi-file-text text-unido-blue me-2"></i>${subItem.name}</a></li>`;
+      elementsHTML += `<li class="list-group-item list-group-item-${subItem.type}"><a href="#" data-mo-toggle="alert" data-mo-target="#inst-outputs-expl" data-mo-desc="${subItem.desc}" data-mo-button="${subItem.button}" data-mo-link="${itemLINK}" class="ins-output-item text-dark text-truncate d-block link-underline link-underline-opacity-0" title="${subItem.name}">${subItem.name}</a></li>`;
     }
     elementsHTML += `</ul></div></div></div>`;
   }
@@ -447,7 +447,13 @@ function createSectionInsOutputs(json) {
 
   let alertToggles = document.querySelectorAll('[data-mo-toggle="alert"]');
   alertToggles.forEach(function(obj) {
-    obj.addEventListener('click', showAlertContent, false);
+    obj.addEventListener('click', function() {
+      alertToggles.forEach(function(item) {
+        item.classList.remove('active');
+      });
+      this.classList.add('active');
+      showAlertContent.call(obj, event);
+    });
   });
 
 }
