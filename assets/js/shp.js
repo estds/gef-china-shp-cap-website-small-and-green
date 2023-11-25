@@ -498,8 +498,10 @@ const photoLightbox = document.getElementById('photo-lightbox');
 if (photoLightbox) {
   let preloaderImg = document.createElement("img");
   photoLightbox.addEventListener('show.bs.modal', event => {
-
-    document.body.classList.add('darker-backdrop');
+		
+    fullpage_api.setAllowScrolling(false);
+    fullpage_api.setKeyboardScrolling(false);
+    document.body.classList.add('darker-backdrop');    
 
     // Button that triggered the modal
     const button = event.relatedTarget;
@@ -530,6 +532,8 @@ if (photoLightbox) {
   photoLightbox.addEventListener('hide.bs.modal', event => {
     document.body.classList.remove('darker-backdrop');
     preloaderImg.src = '';
+    fullpage_api.setAllowScrolling(true);
+    fullpage_api.setKeyboardScrolling(true);
   });
 }
 
@@ -1069,6 +1073,8 @@ function createSectionKnohub(json) {
 const termExplanationBox = document.getElementById('kh-term-exp');
 if (termExplanationBox) {
   termExplanationBox.addEventListener('show.bs.modal', event => {
+    fullpage_api.setAllowScrolling(false);
+    fullpage_api.setKeyboardScrolling(false);
     const button = event.relatedTarget;
     const termTitle = button.getAttribute('title');
     let termExpl = button.getAttribute('data-term-expl');
@@ -1080,6 +1086,10 @@ if (termExplanationBox) {
     }
     termExplHolder.innerHTML = termExpl;
     termTitleHolder.innerHTML = termTitle;
+  });
+  termExplanationBox.addEventListener('hide.bs.modal', event => {
+    fullpage_api.setAllowScrolling(true);
+    fullpage_api.setKeyboardScrolling(true);
   })
 }
 
