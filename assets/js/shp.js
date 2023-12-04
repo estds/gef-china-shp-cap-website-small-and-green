@@ -687,7 +687,7 @@ function createLineChart(json) {
   var chartFooter = chartWrap.querySelector('footer');
 
   const catArray = Object.keys(plants[0].numbers);
-  var showPlant1 = Math.floor((plants.length-3)*Math.random());
+  var showPlant1 = Math.floor((plants.length-2)*Math.random())+1;
   const seriesArray = [];
   const legendArray = {};
 
