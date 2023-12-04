@@ -1,6 +1,6 @@
 var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
 
-const jsonURL = assetsURL + '/data/all-content-v11.json';
+const jsonURL = assetsURL + '/data/all-content-v12.json';
 
 let translation = {
   "caseStudy": "案例分析",
@@ -687,10 +687,12 @@ function createLineChart(json) {
   var chartFooter = chartWrap.querySelector('footer');
 
   const catArray = Object.keys(plants[0].numbers);
-  const seriesArray = []
+  var showPlant1 = Math.floor((plants.length-3)*Math.random());
+  const seriesArray = [];
+  const legendArray = {};
 
   let headerHTML = `<h2>${json.name}</h2><div class="dropdown ms-auto chart-toggles"><button type="button" class="btn btn-link dropdown-toggle rounded-0" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span class="badge rounded-pill bg-danger me-1 d-inline-block">${translation.pickPlant}<i class="bi bi-caret-right-fill animate__animated animate__slower animate__flash animate__infinite"></i></span><i class="bi bi-list-check"></i></button><div class="dropdown-menu p-0 rounded-0 normalScroll" style="max-height: 50vh;overflow-y: auto;"><div class="list-group list-group-flush small"></div></div></div>`;
-  let menuHTML = `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}" checked></label>`;
+  let menuHTML = `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-all-items-${json.id}">${translation.allItems}<input type="checkbox" class="form-check-input ms-auto" data-echarts-toggle="toggle-group-all" data-group-target="#${chartWrapID}" id="checkbox-all-items-${json.id}"></label>`;
   chartHeader.innerHTML = headerHTML;
   chartFooter.innerHTML = `<p class="text-secondary small mb-0">${json.desc}</p>`;
 
@@ -700,12 +702,16 @@ function createLineChart(json) {
       name: plant.plant,
       data: Object.values(plant.numbers),
       type: plant.type,
-      id: plant.id // Add an ID for series 1  
-    }
+      id: plant.id // Add an ID for series 1
+    };
     seriesArray.push(seriesItem);
   }
+  
+  for (let i = 0; i < plants.length; i++) {
+    legendArray[plants[i].plant] = Math.abs(i-showPlant1)<=1? true: false;
+  }
 
-  //console.log(seriesArray);
+  //console.log(legendArray);
 
 
   // Initialize ECharts instance
@@ -737,7 +743,8 @@ function createLineChart(json) {
       }
     },
     legend: {
-      top: -9999
+      top: -9999,
+      selected: legendArray
     },
     series: seriesArray
   };
@@ -750,9 +757,16 @@ function createLineChart(json) {
     chart.resize();
   });
 
+  for (let i = 0; i < seriesArray.length; i++) {
+  	var checkedMark = Math.abs(i-showPlant1)<=1 ? ' checked': '';
+  	menuHTML += `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-${seriesArray[i].id}">${seriesArray[i].name}<input type="checkbox" id="checkbox-${seriesArray[i].id}" class="form-check-input ms-auto" data-echarts-toggle="series" data-echarts-target="#${chartWrapID}" data-echarts-series="${seriesArray[i].name}"${checkedMark}></label>`;
+  }
+  
+  /*
   for (const item of seriesArray) {
     menuHTML += `<label class="list-group-item list-group-item-action d-flex form-switch" for="checkbox-${item.id}">${item.name}<input type="checkbox" id="checkbox-${item.id}" class="form-check-input ms-auto" data-echarts-toggle="series" data-echarts-target="#${chartWrapID}" data-echarts-series="${item.name}" checked></label>`;
   }
+  */
 
   const chartMenu = chartHeader.querySelector('.dropdown-menu .list-group');
   chartMenu.innerHTML = menuHTML;
