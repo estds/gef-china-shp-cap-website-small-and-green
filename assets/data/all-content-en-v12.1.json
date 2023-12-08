@@ -2,10 +2,10 @@
   {
     "home": {
       "id": "home",
-      "name": "小水电绿色转型发展",
+      "name": "Small and Green",
       "type": "section",
       "secClass": "section overflow-hidden video-in-background",
-      "desc": "UNIDO-GEF 中国小水电增效扩容改造增值项目",
+      "desc": "UNIDO-GEF Project on Upgrading of China Small Hydropower Capacity",
       "children": [
         {
           "type": "logo",
@@ -21,7 +21,7 @@
     },
     "projOverview": {
       "id": "project-overview",
-      "name": "项目综述",
+      "name": "Project Overview",
       "type": "section",
       "secClass": "section bg-unido-blue",
       "desc": "联合国工业发展组织（UNIDO）、中国财政部、水利部、国际小水电中心合作执行的全球环境基金（GEF）“中国小水电增效扩容改造增值项目”利用GEF资金，依托中国“十三五”发展计划中农村水电（小水电）增效扩容改造活动，重点推动小水电在河道生态修复、安全生产管理和自动化操作运行等方面的进步，提高小水电增效扩容改造投资的附加值，健全行业发展政策，提升整体行业能力，促进小水电行业的健康可持续发展。自2017年开始实施以来，项目在8省份开展了19处试点，在提升发电效率的同时示范绿色小水电的环境及社会友好性，为更好地利用这一可持续能源创造条件，从而为中国去碳减排贡献力量。项目主要活动及产出主要涵盖小水电绿色转型发展的技术及商业可行性、政策与体制框架、能力建设和知识分享。",
@@ -62,7 +62,7 @@
     },
     "demoPlants": {
       "id": "demo-plants",
-      "name": "试点电站",
+      "name": "Pilot Plants",
       "type": "section",
       "secClass": "section position-relative",
       "desc": "项目选择了全国8省份的26座电站开展技术示范",
@@ -487,7 +487,7 @@
     },
     "techDemo": {
       "id": "tech-demo",
-      "name": "技术示范成效",
+      "name": "Technical Demonstration",
       "type": "section",
       "secClass": "section bg-light-subtle",
       "desc": "通过试点电站的改造升级，项目示范了小水电绿色转型发展的技术和经济可行性。以下是试点电站的改造效果、成本收益分析、社会环境管理计划执行情况、气候水文情势分析。",
@@ -528,7 +528,7 @@
     },
     "instlOutputs": {
       "id": "institutional-outputs",
-      "name": "政策与体制框架",
+      "name": "Policy Outputs",
       "type": "section",
       "secClass": "section bg-unido-blue",
       "desc": "项目推动健全中国绿色小水电发展的相关政策和体制，包括相关技术标准、政府层面的激励政策措施以及管理办法。",
@@ -633,7 +633,7 @@
     },
     "CapAndKno": {
       "id": "capacity-and-knowledge",
-      "name": "能力建设与知识分享",
+      "name": "Capacity and Knowledge",
       "type": "section",
       "secClass": "section bg-light-subtle",
       "desc": "项目开展了丰富的能力建设与知识分享活动",
@@ -866,7 +866,7 @@
     },
     "projectStats": {
       "id": "project-stats",
-      "name": "数说项目",
+      "name": "Project Stats",
       "type": "section",
       "secClass": "section bg-unido-blue",
       "desc": "项目执行过程中的一些关键数据合集",
@@ -2657,7 +2657,7 @@
     },
     "knowledgeHub": {
       "id": "knowledge-hub",
-      "name": "知识库",
+      "name": "Knowledge Hub",
       "type": "section",
       "secClass": "section",
       "desc": "以上列表系项目执行过程中收集整理的相关法律、政策及其他信息，其分类及呈现方式并不代表任何政府部门或公共机构的观点、意见或立场；所链接第三方内容可能由于相关发布机构的更新而失效，使用时请注意信息适用性和有效期。",
@@ -3361,7 +3361,7 @@
     },
     "projPartners": {
       "id": "project-partners",
-      "name": "伙伴关系",
+      "name": "Partnership",
       "type": "section",
       "secClass": "section bg-unido-blue",
       "desc": "我们也谨此致谢以个人身份参与项目的专家和顾问",
@@ -3499,7 +3499,7 @@
     },
     "projContact": {
       "id": "follow-us",
-      "name": "关注我们",
+      "name": "Follow Us",
       "type": "section",
       "secClass": "section bg-dark",
       "desc": " 本页面及所提供下载的文档在出版前未经联合国正式编辑。页面及文档中使用的名称和提供的材料并不意味着联合国工业发展组织（工发组织）秘书处就任何国家、领土、城市或地区或其当局的法律地位或就其边境或边界划界或其经济制度或发展程度发表任何意见。“发达”、“工业化”或“发展中”等名称意在便于统计，未必表达对特定国家或地区所处发展进程的某种判断。对商号名称或商业产品的提及并不构成工发组织对它们的认可。本页面及提供下载文档中涉及的信息系项目执行过程整理汇总而成，可能存在时效性，其分类及呈现方式并不代表任何政府部门或公共机构的观点、意见或立场。 ",
