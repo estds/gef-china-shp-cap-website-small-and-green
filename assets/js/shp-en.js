@@ -10,7 +10,7 @@ let translation = {
   "after": "After",
   "kiloWatt": "kW",
   "annualOutput": "Annual Output",
-  "GWhx100": "0.1 TWh",
+  "GWhx100": "10 MWh",
   "emmCutAnnual": "Annual Emission Cut",
   "pickPlant": "Select",
   "plantList": "Pilot Plants",
