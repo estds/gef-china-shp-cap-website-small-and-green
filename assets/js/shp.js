@@ -88,8 +88,62 @@ function type2Search(json, searchBox) {
 
 }
 
+
 //***************** Callback for formatting the content JSON *****************//
 
+function createArrarySearch(json) {
+
+  var sortedArray = [];
+  
+  for (var key in json) {
+    if (json.hasOwnProperty(key)) {
+      var obj = json[key];
+      var sid = obj.id;
+      var descInfo = obj.desc ? obj.desc : '';
+	    var jsonClasses = obj.secClass ? obj.secClass : '';
+      sortedArray.push([sid, obj.name, descInfo, 0, jsonClasses]);
+      if (obj.children) {
+        for (const child of obj.children) {
+          var childrenArray = getArrayFolder(child, sid);
+          sortedArray = sortedArray.concat(childrenArray);
+        }
+      }
+    }
+  }
+  return sortedArray;
+}
+
+function getArraySingle(json, sid) {
+  var retArray = [];
+  if (json.id && json.name) {
+    var jsonDesc = json.desc ? json.desc : '';
+    var jsonClasses = json.secClass ? json.secClass : '';
+    retArray.push([sid, json.name, jsonDesc, 1, jsonClasses]);
+    return retArray;
+  } else {
+    return '';
+  }
+}
+
+function getArrayFolder(json, sid) {
+  var retArray = [];
+
+  var singleArray = getArraySingle(json, sid);
+  if (singleArray.length > 0) {
+  	retArray = retArray.concat(singleArray);
+  }
+
+  if (json.children) {
+    for (const child of json.children) {
+      retArray = retArray.concat(getArrayFolder(child, sid));
+    }
+  }
+  return retArray;
+}
+
+//***************** OLD !!! Callback for formatting the content JSON *****************//
+
+/*
 function createArrarySearch(json) {
 
   var sortedArray = [];
@@ -137,7 +191,7 @@ function getArrayFolder(json, sid) {
   }
   return retArray;
 }
-
+*/
 //***************** Callbacks for color gradient generator *****************//
 
 function generateGradient(startColor, endColor, steps) {
@@ -179,6 +233,21 @@ function hexToRgb(hex) {
         b: parseInt(result[3], 16),
       }
     : null;
+}
+
+
+//***************** Callback for marking up sections *****************//
+
+function markupSections(json, elementID) {
+  var sections = document.getElementById(elementID);
+  let sectionsHTML = ``;
+
+  for (const obj of json) {
+    if (obj[3] == 0) {
+    	sectionsHTML += `<div class="${obj[4]}" data-anchor="${obj[0]}" data-tooltip="${obj[1]}"></div>`
+    }
+  }
+  sections.innerHTML = sectionsHTML;
 }
 
 //***************** Callback for creating FP menu *****************//
@@ -1180,6 +1249,9 @@ fetch(jsonURL)
   sessionStorage.setItem("searchDataCache", JSON.stringify(storedArray));
   var searchArray = JSON.parse(sessionStorage.getItem("searchDataCache"));
   
+  //console.log(searchArray);
+  
+  markupSections(searchArray, 'fullpage');
   createNavMenu(searchArray, 'fp-menu');
 
   let homeData = contentJson[0].home;
