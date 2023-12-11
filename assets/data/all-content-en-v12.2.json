@@ -29,10 +29,10 @@
       "children": [
         {
           "id": "project-film",
-          "name": "项目视频",
+          "name": "Project Film",
           "type": "video",
           "poster": "/img/unido-gef-shp-small-and-green-poster.jpg",
-          "desc": "观看UNIDO-GEF 中国小水电增效扩容改造增值项目介绍视频",
+          "desc": "Watch a short film about this UNIDO-GEF project",
           "link": [
             {
               "src": "/vid/unido-gef-shp-small-and-green-720p.mp4",
@@ -53,10 +53,10 @@
         },
         {
           "id": "project-brochure",
-          "name": "项目综合报告",
+          "name": "Project Brochure",
           "type": "button",
-          "desc": "阅读UNIDO-GEF 中国小水电增效扩容改造增值项目综合报告",
-          "link": "/docs/project-brochure-in-Chinese-compressed.pdf"
+          "desc": "Read the brochure of this UNIDO-GEF project",
+          "link": "/docs/project-brochure-in-English-compressed.pdf"
         }
       ]
     },
@@ -65,420 +65,420 @@
       "name": "Pilot Plants",
       "type": "section",
       "secClass": "section position-relative",
-      "desc": "项目选择了全国8省份的26座电站开展技术示范",
+      "desc": "26 SHP plants across 8 Chinese provinces underwent refurbishment and upgrades as technical demonstration",
       "children": [
         {
           "id": "shp-plant-maoyandong",
-          "name": "冒烟洞二级电站",
+          "name": "Maoyandong II",
           "type": "link",
-          "county": "云南泸西",
+          "county": "Luxi, Yunnan",
           "desc": "冒烟洞二级电站位于云南省红河州泸西县永宁乡境内，属径流引水式电站，于1988年12月投产发电。",
           "plantLat": 24.318056997796,
           "plantLon": 103.728402699034,
           "capBefore": 12600,
-          "outputBefore": 5196,
+          "outputBefore": 51960,
           "capAfter": 15000,
-          "outputAfter": 7121,
+          "outputAfter": 71210,
           "emCut": 13041,
           "csReport": "/docs/pilot-plant-case-study-maoyandong-2-yunnan.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-mabozi",
-          "name": "马脖子电站",
+          "name": "Mabozi",
           "type": "link",
-          "county": "云南通海",
+          "county": "Tonghai, Yunnan",
           "desc": "马脖子水电站位于云南省玉溪市通海县高大乡高大村，为坝后式水电站，1981年5月建成。",
           "plantLat": 23.9907821435774,
           "plantLon": 102.739126273567,
           "capBefore": 3650,
-          "outputBefore": 478,
+          "outputBefore": 4780,
           "capAfter": 5300,
-          "outputAfter": 553,
+          "outputAfter": 5530,
           "emCut": 695,
           "csReport": "/docs/pilot-plant-case-study-mabozi-yunnan.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-chahe",
-          "name": "岔河电站",
+          "name": "Chahe",
           "type": "link",
-          "county": "云南石屏",
+          "county": "Shiping, Yunnan",
           "desc": "岔河电站位于云南省红河州石屏县宝秀镇哥白孔村，为无调节引水式径流电站，1988年投入运营。",
           "plantLat": 23.7114856930099,
           "plantLon": 102.211821488903,
           "capBefore": 4000,
-          "outputBefore": 950,
+          "outputBefore": 9500,
           "capAfter": 4800,
-          "outputAfter": 1041,
+          "outputAfter": 10410,
           "emCut": 1439,
           "csReport": "/docs/pilot-plant-case-study-chahe-yunnan.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-zhoujialiang",
-          "name": "周家梁电站",
+          "name": "Zhoujialiang",
           "type": "link",
-          "county": "湖北郧阳",
+          "county": "Yunyang, Hubei",
           "desc": "周家梁电站位于湖北省十堰市郧阳区南化塘镇江湾村，为引水式电站，1986年投入运营。",
           "plantLat": 33.0482391690451,
           "plantLon": 110.98825649486,
           "capBefore": 2230,
-          "outputBefore": 975,
+          "outputBefore": 9750,
           "capAfter": 2630,
-          "outputAfter": 783,
+          "outputAfter": 7830,
           "emCut": 305,
           "csReport": "/docs/pilot-plant-case-study-zhoujialiang-hubei.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-chaotianhou",
-          "name": "杨道河电站",
+          "name": "Yangdaohe",
           "type": "link",
-          "county": "湖北兴山",
+          "county": "Xingshan, Hubei",
           "desc": "杨道河电站位于湖北省兴山县湖北宜昌市兴山县峡口镇高岚河流域杨道河村，为引水式电站，1997年7月投产发电。",
           "plantLat": 31.163392641229,
           "plantLon": 110.852056061495,
           "capBefore": 7500,
-          "outputBefore": 3505,
+          "outputBefore": 35050,
           "capAfter": 7500,
-          "outputAfter": 2585,
+          "outputAfter": 25850,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-yangdaohe-cascade-hubei.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-yangdaohe",
-          "name": "朝天吼电站",
+          "name": "Chaotianhou",
           "type": "link",
-          "county": "湖北兴山",
+          "county": "Xingshan, Hubei",
           "desc": "朝天吼电站位于湖北宜昌市兴山县峡口镇高岚河流域杨道河村，为引水式电站，于1999年4月投产发电。",
           "plantLat": 31.2072358654018,
           "plantLon": 110.867966203405,
           "capBefore": 5000,
-          "outputBefore": 1930,
+          "outputBefore": 19300,
           "capAfter": 5000,
-          "outputAfter": 1443,
+          "outputAfter": 14430,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-yangdaohe-cascade-hubei.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-shijiaba",
-          "name": "石家坝电站",
+          "name": "Shijiaba",
           "type": "link",
-          "county": "湖北兴山",
+          "county": "Xingshan, Hubei",
           "desc": "石家坝电站位于湖北宜昌市兴山县峡口镇高岚河流域下游石家坝村，为引水式电站，与1985年4月投产发电。",
           "plantLat": 31.1396950882973,
           "plantLon": 110.840926279425,
           "capBefore": 3750,
-          "outputBefore": 1578,
+          "outputBefore": 15780,
           "capAfter": 4500,
-          "outputAfter": 1515,
+          "outputAfter": 15150,
           "emCut": 493,
           "csReport": "/docs/pilot-plant-case-study-yangdaohe-cascade-hubei.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-jiangjunzhu",
-          "name": "将军柱电站",
+          "name": "Jiangjunzhu",
           "type": "link",
-          "county": "湖北兴山",
+          "county": "Xingshan, Hubei",
           "desc": "将军柱水电站位于湖北省兴山县高岚河左支流王家河上，为引水式电站，1987年投入运营。",
           "plantLat": 31.2113743887524,
           "plantLon": 110.881672628368,
           "capBefore": 3000,
-          "outputBefore": 1289,
+          "outputBefore": 12890,
           "capAfter": 3000,
-          "outputAfter": 1089,
+          "outputAfter": 10890,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-jiangjunzhu-hubei.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-majing",
-          "name": "马颈电站",
+          "name": "Majing",
           "type": "link",
-          "county": "重庆綦江",
+          "county": "Qijiang, Chongqing",
           "desc": "马颈电站位于重庆市綦江区清溪河畔，为引水式电站，于1986年12月建成投运。",
           "plantLat": 28.9656451341123,
           "plantLon": 106.462707262927,
           "capBefore": 5000,
-          "outputBefore": 1606,
+          "outputBefore": 16060,
           "capAfter": 6400,
-          "outputAfter": 2210,
+          "outputAfter": 22100,
           "emCut": 4369,
           "csReport": "/docs/pilot-plant-case-study-majing-chongqing.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-xiaokeng",
-          "name": "小坑电站",
+          "name": "Xiaokeng",
           "type": "link",
-          "county": "重庆北碚",
+          "county": "Beibei, Chongqing",
           "desc": "小坑电站位于重庆市北碚区歇马镇天马村梁滩河上，为混合式电站，1942年建成。",
           "plantLat": 29.7571863323141,
           "plantLon": 106.397329882572,
           "capBefore": 480,
-          "outputBefore": 151,
+          "outputBefore": 1510,
           "capAfter": 1200,
-          "outputAfter": 424,
+          "outputAfter": 4240,
           "emCut": 1972,
           "csReport": "/docs/pilot-plant-case-study-xiaokeng-chongqing.pdf",
           "emNote": "2021-2022"
         },
         {
           "id": "shp-plant-gaokeng",
-          "name": "高坑电站",
+          "name": "Gaokeng",
           "type": "link",
-          "county": "重庆铜梁",
+          "county": "Tongliang, Chongqing",
           "desc": "高坑电站位于重庆市铜梁县旧县镇的小安溪上，为径流式电站，1966年建成投产。",
           "plantLat": 29.8882316819874,
           "plantLon": 106.192525480458,
           "capBefore": 4060,
-          "outputBefore": 1898,
+          "outputBefore": 18980,
           "capAfter": 4600,
-          "outputAfter": 2068,
+          "outputAfter": 20680,
           "emCut": 1226,
           "csReport": "/docs/pilot-plant-case-study-gaokeng-chongqing.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-taiping",
-          "name": "太平电站",
+          "name": "Taiping",
           "type": "link",
-          "county": "重庆云阳",
+          "county": "Yunyang, Chongqing",
           "desc": "太平电站位于重庆市云阳县泥溪镇，为引水式电站，1989年投入运营。",
           "plantLat": 30.7401452344584,
           "plantLon": 108.885282916036,
           "capBefore": 2000,
-          "outputBefore": 1088,
+          "outputBefore": 10880,
           "capAfter": 4000,
-          "outputAfter": 916,
+          "outputAfter": 9160,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-taiping-chongqing.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-tangban",
-          "name": "塘坂电站",
+          "name": "Tangban",
           "type": "link",
-          "county": "福建连江",
+          "county": "Lianjiang, Fujian",
           "desc": "塘坂水力发电厂位于福建省连江县敖江中游的潘渡乡塘坂村，为坝后式电站，于2000年建成投产。",
           "plantLat": 26.2885337545575,
           "plantLon": 119.372470925293,
           "capBefore": 11000,
-          "outputBefore": 3270,
+          "outputBefore": 32700,
           "capAfter": 12000,
-          "outputAfter": 2515,
+          "outputAfter": 25150,
           "emCut": 0,
           "csReport": "pilot-plant-case-study-tangban-fujian.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-jiaosan",
-          "name": "角三电站",
+          "name": "Jiaosan",
           "type": "link",
-          "county": "福建泰宁",
+          "county": "Taininh, Fujian",
           "desc": "角溪三级水电站位于福建省三明市泰宁县大龙乡角溪村，为坝后式水电站，1997年投入运营。",
           "plantLat": 26.6212279908564,
           "plantLon": 117.080432602317,
           "capBefore": 4800,
-          "outputBefore": 1875,
+          "outputBefore": 18750,
           "capAfter": 6000,
-          "outputAfter": 1471,
+          "outputAfter": 14710,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-jiaosan-tantou-fujian.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-tantou",
-          "name": "滩头电站",
+          "name": "Tantou",
           "type": "link",
-          "county": "福建泰宁",
+          "county": "Taininh, Fujian",
           "desc": "滩头电站位于福建省三明市泰宁县大龙乡杉城镇金溪流域杉溪支流，为引水式电站，1994年投入运营。",
           "plantLat": 26.9117536936703,
           "plantLon": 117.201641842194,
           "capBefore": 2000,
-          "outputBefore": 890,
+          "outputBefore": 8900,
           "capAfter": 2520,
-          "outputAfter": 883,
+          "outputAfter": 8830,
           "emCut": 355,
           "csReport": "/docs/pilot-plant-case-study-jiaosan-tantou-fujian.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-gaofang-ii",
-          "name": "高坊二级电站",
+          "name": "Gaofang II",
           "type": "link",
-          "county": "福建浦城",
+          "county": "Pucheng, Fujian",
           "desc": "浦城县高坊二级水电站位于福建省南平市浦城东北部，富岭镇大水口村境内，为引水式电站，1998年投入运营。",
           "plantLat": 27.8656703728014,
           "plantLon": 118.760105930228,
           "capBefore": 2000,
-          "outputBefore": 500,
+          "outputBefore": 5000,
           "capAfter": 2350,
-          "outputAfter": 461,
+          "outputAfter": 4610,
           "emCut": 176,
           "csReport": "/docs/pilot-plant-case-study-gaofang-2-fujian.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-xinpingya",
-          "name": "新坪垭电站",
+          "name": "Xinpingya",
           "type": "link",
-          "county": "陕西紫阳",
+          "county": "Ziyang, Shaanxi",
           "desc": "新坪垭水电站位于陕西省紫阳县斑桃镇境内汉江二级支流八道河中下游，为径流式电站，1999年12月建成发电。",
           "plantLat": 32.2915230897492,
           "plantLon": 108.636021134263,
           "capBefore": 2500,
-          "outputBefore": 970,
+          "outputBefore": 9700,
           "capAfter": 3200,
-          "outputAfter": 1572,
+          "outputAfter": 15720,
           "emCut": 4238,
           "csReport": "/docs/pilot-plant-case-study-xinpingya-shaanxi.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-guanxi",
-          "name": "官溪电站",
+          "name": "Gaunxi",
           "type": "link",
-          "county": "广东乳源",
+          "county": "Ruyuan, Guangxi",
           "desc": "官溪电站位于广东省韶关市乳源县侯公渡镇南水河中游乳源瑶族自治县，为河床式电站，于1986年建成发电。",
           "plantLat": 24.7367320561668,
           "plantLon": 113.357554360131,
           "capBefore": 4800,
-          "outputBefore": 1500,
+          "outputBefore": 15000,
           "capAfter": 6000,
-          "outputAfter": 1326,
+          "outputAfter": 13260,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-guanxi-guangdong.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-sandeliing",
-          "name": "三叠岭电站",
+          "name": "Sandieling",
           "type": "link",
-          "county": "广西靖西",
+          "county": "Jingxi, Guangxi",
           "desc": "三叠岭电站位于广西省百色市靖西市湖润镇新灵村，为引水式电站，1996年建成发电。",
           "plantLat": 22.9876658970896,
           "plantLon": 106.681169942109,
           "capBefore": 13500,
-          "outputBefore": 2768,
+          "outputBefore": 27680,
           "capAfter": 13500,
-          "outputAfter": 2203,
+          "outputAfter": 22030,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-sandieling-dongpai-guangxi.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-dongpai",
-          "name": "峒牌电站",
+          "name": "Dongpai",
           "type": "link",
-          "county": "广西靖西",
+          "county": "Jingxi, Guangxi",
           "desc": "峒牌电站位于百色市靖西市湖润镇峒牌村，为引水式电站，1999年建成发电。",
           "plantLat": 23.0053922606984,
           "plantLon": 106.615986626384,
           "capBefore": 1500,
-          "outputBefore": 340,
+          "outputBefore": 3400,
           "capAfter": 1500,
-          "outputAfter": 176,
+          "outputAfter": 1760,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-sandieling-dongpai-guangxi.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-aibu-ii",
-          "name": "爱布二级电站",
+          "name": "Aibu II",
           "type": "link",
-          "county": "广西靖西",
+          "county": "Jingxi, Guangxi",
           "desc": "爱布二级电站位于广西靖西县化峒镇爱布村，为引水式电站，1969年投入运营。",
           "plantLat": 22.997027282151,
           "plantLon": 106.492266034801,
           "capBefore": 1260,
-          "outputBefore": 906,
+          "outputBefore": 9060,
           "capAfter": 3200,
-          "outputAfter": 787,
+          "outputAfter": 7870,
           "emCut": 44,
           "csReport": "/docs/pilot-plant-case-study-aibu-2and3-guangxi.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-aibu-iii",
-          "name": "爱布三级电站",
+          "name": "Aibu III",
           "type": "link",
-          "county": "广西靖西",
+          "county": "Jingxi, Guangxi",
           "desc": "爱布三级电站位于广西省百色市靖西市化峒镇爱布村，为引水式电站，1973年投入运营。",
           "plantLat": 22.9910173303555,
           "plantLon": 106.492883471386,
           "capBefore": 600,
-          "outputBefore": 230,
+          "outputBefore": 2300,
           "capAfter": 2400,
-          "outputAfter": 380,
+          "outputAfter": 3800,
           "emCut": 691,
           "csReport": "/docs/pilot-plant-case-study-aibu-2and3-guangxi.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-qingshuitan",
-          "name": "清水潭电站",
+          "name": "Qingshuitan",
           "type": "link",
-          "county": "浙江衢江",
+          "county": "Qujiang, Zhejiang",
           "desc": "清水潭电站位于浙江省衢州市衢江区上山溪流域水源保护区，为引水式电站，1999年7月投产发电。",
           "plantLat": 28.8382528704493,
           "plantLon": 119.005513744259,
           "capBefore": 960,
-          "outputBefore": 372,
+          "outputBefore": 3720,
           "capAfter": 1200,
-          "outputAfter": 270,
+          "outputAfter": 2700,
           "emCut": 0,
           "csReport": "/docs/pilot-plant-case-study-qingshuitan-zhejiang.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-panxi-ii",
-          "name": "盘溪二级电站",
+          "name": "Panxi II",
           "type": "link",
-          "county": "浙江缙云",
+          "county": "Jinyun, Zhejiang",
           "desc": "盘溪二级电站位于浙江省丽水市缙云县胡源乡抱骨岭村、为引水式电站，1974年投入运营。",
           "plantLat": 28.5459469854383,
           "plantLon": 120.228161285355,
           "capBefore": 2400,
-          "outputBefore": 730,
+          "outputBefore": 7300,
           "capAfter": 2400,
-          "outputAfter": 1113,
+          "outputAfter": 11130,
           "emCut": 2866,
           "csReport": "pilot-plant-case-study-panxi-casecade-zhejiang.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-panxi-iii",
-          "name": "盘溪三级电站",
+          "name": "Panxi III",
           "type": "link",
-          "county": "浙江缙云",
+          "county": "Jinyun, Zhejiang",
           "desc": "盘溪三级电站位于浙江省丽水市缙云县胡源乡蛟坑村，为引水式电站，1977年投入运营。",
           "plantLat": 28.5645277381262,
           "plantLon": 120.225015900522,
           "capBefore": 2400,
-          "outputBefore": 770,
+          "outputBefore": 7700,
           "capAfter": 3000,
-          "outputAfter": 1142,
+          "outputAfter": 11420,
           "emCut": 2782,
           "csReport": "/docs/pilot-plant-case-study-panxi-casecade-zhejiang.pdf",
           "emNote": "2020-2022"
         },
         {
           "id": "shp-plant-panxi-iv",
-          "name": "盘溪四级电站",
+          "name": "Panxi IV",
           "type": "link",
-          "county": "浙江缙云",
+          "county": "Jinyun, Zhejiang",
           "desc": "盘溪四级电站位于浙江省丽水市缙云县胡源乡镇胡村，为引水式电站，1979年投入运营。",
           "plantLat": 28.6052898111291,
           "plantLon": 120.207295103475,
           "capBefore": 1600,
-          "outputBefore": 420,
+          "outputBefore": 4200,
           "capAfter": 1600,
-          "outputAfter": 554,
+          "outputAfter": 5540,
           "emCut": 1004,
           "csReport": "/docs/pilot-plant-case-study-panxi-casecade-zhejiang.pdf",
           "emNote": "2020-2022"
@@ -494,7 +494,7 @@
       "children": [
         {
           "id": "ex-post-ex-ante",
-          "name": "改造效果对比分析",
+          "name": "Ex-Ante & Ex-Post Analysis",
           "type": "document",
           "img": "/img/report-demo-plants-ex-ante-ex-post-analysis.jpg",
           "link": "/docs/report-demo-plants-ex-ante-ex-post-analysis.pdf",
@@ -502,7 +502,7 @@
         },
         {
           "id": "cost-benefit-analysis",
-          "name": "成本收益分析",
+          "name": "Cost Benefit Analysis",
           "type": "document",
           "img": "/img/report-demo-plant-cost-benefit-analysis.jpg",
           "link": "/docs/report-demo-plant-cost-benefit-analysis.pdf",
@@ -510,7 +510,7 @@
         },
         {
           "id": "esmp-implementation",
-          "name": "社会环境管理计划",
+          "name": "ESMP Implementation",
           "type": "document",
           "img": "/img/report-demo-plants-esmp-monitoring.jpg",
           "link": "/docs/report-demo-plants-esmp-monitoring.pdf",
@@ -518,7 +518,7 @@
         },
         {
           "id": "hydrological-regime-assessment",
-          "name": "水文情势分析",
+          "name": "Hydrological Regime Analysis",
           "type": "document",
           "img": "/img/report-demo-plant-hydrological-regime-analysis.jpg",
           "link": "/docs/report-demo-plant-hydrological-regime-analysis.pdf",
@@ -535,7 +535,7 @@
       "children": [
         {
           "id": "institution-and-standards",
-          "name": "制度与标准",
+          "name": "Technical Standards & Policies",
           "type": "list",
           "desc": "项目在小水电绿色发展的制度与标准方面的产出",
           "children": [
@@ -596,7 +596,7 @@
         },
         {
           "id": "incentive-policies",
-          "name": "激励政策",
+          "name": "Incentive Policies",
           "type": "list",
           "desc": "项目在小水电绿色发展的激励政策方面的产出",
           "children": [
@@ -869,16 +869,16 @@
       "name": "Project Stats",
       "type": "section",
       "secClass": "section bg-unido-blue",
-      "desc": "项目执行过程中的一些关键数据合集",
+      "desc": "Key statistics about the UNIDO-GEF Project",
       "children": [
         {
           "id": "demo-plant-annual-outputs",
-          "name": "试点电站发电量",
-          "desc": "试点电站从2010年开始每年的发电量（万KWh）。折线中间明显下降的时间代表电站停机改造的时间（大多为2017-2019），具体分析可查阅本站“试点电站”和“技术示范成效”部分的报告。默认显示三座电站，请从本图表右上角下拉菜单中选择更多电站。",
+          "name": "Annual outputs of pilot plants",
+          "desc": "Annual outputs of pilot plants since 2010 (x10 MWh), which take evident dips when the plants underwent refurbishment and upgrades (mostly between 2017 and 2019) and recovers afterwards. Please see \"Pilot Plants\" and \"Technical Demonstration\" sections of the page. For clarity, only three plants are displayed by default. Please use the dropdown menu on the top-right of this figure to see more.",
           "charType": "echarts",
           "data": [
             {
-              "plant": "冒烟洞二级",
+              "plant": "Maoyandong II",
               "id": "annual-output-maoyandong2",
               "type": "line",
               "numbers": {
@@ -898,7 +898,7 @@
               }
             },
             {
-              "plant": "马脖子",
+              "plant": "Mabozi",
               "id": "annual-output-mabozi",
               "type": "line",
               "numbers": {
@@ -918,7 +918,7 @@
               }
             },
             {
-              "plant": "岔河",
+              "plant": "Chahe",
               "id": "annual-output-chahe",
               "type": "line",
               "numbers": {
@@ -938,7 +938,7 @@
               }
             },
             {
-              "plant": "周家梁",
+              "plant": "Zhoujialiang",
               "id": "annual-output-zhoujialiang",
               "type": "line",
               "numbers": {
@@ -958,7 +958,7 @@
               }
             },
             {
-              "plant": "杨道河",
+              "plant": "Yangdaohe",
               "id": "annual-output-yangdaohe",
               "type": "line",
               "numbers": {
@@ -978,7 +978,7 @@
               }
             },
             {
-              "plant": "朝天吼",
+              "plant": "Chaotianhou",
               "id": "annual-output-chaotianhou",
               "type": "line",
               "numbers": {
@@ -998,7 +998,7 @@
               }
             },
             {
-              "plant": "石家坝",
+              "plant": "Shijiaba",
               "id": "annual-output-shijiaba",
               "type": "line",
               "numbers": {
@@ -1018,7 +1018,7 @@
               }
             },
             {
-              "plant": "将军柱",
+              "plant": "Jiangjunzhu",
               "id": "annual-output-jiangjunzhu",
               "type": "line",
               "numbers": {
@@ -1038,7 +1038,7 @@
               }
             },
             {
-              "plant": "马颈",
+              "plant": "Majing",
               "id": "annual-output-majing",
               "type": "line",
               "numbers": {
@@ -1058,7 +1058,7 @@
               }
             },
             {
-              "plant": "小坑",
+              "plant": "Xiaokeng",
               "id": "annual-output-xiaokeng",
               "type": "line",
               "numbers": {
@@ -1078,7 +1078,7 @@
               }
             },
             {
-              "plant": "高坑",
+              "plant": "Gaokeng",
               "id": "annual-output-gaokeng",
               "type": "line",
               "numbers": {
@@ -1098,7 +1098,7 @@
               }
             },
             {
-              "plant": "太平",
+              "plant": "Taiping",
               "id": "annual-output-taiping",
               "type": "line",
               "numbers": {
@@ -1118,7 +1118,7 @@
               }
             },
             {
-              "plant": "塘坂",
+              "plant": "Tangban",
               "id": "annual-output-tangban",
               "type": "line",
               "numbers": {
@@ -1138,7 +1138,7 @@
               }
             },
             {
-              "plant": "角三",
+              "plant": "Jiaosan",
               "id": "annual-output-jiaosan",
               "type": "line",
               "numbers": {
@@ -1158,7 +1158,7 @@
               }
             },
             {
-              "plant": "滩头",
+              "plant": "Tantou",
               "id": "annual-output-tantou",
               "type": "line",
               "numbers": {
@@ -1178,7 +1178,7 @@
               }
             },
             {
-              "plant": "高坊二级",
+              "plant": "Gaofang II",
               "id": "annual-output-gaofang2",
               "type": "line",
               "numbers": {
@@ -1198,7 +1198,7 @@
               }
             },
             {
-              "plant": "新坪垭",
+              "plant": "Xinpingya",
               "id": "annual-output-xinpingya",
               "type": "line",
               "numbers": {
@@ -1218,7 +1218,7 @@
               }
             },
             {
-              "plant": "官溪",
+              "plant": "Guanxi",
               "id": "annual-output-guanxi",
               "type": "line",
               "numbers": {
@@ -1238,7 +1238,7 @@
               }
             },
             {
-              "plant": "三叠岭",
+              "plant": "Sandieling",
               "id": "annual-output-sandieling",
               "type": "line",
               "numbers": {
@@ -1258,7 +1258,7 @@
               }
             },
             {
-              "plant": "峒牌",
+              "plant": "Dongpai",
               "id": "annual-output-dongpai",
               "type": "line",
               "numbers": {
@@ -1278,7 +1278,7 @@
               }
             },
             {
-              "plant": "爱布二级",
+              "plant": "Aibu II",
               "id": "annual-output-aibu2",
               "type": "line",
               "numbers": {
@@ -1298,7 +1298,7 @@
               }
             },
             {
-              "plant": "爱布三级",
+              "plant": "Aibu III",
               "id": "annual-output-aibu3",
               "type": "line",
               "numbers": {
@@ -1318,7 +1318,7 @@
               }
             },
             {
-              "plant": "清水潭",
+              "plant": "Qingshuitan",
               "id": "annual-output-qingshuitan",
               "type": "line",
               "numbers": {
@@ -1338,7 +1338,7 @@
               }
             },
             {
-              "plant": "盘溪二级",
+              "plant": "Panxi II",
               "id": "annual-output-panxi2",
               "type": "line",
               "numbers": {
@@ -1358,7 +1358,7 @@
               }
             },
             {
-              "plant": "盘溪三级",
+              "plant": "Panxi III",
               "id": "annual-output-panxi3",
               "type": "line",
               "numbers": {
@@ -1378,7 +1378,7 @@
               }
             },
             {
-              "plant": "盘溪四级",
+              "plant": "Panxi IV",
               "id": "annual-output-panxi4",
               "type": "line",
               "numbers": {
@@ -1401,12 +1401,12 @@
         },
         {
           "id": "demo-plant-annual-ghg-emmission-cuts",
-          "name": "试点电站减排量",
-          "desc": "试点电站改造后较改造前年均发电量的增幅折算为减少温室气体排放的数量（吨）。当发电量不足改造前年均发电量时，该电站减少的温室气体排放为零，具体分析可查阅本站“试点电站”和“技术示范成效”部分的报告。请从本图表右上角下拉菜单中选择显示或隐藏具体电站。",
+          "name": "GHG Emission Cuts",
+          "desc": "Greenhouse gas cuts (ton) because of the marginal increase in power output from the pilot plants after refurbishment compared to long-term average before. When output is below the long-term average before, no cut is accounted at that plant. Please see \"Pilot Plants\" and \"Technical Demonstration\" sections of the page for more details. Please select plants in the dropdown menu of the top-right of the figure.",
           "charType": "echarts",
           "data": [
             {
-              "plant": "冒烟洞二级",
+              "plant": "Maoyandong II",
               "id": "annual-emm-cut-maoyandong2",
               "type": "bar",
               "stack": "x",
@@ -1419,7 +1419,7 @@
               }
             },
             {
-              "plant": "马脖子",
+              "plant": "Mabozi",
               "id": "annual-emm-cut-mabozi",
               "type": "bar",
               "stack": "x",
@@ -1431,7 +1431,7 @@
               }
             },
             {
-              "plant": "岔河",
+              "plant": "Chahe",
               "id": "annual-emm-cut-chahe",
               "type": "bar",
               "stack": "x",
@@ -1443,7 +1443,7 @@
               }
             },
             {
-              "plant": "周家梁",
+              "plant": "Zhoujialiang",
               "id": "annual-emm-cut-zhoujialiang",
               "type": "bar",
               "stack": "x",
@@ -1455,7 +1455,7 @@
               }
             },
             {
-              "plant": "杨道河",
+              "plant": "Yangdaohe",
               "id": "annual-emm-cut-yangdaohe",
               "type": "bar",
               "stack": "x",
@@ -1467,7 +1467,7 @@
               }
             },
             {
-              "plant": "朝天吼",
+              "plant": "Chaotianhou",
               "id": "annual-emm-cut-chaotianhou",
               "type": "bar",
               "stack": "x",
@@ -1479,7 +1479,7 @@
               }
             },
             {
-              "plant": "石家坝",
+              "plant": "Shijiaba",
               "id": "annual-emm-cut-shijiaba",
               "type": "bar",
               "stack": "x",
@@ -1491,7 +1491,7 @@
               }
             },
             {
-              "plant": "将军柱",
+              "plant": "Jiangjunzhu",
               "id": "annual-emm-cut-jiangjunzhu",
               "type": "bar",
               "stack": "x",
@@ -1503,7 +1503,7 @@
               }
             },
             {
-              "plant": "马颈",
+              "plant": "Majing",
               "id": "annual-emm-cut-majing",
               "type": "bar",
               "stack": "x",
@@ -1515,7 +1515,7 @@
               }
             },
             {
-              "plant": "小坑",
+              "plant": "Xiaokeng",
               "id": "annual-emm-cut-xiaokeng",
               "type": "bar",
               "stack": "x",
@@ -1527,7 +1527,7 @@
               }
             },
             {
-              "plant": "高坑",
+              "plant": "Gaokeng",
               "id": "annual-emm-cut-gaokeng",
               "type": "bar",
               "stack": "x",
@@ -1539,7 +1539,7 @@
               }
             },
             {
-              "plant": "太平",
+              "plant": "Taiping",
               "id": "annual-emm-cut-taiping",
               "type": "bar",
               "stack": "x",
@@ -1551,7 +1551,7 @@
               }
             },
             {
-              "plant": "塘坂",
+              "plant": "Tangban",
               "id": "annual-emm-cut-tangban",
               "type": "bar",
               "stack": "x",
@@ -1563,7 +1563,7 @@
               }
             },
             {
-              "plant": "角三",
+              "plant": "Jiaosan",
               "id": "annual-emm-cut-jiaosan",
               "type": "bar",
               "stack": "x",
@@ -1575,7 +1575,7 @@
               }
             },
             {
-              "plant": "滩头",
+              "plant": "Tantou",
               "id": "annual-emm-cut-tantou",
               "type": "bar",
               "stack": "x",
@@ -1587,7 +1587,7 @@
               }
             },
             {
-              "plant": "高坊二级",
+              "plant": "Gaofang II",
               "id": "annual-emm-cut-gaofang",
               "type": "bar",
               "stack": "x",
@@ -1599,7 +1599,7 @@
               }
             },
             {
-              "plant": "新坪垭",
+              "plant": "Xinpingya",
               "id": "annual-emm-cut-xinpingya",
               "type": "bar",
               "stack": "x",
@@ -1611,7 +1611,7 @@
               }
             },
             {
-              "plant": "官溪",
+              "plant": "Guanxi",
               "id": "annual-emm-cut-guanxi",
               "type": "bar",
               "stack": "x",
@@ -1623,7 +1623,7 @@
               }
             },
             {
-              "plant": "三叠岭",
+              "plant": "Sandieling",
               "id": "annual-emm-cut-sandieling",
               "type": "bar",
               "stack": "x",
@@ -1635,7 +1635,7 @@
               }
             },
             {
-              "plant": "峒牌",
+              "plant": "Dongpai",
               "id": "annual-emm-cut-dongpai",
               "type": "bar",
               "stack": "x",
@@ -1647,7 +1647,7 @@
               }
             },
             {
-              "plant": "爱布二级",
+              "plant": "Aibu II",
               "id": "annual-emm-cut-aibu2",
               "type": "bar",
               "stack": "x",
@@ -1659,7 +1659,7 @@
               }
             },
             {
-              "plant": "爱布三级",
+              "plant": "Aibu III",
               "id": "annual-emm-cut-aibu3",
               "type": "bar",
               "stack": "x",
@@ -1671,7 +1671,7 @@
               }
             },
             {
-              "plant": "清水潭",
+              "plant": "Qingshuitan",
               "id": "annual-emm-cut-qingshuitan",
               "type": "bar",
               "stack": "x",
@@ -1683,7 +1683,7 @@
               }
             },
             {
-              "plant": "盘溪二级",
+              "plant": "Panxi II",
               "id": "annual-emm-cut-panxi2",
               "type": "bar",
               "stack": "x",
@@ -1695,7 +1695,7 @@
               }
             },
             {
-              "plant": "盘溪三级",
+              "plant": "Panxi III",
               "id": "annual-emm-cut-panxi3",
               "type": "bar",
               "stack": "x",
@@ -1707,7 +1707,7 @@
               }
             },
             {
-              "plant": "盘溪四级",
+              "plant": "Panxi IV",
               "id": "annual-emm-cut-panxi4",
               "type": "bar",
               "stack": "x",
@@ -1722,23 +1722,23 @@
         },
         {
           "id": "demo-plant-employee-gender",
-          "name": "试点电站职工性别",
-          "desc": "试点电站改造升级前后不同性别职工的数量，数据来自项目试点电站改造性能监测分析（浙江水利水电学院, 2021），女干部指值班长及以上职位的女性职工，女职工指值班长以下的女性职工。请从本图表右上角下拉菜单中选择电站。",
+          "name": "Eployee Genders of Pilot Plants",
+          "desc": "Genders of the employees of the pilot plants before and after the refurbishment. Data from monitoring and analysis (Zhejiang Univerisity of Water Resources and Electric Power, 2021). Female leaders are female employees higher than team leaders, and not included in female employees in the figures. Please select plants in the dropdown menu of the top-right of the figure.",
           "charType": "echarts",
           "phases": [
-            "改造前",
-            "改造后"
+            "Before",
+            "After"
           ],
           "cates": [
-            "男职工",
-            "女职工",
-            "女干部"
+            "Male",
+            "Female",
+            "Female Leaders"
           ],
           "type": "pie",
           "data": [
             {
               "id": "demo-plant-employee-gender-all-plants",
-              "plant": "试点电站合计",
+              "plant": "All plants combined",
               "records": [
                 [
                   279,
@@ -1754,7 +1754,7 @@
             },
             {
               "id": "demo-plant-employee-gender-maoyandong2",
-              "plant": "冒烟洞二级",
+              "plant": "Maoyandong II",
               "records": [
                 [
                   12,
@@ -1770,7 +1770,7 @@
             },
             {
               "id": "demo-plant-employee-gender-mabozi",
-              "plant": "马脖子",
+              "plant": "Mabozi",
               "records": [
                 [
                   13,
@@ -1786,7 +1786,7 @@
             },
             {
               "id": "demo-plant-employee-gender-chahe",
-              "plant": "岔河",
+              "plant": "Chahe",
               "records": [
                 [
                   9,
@@ -1802,7 +1802,7 @@
             },
             {
               "id": "demo-plant-employee-gender-zhoujialiang",
-              "plant": "周家梁",
+              "plant": "Zhoujialiang",
               "records": [
                 [
                   7,
@@ -1818,7 +1818,7 @@
             },
             {
               "id": "demo-plant-employee-gender-yangdaohe",
-              "plant": "杨道河",
+              "plant": "Yangdaohe",
               "records": [
                 [
                   7,
@@ -1834,7 +1834,7 @@
             },
             {
               "id": "demo-plant-employee-gender-chaotianhou",
-              "plant": "朝天吼",
+              "plant": "Chaotianhou",
               "records": [
                 [
                   5,
@@ -1850,7 +1850,7 @@
             },
             {
               "id": "demo-plant-employee-gender-shijiaba",
-              "plant": "石家坝",
+              "plant": "Shijiaba",
               "records": [
                 [
                   5,
@@ -1866,7 +1866,7 @@
             },
             {
               "id": "demo-plant-employee-gender-jiangjunzhu",
-              "plant": "将军柱",
+              "plant": "Jiangjunzhu",
               "records": [
                 [
                   7,
@@ -1882,7 +1882,7 @@
             },
             {
               "id": "demo-plant-employee-gender-majing",
-              "plant": "马颈",
+              "plant": "Majing",
               "records": [
                 [
                   34,
@@ -1898,7 +1898,7 @@
             },
             {
               "id": "demo-plant-employee-gender-xiaokeng",
-              "plant": "小坑",
+              "plant": "Xiaokeng",
               "records": [
                 [
                   8,
@@ -1914,7 +1914,7 @@
             },
             {
               "id": "demo-plant-employee-gender-gaokeng",
-              "plant": "高坑",
+              "plant": "Gaokeng",
               "records": [
                 [
                   12,
@@ -1930,7 +1930,7 @@
             },
             {
               "id": "demo-plant-employee-gender-taiping",
-              "plant": "太平",
+              "plant": "Taiping",
               "records": [
                 [
                   8,
@@ -1946,7 +1946,7 @@
             },
             {
               "id": "demo-plant-employee-gender-tangban",
-              "plant": "塘坂",
+              "plant": "Tangban",
               "records": [
                 [
                   44,
@@ -1962,7 +1962,7 @@
             },
             {
               "id": "demo-plant-employee-gender-jiaosan",
-              "plant": "角三",
+              "plant": "Jiaosan",
               "records": [
                 [
                   6,
@@ -1978,7 +1978,7 @@
             },
             {
               "id": "demo-plant-employee-gender-tantou",
-              "plant": "滩头",
+              "plant": "Tantou",
               "records": [
                 [
                   11,
@@ -1994,7 +1994,7 @@
             },
             {
               "id": "demo-plant-employee-gender-gaofang2",
-              "plant": "高坊二级",
+              "plant": "Gaofang II",
               "records": [
                 [
                   10,
@@ -2010,7 +2010,7 @@
             },
             {
               "id": "demo-plant-employee-gender-xinpingya",
-              "plant": "新坪垭",
+              "plant": "Xinpingya",
               "records": [
                 [
                   5,
@@ -2026,7 +2026,7 @@
             },
             {
               "id": "demo-plant-employee-gender-guanxi",
-              "plant": "官溪",
+              "plant": "Guanxi",
               "records": [
                 [
                   14,
@@ -2042,7 +2042,7 @@
             },
             {
               "id": "demo-plant-employee-gender-sandieling",
-              "plant": "三叠岭",
+              "plant": "Sandieling",
               "records": [
                 [
                   17,
@@ -2058,7 +2058,7 @@
             },
             {
               "id": "demo-plant-employee-gender-dongpai",
-              "plant": "峒牌",
+              "plant": "Dongpai",
               "records": [
                 [
                   6,
@@ -2074,7 +2074,7 @@
             },
             {
               "id": "demo-plant-employee-gender-aibu2",
-              "plant": "爱布二级",
+              "plant": "Aibu II",
               "records": [
                 [
                   8,
@@ -2090,7 +2090,7 @@
             },
             {
               "id": "demo-plant-employee-gender-aibu3",
-              "plant": "爱布三级",
+              "plant": "Aibu III",
               "records": [
                 [
                   8,
@@ -2106,7 +2106,7 @@
             },
             {
               "id": "demo-plant-employee-gender-qingshuitan",
-              "plant": "清水潭",
+              "plant": "Qingshuitan",
               "records": [
                 [
                   1,
@@ -2122,7 +2122,7 @@
             },
             {
               "id": "demo-plant-employee-gender-panxi2",
-              "plant": "盘溪二级",
+              "plant": "Panxi II",
               "records": [
                 [
                   6,
@@ -2138,7 +2138,7 @@
             },
             {
               "id": "demo-plant-employee-gender-panxi3",
-              "plant": "盘溪三级",
+              "plant": "Panxi III",
               "records": [
                 [
                   8,
@@ -2154,7 +2154,7 @@
             },
             {
               "id": "demo-plant-employee-gender-panxi4",
-              "plant": "盘溪四级",
+              "plant": "Panxi IV",
               "records": [
                 [
                   8,
@@ -2172,23 +2172,23 @@
         },
         {
           "id": "demo-plant-employee-income",
-          "name": "试点电站职工收入",
-          "desc": "试点电站改造升级前后不同性别职工的平均收入情况，数据来自项目试点电站改造性能监测分析（浙江水利水电学院, 2021），女干部指值班长及以上职位的女性职工，女职工指值班长以下的女性职工。请从本图表右上角下拉菜单中选择电站。",
+          "name": "Employee Incomes of Pilot Plants",
+          "desc": "Averaged incomes of employees of the pilot plants before and after refurbishment. Data from monitoring and analysis (Zhejiang Univerisity of Water Resources and Electric Power, 2021). Female leaders are female employees higher than team leaders, and not included in female employees in the figures. Please select plants in the dropdown menu of the top-right of the figure.",
           "charType": "echarts",
           "phases": [
-            "改造前",
-            "改造后"
+            "Before",
+            "After"
           ],
           "cates": [
-            "男职工",
-            "女职工",
-            "女干部"
+            "Male",
+            "Female",
+            "Female Leaders"
           ],
           "type": "bar",
           "data": [
             {
               "id": "demo-plant-employee-income-all-plants",
-              "plant": "所有试点电站",
+              "plant": "All plants combined",
               "records": [
                 [
                   4.47,
@@ -2204,7 +2204,7 @@
             },
             {
               "id": "demo-plant-employee-income-maoyandong2",
-              "plant": "冒烟洞二级",
+              "plant": "Maoyandong II",
               "records": [
                 [
                   4.12,
@@ -2220,7 +2220,7 @@
             },
             {
               "id": "demo-plant-employee-income-mabozi",
-              "plant": "马脖子",
+              "plant": "Mabozi",
               "records": [
                 [
                   2.79,
@@ -2236,7 +2236,7 @@
             },
             {
               "id": "demo-plant-employee-income-chahe",
-              "plant": "岔河",
+              "plant": "Chahe",
               "records": [
                 [
                   3.23,
@@ -2252,7 +2252,7 @@
             },
             {
               "id": "demo-plant-employee-income-zhoujialiang",
-              "plant": "周家梁",
+              "plant": "Zhoujialiang",
               "records": [
                 [
                   3.64,
@@ -2268,7 +2268,7 @@
             },
             {
               "id": "demo-plant-employee-income-yangdaohe",
-              "plant": "杨道河",
+              "plant": "Yangdaohe",
               "records": [
                 [
                   4.62,
@@ -2284,7 +2284,7 @@
             },
             {
               "id": "demo-plant-employee-income-chaotianhou",
-              "plant": "朝天吼",
+              "plant": "Chaotianhou",
               "records": [
                 [
                   5.44,
@@ -2300,7 +2300,7 @@
             },
             {
               "id": "demo-plant-employee-income-shijiaba",
-              "plant": "石家坝",
+              "plant": "Shijiaba",
               "records": [
                 [
                   5.3,
@@ -2316,7 +2316,7 @@
             },
             {
               "id": "demo-plant-employee-income-jiangjunzhu",
-              "plant": "将军柱",
+              "plant": "Jiangjunzhu",
               "records": [
                 [
                   3.83,
@@ -2332,7 +2332,7 @@
             },
             {
               "id": "demo-plant-employee-income-majing",
-              "plant": "马颈",
+              "plant": "Majing",
               "records": [
                 [
                   3.18,
@@ -2348,7 +2348,7 @@
             },
             {
               "id": "demo-plant-employee-income-xiaokeng",
-              "plant": "小坑",
+              "plant": "Xiaokeng",
               "records": [
                 [
                   4.13,
@@ -2364,7 +2364,7 @@
             },
             {
               "id": "demo-plant-employee-income-gaokeng",
-              "plant": "高坑",
+              "plant": "Gaokeng",
               "records": [
                 [
                   6.55,
@@ -2380,7 +2380,7 @@
             },
             {
               "id": "demo-plant-employee-income-taiping",
-              "plant": "太平",
+              "plant": "Taiping",
               "records": [
                 [
                   2.81,
@@ -2396,7 +2396,7 @@
             },
             {
               "id": "demo-plant-employee-income-tangban",
-              "plant": "塘坂",
+              "plant": "Tangban",
               "records": [
                 [
                   6.29,
@@ -2412,7 +2412,7 @@
             },
             {
               "id": "demo-plant-employee-income-jiaosan",
-              "plant": "角三",
+              "plant": "Jiaosan",
               "records": [
                 [
                   2.25,
@@ -2428,7 +2428,7 @@
             },
             {
               "id": "demo-plant-employee-income-tantou",
-              "plant": "滩头",
+              "plant": "Tantou",
               "records": [
                 [
                   2.3,
@@ -2444,7 +2444,7 @@
             },
             {
               "id": "demo-plant-employee-income-gaofang2",
-              "plant": "高坊二级",
+              "plant": "Gaofang II",
               "records": [
                 [
                   3.2,
@@ -2460,7 +2460,7 @@
             },
             {
               "id": "demo-plant-employee-income-xinpingya",
-              "plant": "新坪垭",
+              "plant": "Xinpingya",
               "records": [
                 [
                   6.45,
@@ -2476,7 +2476,7 @@
             },
             {
               "id": "demo-plant-employee-income-guanxi",
-              "plant": "官溪",
+              "plant": "Guanxi",
               "records": [
                 [
                   6.58,
@@ -2492,7 +2492,7 @@
             },
             {
               "id": "demo-plant-employee-income-sandieling",
-              "plant": "三叠岭",
+              "plant": "Sandieling",
               "records": [
                 [
                   3.22,
@@ -2508,7 +2508,7 @@
             },
             {
               "id": "demo-plant-employee-income-dongpai",
-              "plant": "峒牌",
+              "plant": "Dongpai",
               "records": [
                 [
                   3.22,
@@ -2524,7 +2524,7 @@
             },
             {
               "id": "demo-plant-employee-income-aibu2",
-              "plant": "爱布二级",
+              "plant": "Aibu II",
               "records": [
                 [
                   3.79,
@@ -2540,7 +2540,7 @@
             },
             {
               "id": "demo-plant-employee-income-aibu3",
-              "plant": "爱布三级",
+              "plant": "Aibu III",
               "records": [
                 [
                   3.26,
@@ -2556,7 +2556,7 @@
             },
             {
               "id": "demo-plant-employee-income-qingshuitan",
-              "plant": "清水潭",
+              "plant": "Qingshuitan",
               "records": [
                 [
                   5.35,
@@ -2572,7 +2572,7 @@
             },
             {
               "id": "demo-plant-employee-income-panxi2",
-              "plant": "盘溪二级",
+              "plant": "Panxi II",
               "records": [
                 [
                   6.44,
@@ -2588,7 +2588,7 @@
             },
             {
               "id": "demo-plant-employee-income-panxi3",
-              "plant": "盘溪三级",
+              "plant": "Panxi III",
               "records": [
                 [
                   6.66,
@@ -2604,7 +2604,7 @@
             },
             {
               "id": "demo-plant-employee-income-panxi4",
-              "plant": "盘溪四级",
+              "plant": "Panxi IV",
               "records": [
                 [
                   6.66,
@@ -2622,738 +2622,34 @@
         },
         {
           "id": "capacity-building-tranees",
-          "name": "能力建设培训人数",
-          "desc": "累计参加项目各类能力建设培训的人数。",
+          "name": "Trainees of Capacity Building Workshops",
+          "desc": "Number of trainees in the training workshops for capacity building.",
           "charType": "aniNumber",
           "data": [
             {
               "id": "capacity-building-tranees-shp-owners",
-              "name": "小水电项目业主、管理者等",
+              "name": "SHP owners, managers, etc.",
               "number": 1226
             },
             {
               "id": "capacity-building-tranees-shp-officials",
-              "name": "小水电行业政府官员",
+              "name": "SHP officials",
               "number": 211
             },
             {
               "id": "capacity-building-tranees-shp-trainers",
-              "name": "能力建设培训教员",
+              "name": "Trainers",
               "number": 50
             },
             {
               "id": "capacity-building-tranees-green-shp-certification",
-              "name": "绿色小水电创建专题培训学员",
+              "name": "Trainees for green SHP ceritification",
               "number": 374
             },
             {
               "id": "capacity-building-tranees-shp-safety",
-              "name": "安全生产标准化专题培训学员",
+              "name": "Trainees for operational safety",
               "number": 202
-            }
-          ]
-        }
-      ]
-    },
-    "knowledgeHub": {
-      "id": "knowledge-hub",
-      "name": "Knowledge Hub",
-      "type": "section",
-      "secClass": "section",
-      "desc": "以上列表系项目执行过程中收集整理的相关法律、政策及其他信息，其分类及呈现方式并不代表任何政府部门或公共机构的观点、意见或立场；所链接第三方内容可能由于相关发布机构的更新而失效，使用时请注意信息适用性和有效期。",
-      "children": [
-        {
-          "id": "folder-1",
-          "name": "国家法律及政策",
-          "type": "kh-folder",
-          "expanded": true,
-          "children": [
-            {
-              "id": "folder-1-1",
-              "name": "法律法规",
-              "expanded": true,
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "entry-1-1-1",
-                  "name": "中华人民共和国安全生产法（中华人民共和国主席令第十三号）",
-                  "type": "kh-item",
-                  "link": "https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE3YTY2YjgxNjAxN2E3OTU2YjdkYjBhZDQ%3D"
-                },
-                {
-                  "id": "entry-1-1-2",
-                  "name": "中华人民共和国可再生能源法（主席令 第33号）",
-                  "type": "kh-item",
-                  "link": "https://flk.npc.gov.cn/detail2.html?MmM5MDlmZGQ2NzhiZjE3OTAxNjc4YmY3MDhhNjA1NzM%3D"
-                }
-              ]
-            },
-            {
-              "id": "folder-1-2",
-              "name": "政策文件",
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "folder-1-2-1",
-                  "name": "综合",
-                  "type": "kh-folder",
-                  "children": [
-                    {
-                      "id": "entry-1-2-1-1",
-                      "name": "水利工程质量管理规定（水利部令第52号，2023）",
-                      "type": "kh-item",
-                      "link": "https://www.gov.cn/gongbao/content/2023/content_5743637.htm"
-                    },
-                    {
-                      "id": "entry-1-2-1-2",
-                      "name": "水利部办公厅关于印发2023年农村水利水电工作要点的通知（办农水〔2023〕48号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202303/t20230330_1651534.html"
-                    },
-                    {
-                      "id": "entry-1-2-1-3",
-                      "name": "水利部办公厅关于印发2022年农村水利水电工作要点的通知（办农水〔2022〕67号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202203/t20220317_1565147.html"
-                    },
-                    {
-                      "id": "entry-1-2-1-4",
-                      "name": "水利部办公厅关于印发2021年农村水利水电工作要点的通知（办农水〔2021〕69号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202104/t20210402_1512469.html"
-                    },
-                    {
-                      "id": "entry-1-2-1-5",
-                      "name": "水利部办公厅关于印发2020年农村水利水电工作要点的通知（办农水〔2020〕32号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202003/t20200310_1441145.html"
-                    },
-                    {
-                      "id": "entry-1-2-1-6",
-                      "name": "水利部关于做好河湖生态流量确定和保障工作的指导意见（水资管〔2020〕67号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zw/zcjd/xgwj/202004/t20200424_1401347.html"
-                    }
-                  ]
-                },
-                {
-                  "id": "folder-1-2-2",
-                  "name": "清理整改",
-                  "type": "kh-folder",
-                  "desc": "清理整改",
-                  "children": [
-                    {
-                      "id": "entry-1-2-2-1",
-                      "name": "水利部 国家发展改革委 生态环境部 国家能源局关于开展长江经济带小水电清理整改工作的意见（水电〔2018〕312号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/201902/t20190228_1440874.html"
-                    },
-                    {
-                      "id": "entry-1-2-2-2",
-                      "name": "水利部办公厅关于印发长江经济带小水电清理整改验收销号工作指导意见的通知（办水电〔2020〕109号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202005/t20200527_1441200.html"
-                    },
-                    {
-                      "id": "entry-1-2-2-3",
-                      "name": "水利部 发展改革委 自然资源部 生态环境部 农业农村部 能源局 林草局关于开展黄河流域小水电清理整改工作的通知（水电〔2021〕410号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202201/t20220105_1558137.html"
-                    },
-                    {
-                      "id": "entry-1-2-2-5",
-                      "name": "水利部 发展改革委 自然资源部 生态环境部 农业农村部 能源局 林草局关于进一步做好小水电分类整改工作的意见（水电〔2021〕]397号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202201/t20220121_1560101.html"
-                    },
-                    {
-                      "id": "entry-1-2-2-6",
-                      "name": "生态环境部 国家发展和改革委员会 最高人民法院 最高人民检察院 科学技术部 工业和信息化部 公安部 财政部 人力资源和社会保障部 自然资源部 住房和城乡建设部 交通运输部 水利部 农业农村部 应急管理部 国家林业和草原局 国家矿山安全监察局 深入打好长江保护修复攻坚战行动方案（环水体〔2022〕55号）",
-                      "type": "kh-item",
-                      "link": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk03/202209/t20220919_994278.html"
-                    }
-                  ]
-                },
-                {
-                  "id": "folder-1-2-6",
-                  "name": "生态流量",
-                  "type": "kh-folder",
-                  "desc": "清理整改",
-                  "children": [
-                    {
-                      "id": "entry-1-2-6-1",
-                      "name": "水利部办公厅 生态环境部办公厅关于进一步加强小水电站生态流量监督检查工作的通知（办水电〔2021〕382号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202201/t20220105_1558135.html"
-                    },
-                    {
-                      "id": "entry-1-2-6-2",
-                      "name": "水利部办公厅关于做好小水电站生态流量泄放评估工作的通知（办水电〔2022〕115号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202204/t20220425_1570855.html"
-                    },
-                    {
-                      "id": "entry-1-2-6-3",
-                      "name": "水利部 生态环境部关于加强长江经济带小水电站生态流量监管的通知（水电〔2019〕241号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/201909/t20190902_1440968.html"
-                    }
-                  ]
-                },
-                {
-                  "id": "folder-1-2-3",
-                  "name": "安全生产",
-                  "type": "kh-folder",
-                  "children": [
-                    {
-                      "id": "entry-1-2-3-1",
-                      "name": "水利部安全生产领导小组关于印发李国英部长在水利部安全生产会议上的讲话的通知（水安〔2022〕2号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202206/t20220609_1578007.html"
-                    },
-                    {
-                      "id": "entry-1-2-3-2",
-                      "name": "水利部办公厅关于规范和加强农村水电安全生产监督检查工作的通知（办水电〔2019〕19号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/201902/t20190215_1440867.html"
-                    },
-                    {
-                      "id": "entry-1-2-3-3",
-                      "name": "水利部办公厅关于印发《库容10万立方米以下小水电站大坝安全评估技术指南（试行）》的通知（办水电〔2022〕272号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202210/t20221010_1599911.html"
-                    },
-                    {
-                      "id": "entry-1-2-3-4",
-                      "name": "水利部办公厅关于印发农村水电站安全生产标准化评审标准的通知（办水电[2019]16号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/201902/t20190228_1440871.html"
-                    },
-                    {
-                      "id": "entry-1-2-3-5",
-                      "name": "水利部关于印发农村水电站安全生产标准化达标评级实施办法（暂行）的通知",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/201407/t20140715_1443631.html"
-                    }
-                  ]
-                },
-                {
-                  "id": "folder-1-2-4",
-                  "name": "绿色小水电",
-                  "type": "kh-folder",
-                  "children": [
-                    {
-                      "id": "entry-1-2-4-1",
-                      "name": "水利部关于开展绿色小水电站创建工作的通知（水电〔2017〕220号）",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/201706/t20170608_1442512.html"
-                    },
-                    {
-                      "id": "entry-1-2-4-2",
-                      "name": "水利部办公厅关于做好绿色小水电示范电站创建和期满延续工作的通知（办水电〔2022〕19号",
-                      "type": "kh-item",
-                      "link": "http://www.mwr.gov.cn/zwgk/gknr/202202/t20220209_1561585.html"
-                    }
-                  ]
-                },
-                {
-                  "id": "folder-1-2-5",
-                  "name": "减排固碳",
-                  "type": "kh-folder",
-                  "desc": "减排固碳",
-                  "children": [
-                    {
-                      "id": "entry-1-2-5-1",
-                      "name": "生态环境部 发展改革委 工业和信息化部 住房城乡建设部 交通运输部 农业农村部 能源局关于印发减污降碳协同增效实施方案的通知（环综合〔2022〕42号）",
-                      "type": "kh-item",
-                      "link": "https://www.gov.cn/gongbao/content/2022/content_5707285.htm"
-                    },
-                    {
-                      "id": "entry-1-2-5-2",
-                      "name": "国家发展改革委 国家能源局关于推进电力源网荷储一体化和多能互补发展的指导意见（发改能源规〔2021〕280号）",
-                      "type": "kh-item",
-                      "link": "https://www.gov.cn/zhengce/zhengceku/2021-03/06/content_5590895.htm"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "folder-1-3",
-              "name": "技术标准",
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "entry-1-3-1",
-                  "name": "水利安全生产标准化通用规范（SL/T789-2019）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%252FT%2B789-2019"
-                },
-                {
-                  "id": "entry-1-3-2",
-                  "name": "小型水电站安全检测与评价规范（GB/T50876-2013）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=GB%252FT%2B50876-2013"
-                },
-                {
-                  "id": "entry-1-3-3",
-                  "name": "小型水电站下游河道减脱水防治技术导则（SL/T796-2020）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%252FT%2B796-2020"
-                },
-                {
-                  "id": "entry-1-3-4",
-                  "name": "电力变压器运行规程（DL/T572-2021）",
-                  "type": "kh-item",
-                  "link": "https://hbba.sacinfo.org.cn/stdDetail/60cae44bb79bc8b54530cc80e7091d4a"
-                },
-                {
-                  "id": "entry-1-3-5",
-                  "name": "农村水电送电线路技术管理规程（SL527-2011）",
-                  "type": "kh-item",
-                  "link": "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=8B1827F2234CBB19E05397BE0A0AB44A"
-                },
-                {
-                  "id": "entry-1-3-6",
-                  "name": "河湖生态环境需水计算规范（SL/T712-2014）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%252FT%2B712-2021"
-                },
-                {
-                  "id": "entry-1-3-7",
-                  "name": "水电工程生态流量计算规范（NB/T35091-2016）",
-                  "type": "kh-item",
-                  "link": "http://bz.creei.cn:8888/default/pub/detail.jsp?eventid=20171113220217858525"
-                },
-                {
-                  "id": "entry-1-3-8",
-                  "name": "水轮机运行规程（DL/T710-2018）",
-                  "type": "kh-item",
-                  "link": "https://hbba.sacinfo.org.cn/stdDetail/7d93e702351a43548fd234cac457634d"
-                },
-                {
-                  "id": "entry-1-3-9",
-                  "name": "小型水电站水能设计标准（GB/T51372-2019）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=GB%252FT%2B51372-2019"
-                },
-                {
-                  "id": "entry-1-3-10",
-                  "name": "小型水电站水文计算规范（SL77-2013）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%2B77-2013"
-                },
-                {
-                  "id": "entry-1-3-11",
-                  "name": "小型水电站运行维护技术规范（GB/T50964-2014）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=GB%252FT%2B50964-2014"
-                },
-                {
-                  "id": "entry-1-3-12",
-                  "name": "小型水电站施工技术规范（SL172-2012）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%2B172-2012"
-                },
-                {
-                  "id": "entry-1-3-13",
-                  "name": "小型水电站机电设备导则（GB/T18110-2016）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=GB%252FT%2B18110-2016"
-                },
-                {
-                  "id": "entry-1-3-14",
-                  "name": "小水电建设项目经济评价规程（SL/T16-2019）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%252FT%2B16-2019"
-                },
-                {
-                  "id": "entry-1-3-15",
-                  "name": "小型水电站建设工程验收规程（SL168-2012）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%2B168-2012"
-                },
-                {
-                  "id": "entry-1-3-16",
-                  "name": "农村水电站技术管理规程（SL529-2011）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%2B529-2011"
-                },
-                {
-                  "id": "entry-1-3-17",
-                  "name": "农村水电站工程环境影响评价规程（SL315-2005）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%2B315-2005"
-                },
-                {
-                  "id": "entry-1-3-18",
-                  "name": "绿色小水电评价标准（SL/T752-2020）",
-                  "type": "kh-item",
-                  "link": "http://121.36.94.83:9008/jsp/yishenqing/appladd/biaozhunfile/detail.jsp?bzbh=SL%252FT%2B752-2020"
-                }
-              ]
-            },
-            {
-              "id": "folder-1-4",
-              "name": "操作指南",
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "entry-1-4-1",
-                  "name": "绿色小水电建设技术指南",
-                  "type": "kh-item",
-                  "link": "/docs/green-shp-certification-technical-guide-summary.pdf",
-                  "locLink": true
-                },
-                {
-                  "id": "entry-1-4-2",
-                  "name": "水电水利建设项目河道生态用水、低温水和过鱼设施环境影响评价技术指南（试行）",
-                  "type": "kh-item",
-                  "link": "/docs/eflow-low-temp-water-fish-pass-sepa-2006.pdf",
-                  "locLink": true
-                },
-                {
-                  "id": "entry-1-4-3",
-                  "name": "农村水电安全生产标准化最佳案例手册",
-                  "type": "kh-item",
-                  "link": "/docs/best-practice-cases-shp-operational-safety.pdf",
-                  "locLink": true
-                },
-                {
-                  "id": "entry-1-4-4",
-                  "name": "2019年度减排项目中国区域电网基准线排放因子",
-                  "type": "kh-item",
-                  "link": "https://www.mee.gov.cn/ywgz/ydqhbh/wsqtkz/202012/t20201229_815386.shtml"
-                },
-                {
-                  "id": "entry-1-4-5",
-                  "name": "智能化小型水电站技术指南（试行）",
-                  "type": "kh-item",
-                  "link": "http://www.mwr.gov.cn/zwgk/gknr/202307/t20230727_1676161.html"
-                },
-                {
-                  "id": "entry-1-4-6",
-                  "name": "小水电集控中心技术指南（试行）",
-                  "type": "kh-item",
-                  "link": "http://www.mwr.gov.cn/zwgk/gknr/202307/t20230727_1676161.html"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "folder-2",
-          "name": "地方政策",
-          "type": "kh-folder",
-          "children": [
-            {
-              "id": "folder-2-1",
-              "name": "浙江",
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "entry-2-1-1",
-                  "name": "浙江省小水电站生态流量监督管理办法（浙水农电〔2021〕21 号）",
-                  "type": "kh-item",
-                  "link": "http://slt.zj.gov.cn/art/2021/10/25/art_1229052633_2370787.html"
-                },
-                {
-                  "id": "entry-2-1-2",
-                  "name": "浙江省小水电清理整改工作实施方案（浙水农电〔2019〕1 号）",
-                  "type": "kh-item",
-                  "link": "http://slt.zj.gov.cn/art/2019/4/10/art_1229052633_90914.html"
-                },
-                {
-                  "id": "entry-2-1-3",
-                  "name": "浙江省生态水电示范区建设管理暂行办法（浙水电〔2016〕3 号）",
-                  "type": "kh-item",
-                  "link": "http://slt.zj.gov.cn/art/2016/6/22/art_1229052633_623787.html"
-                },
-                {
-                  "id": "entry-2-1-4",
-                  "name": "浙江省水电站生态流量监管平台建设技术指导意见（浙水办农电〔2020〕15 号）",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-1-5",
-                  "name": "浙江省水利厅等五家单位关于进一步加强小水电管理工作的通知（浙水农电[2020]25 号）",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-1-6",
-                  "name": "浙江省农村水电站安全生产标准化达标评级实施办法（暂行）（浙水电〔2013〕15号）",
-                  "type": "kh-item",
-                  "link": "http://slt.zj.gov.cn/art/2014/1/7/art_1229052633_91033.html"
-                }
-              ]
-            },
-            {
-              "id": "folder-2-2",
-              "name": "福建",
-              "type": "kh-folder",
-              "desc": "福建省的小水电相关政策",
-              "children": [
-                {
-                  "id": "entry-2-2-1",
-                  "name": "福建省水利厅关于做好小水电清理整治工作的通知（闽水农水〔2022〕3号）",
-                  "type": "kh-item",
-                  "link": "http://slt.fujian.gov.cn/xxgk/zfxxgk/xxgkml/qtyzdgkdzfxx/202212/t20221219_6081217.htm"
-                },
-                {
-                  "id": "entry-2-2-2",
-                  "name": "福建省水利厅关于进一步做好中央环保督察小水电站生态环境问题整改有关工作的通知 （闽水农电〔2022〕1号）",
-                  "type": "kh-item",
-                  "link": "http://slt.fujian.gov.cn/xxgk/zfxxgk/xxgkml/qtyzdgkdzfxx/202206/t20220617_5931674.htm"
-                },
-                {
-                  "id": "entry-2-2-3",
-                  "name": "福建省水电站生态泄流及监控技术指导意见（闽水农电〔2018〕5 号）",
-                  "type": "kh-item",
-                  "link": "http://slt.fujian.gov.cn/xxgk/zfxxgk/zc/gfxwj_31116/201804/t20180428_3154165.htm"
-                },
-                {
-                  "id": "entry-2-2-4",
-                  "name": "福建省水电站清理整治行动方案（闽政办〔2021〕38号）",
-                  "type": "kh-item",
-                  "link": "http://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/jgzz/fzggwjzc/202108/t20210820_5673849.htm"
-                },
-                {
-                  "id": "entry-2-2-5",
-                  "name": "福建省关于认真做好水电站生态流量考核落实生态电价的通知（闽水农电〔2019〕1 号）",
-                  "type": "kh-item",
-                  "link": "http://slt.fujian.gov.cn/xxgk/zfxxgk/xxgkml/qtyzdgkdzfxx/201901/t20190117_4745737.htm"
-                }
-              ]
-            },
-            {
-              "id": "folder-2-3",
-              "name": "广西",
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "entry-2-3-1",
-                  "name": "广西壮族自治区小水电清理整改实施方案（2022年6月）",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-3-2",
-                  "name": "广西壮族自治区小水电站生态流量监督管理办法(试行)（2022年11月7日）",
-                  "type": "kh-item",
-                  "link": "https://www.waterinfo.com.cn/xsyj/zcjw/dfcm/202303/t20230330_35511.html"
-                },
-                {
-                  "id": "entry-2-3-3",
-                  "name": "广西壮族自治区水能资源开发利用管理条例（十二届人大第 9 号）",
-                  "type": "kh-item",
-                  "link": "https://www.gxrd.gov.cn/html/art138503.html"
-                },
-                {
-                  "id": "entry-2-3-4",
-                  "name": "关于印发广西壮族自治区农村水电站安全生产标准化达标评级实施暂行办法的通知(桂水电〔2015〕19 号)",
-                  "type": "kh-item"
-                }
-              ]
-            },
-            {
-              "id": "folder-2-4",
-              "name": "云南",
-              "type": "kh-folder",
-              "desc": "云南省的小水电相关政策",
-              "children": [
-                {
-                  "id": "entry-2-4-1",
-                  "name": "云南省小水电站生态流量管理办法（试行）（云水规〔2021〕1号）",
-                  "type": "kh-item",
-                  "link": "https://www.yn.gov.cn/zwgk/zfgb/2022/2022d6q/sjbmwj/202204/t20220408_240287.html"
-                },
-                {
-                  "id": "entry-2-4-2",
-                  "name": "云南省小水电清理整改实施方案（云水发〔2019〕56 号）",
-                  "type": "kh-item",
-                  "link": "https://www.ynml.gov.cn/swj/92285.news.detail.dhtml?news_id=1078790"
-                }
-              ]
-            },
-            {
-              "id": "folder-2-5",
-              "name": "广东",
-              "type": "kh-folder",
-              "desc": "广东省的小水电相关政策",
-              "children": [
-                {
-                  "id": "entry-2-5-1",
-                  "name": "广东省小水电管理办法（粤府令第 152 号）",
-                  "type": "kh-item",
-                  "link": "http://slt.gd.gov.cn/zwgk_new/flfg/content/post_3757752.html"
-                },
-                {
-                  "id": "entry-2-5-2",
-                  "name": "广东省小水电清理整改工作实施方案2021年7月8日",
-                  "type": "kh-item",
-                  "link": "http://gdshe.org/Item/15355.aspx"
-                },
-                {
-                  "id": "entry-2-5-3",
-                  "name": "广东省关于加强小水电站生态流量监管的通知",
-                  "type": "kh-item",
-                  "link": "http://slt.gd.gov.cn/hdjlpt/yjzj/result/6982"
-                },
-                {
-                  "id": "entry-2-5-4",
-                  "name": "广东省水利厅关于进一步加强水利安全生产标准化建设的通知（粤水农水农电函〔2020〕621 号）",
-                  "type": "kh-item",
-                  "link": "http://slt.gd.gov.cn/glgk8787/content/post_2990054.html"
-                }
-              ]
-            },
-            {
-              "id": "folder-2-6",
-              "name": "陕西",
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "entry-2-6-1",
-                  "name": "陕西省小水电站生态流量监督管理指导意见（陕水发〔2019〕20 号）",
-                  "type": "kh-item",
-                  "link": "http://slj.xianyang.gov.cn/zwgk/fdzdgknr/zcfg/gjbswj/202112/t20211208_1128946.html"
-                },
-                {
-                  "id": "entry-2-6-2",
-                  "name": "陕西省小水电开发利用规划（陕政办发〔2010〕131 号）",
-                  "type": "kh-item",
-                  "link": "http://www.shaanxi.gov.cn/zfxxgk/fdzdgknr/zcwj/nszfbgtwj/szbf/202208/t20220808_2234993.html"
-                },
-                {
-                  "id": "entry-2-6-3",
-                  "name": "陕西省水利厅办公室关于水电站安全生产标准化评审工作有关事项通知(陕水电发〔2018〕9 号)",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-6-4",
-                  "name": "陕西省水利厅关于开展农村水电站安全生产标准化达标评级有关问题的通知（陕水电发〔2014〕13号）",
-                  "type": "kh-item"
-                }
-              ]
-            },
-            {
-              "id": "folder-2-7",
-              "name": "重庆",
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "entry-2-7-1",
-                  "name": "重庆市长江经济带小水电清理整改工作实施方案（渝水农水〔2019〕4 号）",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-7-2",
-                  "name": "重庆市水利局关于加强水电站生态流量监管工作的函（渝水函〔2017〕13 号）",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-7-3",
-                  "name": "重庆市关于加强农村水电建设生态环境保护工作的通知（渝水办电〔2015〕6 号）",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-7-4",
-                  "name": "重庆市小水电站生态流量监管办法（渝府办发〔2022〕121号）",
-                  "type": "kh-item",
-                  "link": "https://slj.cq.gov.cn/zwgk_250/fdzdgknr/lzyj/gfxwj/szfgfxwj/202211/t20221124_11333170.html"
-                }
-              ]
-            },
-            {
-              "id": "folder-2-8",
-              "name": "湖北",
-              "type": "kh-folder",
-              "children": [
-                {
-                  "id": "entry-2-8-1",
-                  "name": "湖北省长江经济带小水电清理整改工作实施方案",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-8-2",
-                  "name": "湖北省关于加强水电站生态泄流监督管理的指导意见",
-                  "type": "kh-item"
-                },
-                {
-                  "id": "entry-2-8-3",
-                  "name": "湖北省小水电站生态流量监督管理办法（试行）（鄂水利函〔2022〕462号）",
-                  "type": "kh-item",
-                  "link": "http://slt.hubei.gov.cn/fbjd/zcwj/gfwj/202208/t20220822_4275101.shtml"
-                },
-                {
-                  "id": "entry-2-8-4",
-                  "name": "湖北省农村水电站安全生产标准化达标评级实施细则（暂行）（鄂水利规〔2014〕1号 ）",
-                  "type": "kh-item",
-                  "link": "http://slt.hubei.gov.cn/fbjd/zcwj/zcfg/slgl_48151/201501/t20150106_863968.shtml"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "folder-3",
-          "name": "术语解释",
-          "type": "kh-folder",
-          "expanded": true,
-          "desc": "术语解释",
-          "children": [
-            {
-              "id": "entry-3-1",
-              "name": "UNIDO",
-              "type": "kh-term",
-              "desc": "联合国工业发展组织（United Nations Industrial Development Organization），主要任务是促进和加速发展中国家以及处于产业转型发展的国家的经济，并且促进国际工业合作。它也是联合国发展集团的成员。网址：https://www.unido.org"
-            },
-            {
-              "id": "entry-3-2",
-              "name": "GEF",
-              "type": "kh-term",
-              "desc": "全球环境基金（Global Environment Facility），成立于1991年的多边合作国际资金机制，向发展中国家提供资金支持，帮助其履行生物多样性、气候变化、土地退化、化学品和垃圾管理、国际水域等领域的环境公约。网址：https://thegef.org"
-            },
-            {
-              "id": "entry-3-3",
-              "name": "绿色小水电",
-              "type": "kh-term",
-              "desc": "在生态环境友好、社会和谐、管理规范和经济合理方面具有示范性的小型水电站。来源：绿色小水电评价标准（SL/T 752-2020）"
-            },
-            {
-              "id": "entry-3-4",
-              "name": "河道减脱水",
-              "type": "kh-term",
-              "desc": "水电站建设及运行引起坝（闸）下游河道内水量较天然条件加减少甚至断流的现象。来源：小型水电站下游河道减脱水防治技术导则（SL/T 796-2020）"
-            },
-            {
-              "id": "entry-3-5",
-              "name": "生态流量",
-              "type": "kh-term",
-              "desc": "维系河流、湖泊等水生态系统的结构和功能，需要保留在河湖内符合水质要求的流量（水量、水位）及其过程。来源：水利部关于做好河湖生态流量确定和保障工作的指导意见（水资管〔2020〕67号）"
-            },
-            {
-              "id": "entry-3-6",
-              "name": "生态堰坝",
-              "type": "kh-term",
-              "desc": "以河道生态修复为目的，顶部长期过水的壅水（因水流受阻而产生的水位升高现象）建筑物。来源：小型水电站下游河道减脱水防治技术导则（SL/T 796-2020）"
-            },
-            {
-              "id": "entry-3-7",
-              "name": "引水式水电站",
-              "type": "kh-term",
-              "desc": "在河流坡降陡的河段上筑一低坝（或无坝）取水，通过人工修建的引水道（渠道、隧洞、管道）引水到河段下游，集中落差，再经压力管道引水到水轮机进行发电。引水式水电站是农村水能资源开发利用采用最多的形式，也是对河道水文情势影响最大的开发形式。见项目综合报告。"
-            },
-            {
-              "id": "entry-3-8",
-              "name": "河床式水电站",
-              "type": "kh-term",
-              "desc": "河床式水电站大多建造在河流中下游河道底坡平缓的河段上，主要靠流量大出力，属低水头大流量型水电站。河床式水电站一般不设专门的引水管道，水流直接从厂房上游进水口进入水轮机。见项目综合报告。"
-            },
-            {
-              "id": "entry-3-9",
-              "name": "水头",
-              "type": "kh-term",
-              "desc": "上游引水进口断面和下游尾水出口断面之间的单位重量水体所具有的能量差值，常以米（m）计量。水头代表了水的势能，水头越高，势能越大，同等流量能发的电也就多，在水电项目中有重要意义。来源：中国大百科全书 1980"
             }
           ]
         }
@@ -3364,11 +2660,11 @@
       "name": "Partnership",
       "type": "section",
       "secClass": "section bg-unido-blue",
-      "desc": "我们也谨此致谢以个人身份参与项目的专家和顾问",
+      "desc": "We would also like to express our sincere gratitudes towards individual consultants and experts who took part in the project.",
       "children": [
         {
           "id": "partner-group-donor",
-          "name": "资助方",
+          "name": "Donor",
           "type": "partner-group",
           "children": [
             {
@@ -3381,24 +2677,24 @@
         },
         {
           "id": "partner-group-implementor",
-          "name": "执行机构",
+          "name": "Execution",
           "type": "partner-group",
           "children": [
             {
               "id": "partner-unido",
-              "name": "联合国工业发展组织",
+              "name": "UNIDO",
               "type": "partner-logo",
               "img": "/img/partner-logo-unido.jpg"
             },
             {
               "id": "partner-mwr",
-              "name": "中华人民共和国水利部",
+              "name": "MWR",
               "type": "partner-logo",
               "img": "/img/partner-logo-mwr-name.jpg"
             },
             {
               "id": "partner-icshp",
-              "name": "国际小水电中心",
+              "name": "ICSHP",
               "type": "partner-logo",
               "img": "/img/partner-logo-icshp.jpg"
             },
@@ -3412,7 +2708,7 @@
         },
         {
           "id": "partner-group-partners",
-          "name": "伙伴机构",
+          "name": "Partners",
           "type": "partner-group",
           "children": [
             {
@@ -3502,25 +2798,25 @@
       "name": "Follow Us",
       "type": "section",
       "secClass": "section bg-dark",
-      "desc": " 本页面及所提供下载的文档在出版前未经联合国正式编辑。页面及文档中使用的名称和提供的材料并不意味着联合国工业发展组织（工发组织）秘书处就任何国家、领土、城市或地区或其当局的法律地位或就其边境或边界划界或其经济制度或发展程度发表任何意见。“发达”、“工业化”或“发展中”等名称意在便于统计，未必表达对特定国家或地区所处发展进程的某种判断。对商号名称或商业产品的提及并不构成工发组织对它们的认可。本页面及提供下载文档中涉及的信息系项目执行过程整理汇总而成，可能存在时效性，其分类及呈现方式并不代表任何政府部门或公共机构的观点、意见或立场。 ",
+      "desc": " This page and its linked documents have been produced without formal United Nations editing. The designations employed and the presentation of the material in this document do not imply the expression of any opinion whatsoever on the part of the Secretariat of the United Nations Industrial Development Organization (UNIDO) concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries, or its economic system or degree of development. Designations such as “developed”, “industrialized” or “developing” are intended for statistical convenience and do not necessarily express a judgement about the stage reached by a particular country or area in the development process. Mention of firm names or commercial products does not constitute an endorsement by UNIDO. The information provided on this page and in the linked documents is obtained during the execution of the project and is subject to potential changes in validity. The categorisation and presentation of this information should not be interpreted as reflecting any viewpoint, opinion, or position of any government entity or public institution.",
       "children": [
         {
           "id": "unido-shp-page",
-          "name": "UNIDO小水电",
+          "name": "UNIDO Small Hydropower",
           "type": "qr-code",
           "img": "/img/qr-code-unido-shp.svg",
           "link": "https://www.unido.org/small-hydropower"
         },
         {
           "id": "unido-gef-china-shp-page",
-          "name": "项目网站 Small & Green",
+          "name": "Project Website Small & Green",
           "type": "qr-code",
           "img": "/img/qr-code-shp-website.svg",
           "link": "http://www.icshp.org/small-and-green"
         },
         {
           "id": "green-shp-weixin",
-          "name": "「绿色小水电建设」公众号",
+          "name": "Green SHP on Wechat",
           "type": "qr-code",
           "img": "/img/qr-code-green-shp-weixin.svg"
         }
