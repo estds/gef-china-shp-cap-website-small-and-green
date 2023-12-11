@@ -1280,8 +1280,8 @@ fetch(jsonURL)
   createComparisonChart(projectStats.children[3]);
   createAnimatedNumbers(projectStats.children[4]);
 
-  let knoHUB = contentJson[0].knowledgeHub;
-  createSectionKnohub(knoHUB);
+  //let knoHUB = contentJson[0].knowledgeHub;
+  //createSectionKnohub(knoHUB);
 
   let projPartners = contentJson[0].projPartners;
   createSectionPartners(projPartners);
