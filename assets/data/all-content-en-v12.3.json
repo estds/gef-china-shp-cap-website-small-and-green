@@ -2659,7 +2659,7 @@
       "id": "project-partners",
       "name": "Partnership",
       "type": "section",
-      "secClass": "section bg-unido-blue",
+      "secClass": "section bg-unido-orange",
       "desc": "We would also like to express our sincere gratitudes towards individual consultants and experts who took part in the project.",
       "children": [
         {
