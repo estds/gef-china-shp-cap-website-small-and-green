@@ -19,6 +19,7 @@ let translation = {
   "allItems": "Show all",
   "noResultFound": "No result found",
   "typeToSearch": "Input keywords to show results",
+  "disclaimer": "Disclaimer",
   "knowMore": "Know more"
 };
 
@@ -1217,7 +1218,10 @@ function createSectionFollow(json) {
 
     followUsHTML += `<div class="col-4"><p class="text-center mb-1"><img src="${assetsURL+obj.img}" class="img-fluid img-${obj.type}" alt="${obj.name} QR Code"></p><p class="text-center text-very-small text-white">${qrCaption}</p></div>`;
   }
-  followUsHTML += `</div><p class="text-very-small text-secondary px-4 mt-5 mb-0">${json.desc}</p>`;
+  //followUsHTML += `</div><p class="text-very-small text-secondary px-4 mt-5 mb-0">${json.desc}</p>`;
+  followUsHTML += `</div><p class="small text-center text-secondary px-4 mt-5 mb-0"><a href="#" data-term-expl="${json.desc}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" class="text-secondary text-decoration-none" title="${translation.disclaimer}">${translation.disclaimer}</a></p>`;
+  
+  
   
   var selectorID = json.id+'-wrap';
   const followUsWrap = document.getElementById(selectorID);
@@ -1359,3 +1363,4 @@ fetch(jsonURL)
   // Handle any errors that occurred during the fetch
   console.error('Error:', error);
 });
+
