@@ -88,8 +88,62 @@ function type2Search(json, searchBox) {
 
 }
 
+
 //***************** Callback for formatting the content JSON *****************//
 
+function createArrarySearch(json) {
+
+  var sortedArray = [];
+  
+  for (var key in json) {
+    if (json.hasOwnProperty(key)) {
+      var obj = json[key];
+      var sid = obj.id;
+      var descInfo = obj.desc ? obj.desc : '';
+	    var jsonClasses = obj.secClass ? obj.secClass : '';
+      sortedArray.push([sid, obj.name, descInfo, 0, jsonClasses]);
+      if (obj.children) {
+        for (const child of obj.children) {
+          var childrenArray = getArrayFolder(child, sid);
+          sortedArray = sortedArray.concat(childrenArray);
+        }
+      }
+    }
+  }
+  return sortedArray;
+}
+
+function getArraySingle(json, sid) {
+  var retArray = [];
+  if (json.id && json.name) {
+    var jsonDesc = json.desc ? json.desc : '';
+    var jsonClasses = json.secClass ? json.secClass : '';
+    retArray.push([sid, json.name, jsonDesc, 1, jsonClasses]);
+    return retArray;
+  } else {
+    return '';
+  }
+}
+
+function getArrayFolder(json, sid) {
+  var retArray = [];
+
+  var singleArray = getArraySingle(json, sid);
+  if (singleArray.length > 0) {
+  	retArray = retArray.concat(singleArray);
+  }
+
+  if (json.children) {
+    for (const child of json.children) {
+      retArray = retArray.concat(getArrayFolder(child, sid));
+    }
+  }
+  return retArray;
+}
+
+//***************** OLD !!! Callback for formatting the content JSON *****************//
+
+/*
 function createArrarySearch(json) {
 
   var sortedArray = [];
@@ -137,7 +191,7 @@ function getArrayFolder(json, sid) {
   }
   return retArray;
 }
-
+*/
 //***************** Callbacks for color gradient generator *****************//
 
 function generateGradient(startColor, endColor, steps) {
@@ -179,6 +233,21 @@ function hexToRgb(hex) {
         b: parseInt(result[3], 16),
       }
     : null;
+}
+
+
+//***************** Callback for marking up sections *****************//
+
+function markupSections(json, elementID) {
+  var sections = document.getElementById(elementID);
+  let sectionsHTML = ``;
+
+  for (const obj of json) {
+    if (obj[3] == 0) {
+    	sectionsHTML += `<div class="${obj[4]}" data-anchor="${obj[0]}" data-tooltip="${obj[1]}"></div>`
+    }
+  }
+  sections.innerHTML = sectionsHTML;
 }
 
 //***************** Callback for creating FP menu *****************//
@@ -309,7 +378,7 @@ function createSectionDemoPlants(json) {
 
   // Loop through the data and create markers
   demoPlants.forEach(function(item, index) {
-    var plantMarker = L.marker([item.plantLat, item.plantLon], {icon: plantIcon}).bindPopup('<h5>' + item.name + '</h5><p class="my-1">' + item.desc + '<a target="_blank" href="' + assetsURL + item.csReport + '">' + translation.caseStudy + '<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p><table cellspacing="0" cellpadding="0" border="0" class="table table-striped table-sm text-end mb-0"> <thead> <tr> <th></th> <th>' + translation.before + '</th> <th>' + translation.after + '</th> </tr> </thead> <tbody> <tr> <td class="text-start"><strong>' + translation.installedCap + '</strong> / ' + translation.kiloWatt + '</td> <td>' + item.capBefore.toLocaleString('en') + '</td> <td>' + item.capAfter.toLocaleString('en') + '</td> </tr> <tr> <td class="text-start"><strong>' + translation.annualOutput + '</strong> / ' + translation.GWhx100 + '</td> <td>' + item.outputBefore.toLocaleString('en') + '</td> <td>' + item.outputAfter.toLocaleString('en') + '*</td> </tr> <tr> <td colspan="2" class="text-start"><strong>' + translation.emmCutAnnual + '</strong> / ' + translation.ton + '</td> <td>' + item.emCut.toLocaleString('en') + '*</td> </tr> </tbody> </table><p class="my-0 small">* '+item.emNote+'</p>'); // Use 'desc' as the popup content
+    var plantMarker = L.marker([item.plantLat, item.plantLon], {icon: plantIcon}).bindPopup('<h5>' + item.name + '</h5><p class="my-1">' + item.desc + '<a target="_blank" href="' + assetsURL + item.csReport + '">' + translation.caseStudy + '<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p><table cellspacing="0" cellpadding="0" border="0" class="table table-striped table-sm text-end mb-0"> <thead> <tr> <th></th> <th>' + translation.before + '</th> <th>' + translation.after + '</th> </tr> </thead> <tbody> <tr> <td class="text-start"><strong>' + translation.installedCap + '</strong> / ' + translation.kiloWatt + '</td> <td>' + item.capBefore.toLocaleString('en') + '</td> <td>' + item.capAfter.toLocaleString('en') + '</td> </tr> <tr> <td class="text-start"><strong>' + translation.annualOutput + '</strong> / ' + translation.MWhx10 + '</td> <td>' + item.outputBefore.toLocaleString('en') + '</td> <td>' + item.outputAfter.toLocaleString('en') + '*</td> </tr> <tr> <td colspan="2" class="text-start"><strong>' + translation.emmCutAnnual + '</strong> / ' + translation.ton + '</td> <td>' + item.emCut.toLocaleString('en') + '*</td> </tr> </tbody> </table><p class="my-0 small">* '+item.emNote+'</p>'); // Use 'desc' as the popup content
 
     plantMarker.addTo(map);
     plantMarkers.push(plantMarker);
@@ -379,7 +448,7 @@ function createTedemoItems(items) {
                          <div class="card-body">
                            <h5 class="card-title">${items[i1].name}</h5>
                            <p class="card-text small desc-truncate mb-0">${items[i1].desc}</p>
-                           <p class="card-text small d-md-none"><a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i1].desc}" data-know-more-link="${assetsURL + items[i1].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i1].name}">${translation.readOn}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
+                           <p class="card-text small d-md-none"><a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i1].desc}" data-know-more-link="${assetsURL + items[i1].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i1].name}">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
                            <p class="card-text d-none d-md-block mt-2"><a href="${assetsURL + items[i1].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
                          </div>
                        </div>
@@ -1180,6 +1249,9 @@ fetch(jsonURL)
   sessionStorage.setItem("searchDataCache", JSON.stringify(storedArray));
   var searchArray = JSON.parse(sessionStorage.getItem("searchDataCache"));
   
+  //console.log(searchArray);
+  
+  markupSections(searchArray, 'fullpage');
   createNavMenu(searchArray, 'fp-menu');
 
   let homeData = contentJson[0].home;
