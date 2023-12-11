@@ -1255,39 +1255,41 @@ fetch(jsonURL)
   createNavMenu(searchArray, 'fp-menu');
 
   let homeData = contentJson[0].home;
-  createSectionHome(homeData);
+  if (homeData) {createSectionHome(homeData);}
 
   let projOverview = contentJson[0].projOverview;
-  createSectionProjOverview(projOverview);
+  if (projOverview) {createSectionProjOverview(projOverview);}
 
   let demoPlants = contentJson[0].demoPlants;
-  createSectionDemoPlants(demoPlants);
+  if (demoPlants) {createSectionDemoPlants(demoPlants);}
 
   let TedemoEle = contentJson[0].techDemo;
-  createSectionTechDemo(TedemoEle);
+  if (TedemoEle) {createSectionTechDemo(TedemoEle);}
 
   let insOutputs = contentJson[0].instlOutputs;
-  createSectionInsOutputs(insOutputs);
+  if (insOutputs) {createSectionInsOutputs(insOutputs);}
 
   let cakGroups = contentJson[0].CapAndKno;
   createSectionCapakno(cakGroups);
 
   let projectStats = contentJson[0].projectStats;
-  markupChartSection(projectStats);
-  createLineChart(projectStats.children[0]);
-  createStackedBarChart(projectStats.children[1]);
-  createComparisonChart(projectStats.children[2]);
-  createComparisonChart(projectStats.children[3]);
-  createAnimatedNumbers(projectStats.children[4]);
+  if (projectStats) {
+    markupChartSection(projectStats);
+    createLineChart(projectStats.children[0]);
+    createStackedBarChart(projectStats.children[1]);
+    createComparisonChart(projectStats.children[2]);
+    createComparisonChart(projectStats.children[3]);
+    createAnimatedNumbers(projectStats.children[4]);
+  }
 
   let knoHUB = contentJson[0].knowledgeHub;
-  createSectionKnohub(knoHUB);
+  if (knoHUB) {createSectionKnohub(knoHUB);}
 
   let projPartners = contentJson[0].projPartners;
-  createSectionPartners(projPartners);
+  if (projPartners) {createSectionPartners(projPartners);}
 
   let followElements = contentJson[0].projContact;
-  createSectionFollow(followElements);
+  if (followElements) {createSectionFollow(followElements);}
 
   let seriesToggles = document.querySelectorAll('[data-echarts-toggle="series"]');
   for (const obj of seriesToggles) {
