@@ -1,6 +1,6 @@
 var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
 
-const jsonURL = assetsURL + '/data/all-content-en-v12.1.json';
+const jsonURL = assetsURL + '/data/all-content-en-v12.2.json';
 
 let translation = {
   "caseStudy": "Case study",
@@ -10,7 +10,7 @@ let translation = {
   "after": "After",
   "kiloWatt": "kW",
   "annualOutput": "Annual Output",
-  "GWhx100": "MWh",
+  "MWhx10": "MWh",
   "emmCutAnnual": "Annual Emission Cut",
   "pickPlant": "Select",
   "plantList": "Pilot Plants",
