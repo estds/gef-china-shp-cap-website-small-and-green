@@ -19,6 +19,7 @@ let translation = {
   "allItems": "显示所有",
   "noResultFound": "没有检索到结果",
   "typeToSearch": "输入关键词后此处显示搜索结果",
+  "disclaimer": "免责声明",
   "knowMore": "了解更多"
 };
 
@@ -1217,7 +1218,10 @@ function createSectionFollow(json) {
 
     followUsHTML += `<div class="col-4"><p class="text-center mb-1"><img src="${assetsURL+obj.img}" class="img-fluid img-${obj.type}" alt="${obj.name} QR Code"></p><p class="text-center text-very-small text-white">${qrCaption}</p></div>`;
   }
-  followUsHTML += `</div><p class="text-very-small text-secondary px-4 mt-5 mb-0">${json.desc}</p>`;
+  //followUsHTML += `</div><p class="text-very-small text-secondary px-4 mt-5 mb-0">${json.desc}</p>`;
+  followUsHTML += `</div><p class="small text-center text-secondary px-4 mt-5 mb-0"><a href="#" data-term-expl="${json.desc}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" class="text-secondary text-decoration-none" title="${translation.disclaimer}">${translation.disclaimer}</a></p>`;
+  
+  
   
   var selectorID = json.id+'-wrap';
   const followUsWrap = document.getElementById(selectorID);
