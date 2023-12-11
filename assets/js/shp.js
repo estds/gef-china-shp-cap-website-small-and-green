@@ -363,7 +363,7 @@ function createTedemoItems(items) {
                            <h5 class="card-title">${items[i].name}</h5>
                            <p class="card-text small desc-truncate mb-0">${items[i].desc}</p>
                            <p class="card-text small d-md-none"><a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i].desc}" data-know-more-link="${assetsURL + items[i].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i].name}">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
-                           <p class="card-text d-none d-md-block mt-2"><a href="${assetsURL + items[i].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.readOn}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
+                           <p class="card-text d-none d-md-block mt-2"><a href="${assetsURL + items[i].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
                          </div>
                        </div>
                      </div>
@@ -379,8 +379,8 @@ function createTedemoItems(items) {
                          <div class="card-body">
                            <h5 class="card-title">${items[i1].name}</h5>
                            <p class="card-text small desc-truncate mb-0">${items[i1].desc}</p>
-                           <p class="card-text small d-md-none"><a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i1].desc}" data-know-more-link="${assetsURL + items[i1].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i1].name}">${translation.readOn}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
-                           <p class="card-text d-none d-md-block mt-2"><a href="${assetsURL + items[i1].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.readOn}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
+                           <p class="card-text small d-md-none"><a href="#" class="d-md-none text-unido-orange" data-term-expl="${items[i1].desc}" data-know-more-link="${assetsURL + items[i1].link}" data-bs-toggle="modal" data-bs-target="#kh-term-exp" title="${items[i1].name}">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
+                           <p class="card-text d-none d-md-block mt-2"><a href="${assetsURL + items[i1].link}" target="_blank" class="btn btn-primary btn-unido-orange rounded-0 shadow">${translation.knowMore}<i class="bi bi-arrow-up-right-square-fill ms-1"></i></a></p>
                          </div>
                        </div>
                      </div>
