@@ -30,6 +30,14 @@
   font-size: 0.7rem;
 }
 
+p.small {
+  line-height: 0.98rem;
+}
+
+p.text-very-small {
+  line-height: 0.8rem;
+}
+
 .darker-backdrop .modal-backdrop {
   opacity: .85;
 }
