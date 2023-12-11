@@ -373,8 +373,8 @@
   max-height: 90vh;
 }
 
-.chart-footer p.small {
-  line-height: 0.98rem;
+.container-chart p.small {
+  line-height: .98rem;
 }
 
 /* ----------- Photo walls ----------- */
