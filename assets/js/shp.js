@@ -1274,14 +1274,14 @@ fetch(jsonURL)
   //let cakGroups = contentJson[0].CapAndKno;
   if (contentJson[0].CapAndKno) {createSectionCapakno(contentJson[0].CapAndKno);}
 
-  //let projectStats = contentJson[0].projectStats;
+  let projectStats = contentJson[0].projectStats;
   if (contentJson[0].projectStats) {
-    markupChartSection(contentJson[0].projectStats);
-    createLineChart(contentJson[0].projectStats.children[0]);
-    createStackedBarChart(contentJson[0].projectStats.children[1]);
-    createComparisonChart(contentJson[0].projectStats.children[2]);
-    createComparisonChart(contentJson[0].projectStats.children[3]);
-    createAnimatedNumbers(contentJson[0].projectStats.children[4]);
+    markupChartSection(projectStats);
+    createLineChart(projectStats.children[0]);
+    createStackedBarChart(projectStats.children[1]);
+    createComparisonChart(projectStats.children[2]);
+    createComparisonChart(projectStats.children[3]);
+    createAnimatedNumbers(projectStats.children[4]);
   }
 
   //let knoHUB = contentJson[0].knowledgeHub;
