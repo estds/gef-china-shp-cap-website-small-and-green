@@ -531,56 +531,56 @@
       "name": "Policy Outputs",
       "type": "section",
       "secClass": "section bg-unido-blue",
-      "desc": "项目推动健全中国绿色小水电发展的相关政策和体制，包括相关技术标准、政府层面的激励政策措施以及管理办法。",
+      "desc": "Outputs from the UNIDO-GEF project contribute to China's SHP institutions, including technical standards, incentive policies and regulatory frameworks.",
       "children": [
         {
           "id": "institution-and-standards",
           "name": "Technical Standards & Policies",
           "type": "list",
-          "desc": "项目在小水电绿色发展的制度与标准方面的产出",
+          "desc": "Outputs in technical standards and policies",
           "children": [
             {
               "id": "green-shp-standard",
-              "name": "绿色小水电标准",
+              "name": "Green SHP Assessment Standard",
               "type": "document",
-              "desc": "包括绿色小水电评价的基本条件、评价内容、评价方法、所需资料及评分标准等，是中国水电行业践行绿色发展的首个标准，水利行业标准编号SL/T752-2020。",
-              "button": "阅读标准",
+              "desc": "This industrial standard lays out detailed requirements for green SHP certification, including those for its methodology and operation. It is the first-ever standard for green hydropower development in China. It is has an index number as SL/T752-2020.",
+              "button": "Read",
               "locLink": true,
               "link": "/docs/slt-752-2020-green-shp-certification-standard.pdf"
             },
             {
               "id": "flow-recovery-standard",
-              "name": "小型水电站下游河道减脱水防治技术导则",
+              "name": "Technical Guidelines for contril of flow reduction downstream of SHP stations",
               "type": "document",
-              "desc": "导则服务于小型水电站下游河道减脱水防治，包括河道减脱水防治的原则、要求和技术方法，是对小型水电站下游河道减脱水防治的全面、系统管理的技术规定，水利行业标准编号SL/T796-2020。",
-              "button": "阅读标准",
+              "desc": "This industrial standard addresses the need of measures to recover depleted river sections downstream SHP plants, including principal requirements and technical methodologies for these measures. It is a comprehensive package of technical measures and managerial practices. It is has an index number as SL/T796-2020.",
+              "button": "Read",
               "locLink": true,
               "link": "/docs/slt-796-2020-recovery-of-river-flow-downstream-shp-projects.pdf"
             },
             {
               "id": "green-shp-technical-guide",
-              "name": "绿色小水电建设技术指南",
+              "name": "Technical Guidelines for green SHP certification",
               "type": "document",
-              "desc": "指南服务于电站绿色小水电创建和评价，包括标准解读、创建和评价要点、管理信息系统使用和案例分析等。",
-              "button": "阅读要点分析",
+              "desc": "This document is a manual for the certification of green SHP, including technical interpretations, key operational aspects, tutorials for the use of online management system, and case studies.",
+              "button": "Read summary",
               "locLink": true,
               "link": "/docs/summary-technical-guidelines-for-green-shp-certification.pdf"
             },
             {
               "id": "green-shp-development-strategyu",
-              "name": "绿色小水电发展战略研究及建议方案",
+              "name": "Green SHP development strategy and proposal",
               "type": "document",
-              "desc": "通过对绿色小水电政策、技术措施及管理措施研究，提出绿色小水电发展的阶段目标、实现途径及总体战略建议方案。",
-              "button": "阅读要点分析",
+              "desc": "Through studies of green SHP policies, technical measures, and managerial practices, this puts forward objectives, implementation plans and overal strategy that China's green SHP development could use.",
+              "button": "Read summary",
               "locLink": true,
               "link": "/docs/summary-green-shp-developmen-strategy-and-proposals.pdf"
             },
             {
               "id": "green-shp-online-mis",
-              "name": "中国绿色小水电管理信息系统",
+              "name": "China Green SHP Online Management System",
               "type": "document",
-              "desc": "通过收集归纳各方意见，对现有系统相关模块及功能提出了优化和改进建议。",
-              "button": "访问系统",
+              "desc": "The system was improved under this UNIDO-GEF project based on extensive consultation of stakeholders.",
+              "button": "Visit",
               "link": "http://ncslsd.mwr.cn"
             },
             {
