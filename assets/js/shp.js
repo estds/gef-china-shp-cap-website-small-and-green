@@ -1256,42 +1256,42 @@ fetch(jsonURL)
   markupSections(searchArray, 'fullpage');
   createNavMenu(searchArray, 'fp-menu');
 
-  let homeData = contentJson[0].home;
-  if (homeData) {createSectionHome(homeData);}
+  //let homeData = contentJson[0].home;
+  if (contentJson[0].home) {createSectionHome(contentJson[0].home);}
 
-  let projOverview = contentJson[0].projOverview;
-  if (projOverview) {createSectionProjOverview(projOverview);}
+  //let projOverview = contentJson[0].projOverview;
+  if (contentJson[0].projOverview) {createSectionProjOverview(contentJson[0].projOverview);}
 
-  let demoPlants = contentJson[0].demoPlants;
-  if (demoPlants) {createSectionDemoPlants(demoPlants);}
+  //let demoPlants = contentJson[0].demoPlants;
+  if (contentJson[0].demoPlants) {createSectionDemoPlants(contentJson[0].demoPlants);}
 
-  let TedemoEle = contentJson[0].techDemo;
-  if (TedemoEle) {createSectionTechDemo(TedemoEle);}
+  //let TedemoEle = contentJson[0].techDemo;
+  if (contentJson[0].techDemo) {createSectionTechDemo(contentJson[0].techDemo);}
 
-  let insOutputs = contentJson[0].instlOutputs;
-  if (insOutputs) {createSectionInsOutputs(insOutputs);}
+  //let insOutputs = contentJson[0].instlOutputs;
+  if (contentJson[0].instlOutputs) {createSectionInsOutputs(contentJson[0].instlOutputs);}
 
-  let cakGroups = contentJson[0].CapAndKno;
-  createSectionCapakno(cakGroups);
+  //let cakGroups = contentJson[0].CapAndKno;
+  if (contentJson[0].CapAndKno) {createSectionCapakno(contentJson[0].CapAndKno);}
 
-  let projectStats = contentJson[0].projectStats;
-  if (projectStats) {
-    markupChartSection(projectStats);
-    createLineChart(projectStats.children[0]);
-    createStackedBarChart(projectStats.children[1]);
-    createComparisonChart(projectStats.children[2]);
-    createComparisonChart(projectStats.children[3]);
-    createAnimatedNumbers(projectStats.children[4]);
+  //let projectStats = contentJson[0].projectStats;
+  if (contentJson[0].projectStats) {
+    markupChartSection(contentJson[0].projectStats);
+    createLineChart(contentJson[0].projectStats.children[0]);
+    createStackedBarChart(contentJson[0].projectStats.children[1]);
+    createComparisonChart(contentJson[0].projectStats.children[2]);
+    createComparisonChart(contentJson[0].projectStats.children[3]);
+    createAnimatedNumbers(contentJson[0].projectStats.children[4]);
   }
 
-  let knoHUB = contentJson[0].knowledgeHub;
-  if (knoHUB) {createSectionKnohub(knoHUB);}
+  //let knoHUB = contentJson[0].knowledgeHub;
+  if (contentJson[0].knowledgeHub) {createSectionKnohub(contentJson[0].knowledgeHub);}
 
-  let projPartners = contentJson[0].projPartners;
-  if (projPartners) {createSectionPartners(projPartners);}
+  //let projPartners = contentJson[0].projPartners;
+  if (contentJson[0].projPartners) {createSectionPartners(contentJson[0].projPartners);}
 
-  let followElements = contentJson[0].projContact;
-  if (followElements) {createSectionFollow(followElements);}
+  //let followElements = contentJson[0].projContact;
+  if (contentJson[0].projContact) {createSectionFollow(contentJson[0].projContact);}
 
   let seriesToggles = document.querySelectorAll('[data-echarts-toggle="series"]');
   for (const obj of seriesToggles) {
