@@ -2696,13 +2696,13 @@
               "id": "partner-icshp",
               "name": "ICSHP",
               "type": "partner-logo",
-              "img": "/img/partner-logo-icshp.jpg"
+              "img": "/img/partner-logo-icshp-en.jpg"
             },
             {
               "id": "partner-icshp",
               "name": "Zhejiang, Fujian, Guangdong, Guangxi, Yunnan, Chongqing, Shaanxi, Hubei Departments of Water Resources",
               "type": "partner-logo",
-              "img": "/img/partner-logo-local-water-depts-names.jpg"
+              "img": "/img/partner-logo-local-water-dept-names-en.jpg"
             }
           ]
         },
