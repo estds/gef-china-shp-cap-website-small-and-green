@@ -1227,8 +1227,9 @@ function createSectionFollow(json) {
 }
 
 
-console.log('This website is archived on GitHub at https://github.com/estds/gef-china-shp-cap-website-small-and-green');
+console.info('This website is archived on GitHub at https://github.com/estds/gef-china-shp-cap-website-small-and-green');
 
+const loadingSpin = document.getElementById("loading-status");
 
 // Use the fetch() method to make an HTTP GET request to the URL
 fetch(jsonURL)
@@ -1351,14 +1352,14 @@ fetch(jsonURL)
   });
 
   //remove loading spin
-  const loadingSpin = document.getElementById("loading-status");
   loadingSpin.remove();
 
-	console.log('Everything completed!');
+	console.log('Everything loaded!');
 
 })
   .catch(error => {
   // Handle any errors that occurred during the fetch
+  var errorMsg = `<p class="text-warning" style="margin-top: 20vh;"><i class="bi bi-exclamation-triangle-fill display-3"></i><br>${error}</p>`;
+  loadingSpin.innerHTML = errorMsg;
   console.error('Error:', error);
 });
-
