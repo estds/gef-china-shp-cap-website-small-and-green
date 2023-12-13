@@ -2690,7 +2690,7 @@
               "id": "partner-mwr",
               "name": "MWR",
               "type": "partner-logo",
-              "img": "/img/partner-logo-mwr-name-en.jpg"
+              "img": "/img/partner-logo-mwr-prc-name-en.jpg"
             },
             {
               "id": "partner-icshp",
@@ -2715,7 +2715,7 @@
               "id": "partner-drc",
               "name": "MWR Development and Research Center",
               "type": "partner-logo",
-              "img": "/img/partner-logo-drc.jpg"
+              "img": "/img/partner-logo-drc-en.jpg"
             },
             {
               "id": "partner-zuwrep",
@@ -2733,7 +2733,7 @@
               "id": "partner-intce",
               "name": "MWR International Economic and Technical and Economic Cooperation and Exchange Center",
               "type": "partner-logo",
-              "img": "/img/partner-logo-intce.jpg"
+              "img": "/img/partner-logo-intce-en.jpg"
             },
             {
               "id": "partner-ches",
@@ -2763,7 +2763,7 @@
               "id": "partner-zjyx",
               "name": "Zhengjiang Yctionsoft",
               "type": "partner-logo",
-              "img": "/img/partner-logo-zjyx.jpg"
+              "img": "/img/partner-logo-zjyx-en.jpg"
             },
             {
               "id": "partner-nnsc",
