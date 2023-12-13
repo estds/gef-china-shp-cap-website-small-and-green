@@ -585,10 +585,10 @@
             },
             {
               "id": "safety-measures-best-practice-cases",
-              "name": "农村水电安全生产标准化优秀案例",
+              "name": "Best practice manual in SHP operational safety",
               "type": "document",
-              "desc": "在全国90家农村水电站安全生产标准化一级单位中选取12家作为典型案例，分析总结电站安全生产标准化创建的亮点，展示创建成果。",
-              "button": "阅读全文",
+              "desc": "This manual is based on case studies of 12 SHP plants among those with highest safety accreditations, highlighting their experiences in improving operational safety.",
+              "button": "Read",
               "locLink": true,
               "link": "/docs/full-report-best-practice-case-study-report-standardised-shp-operatonal-safety-measures.pdf"
             }
@@ -598,32 +598,32 @@
           "id": "incentive-policies",
           "name": "Incentive Policies",
           "type": "list",
-          "desc": "项目在小水电绿色发展的激励政策方面的产出",
+          "desc": "Recommendations in incentive policies for green SHP",
           "children": [
             {
               "id": "green-shp-nameling-scheme",
-              "name": "绿色小水电标识体系建议",
+              "name": "Recommendation on green SHP labelling",
               "type": "document",
-              "desc": "通过对国内外不同行业相关标识体系的梳理，提出了绿色小水电分级标识方案及政策建议。",
-              "button": "阅读要点分析",
+              "desc": "This study is based on extensive studies of international and domestic experiences in labelling systems to come up with recommendations on labelling schemes of green SHP in China.",
+              "button": "Read summary",
               "locLink": true,
               "link": "/docs/summary-policy-recommendation-green-shp-nameling.pdf"
             },
             {
               "id": "green-shp-local-incentives",
-              "name": "地方绿色小水电发展优惠政策建议",
+              "name": "Recommendations on local incentive policies",
               "type": "document",
-              "desc": "通过总结各地在绿色小水电示范电站创建和改造中积累的经验及国内外相关政策，提出推动地方完善绿色小水电政策的总体思路、基本原则及激励政策建议。",
-              "button": "阅读要点分析",
+              "desc": "This study combs through international and domestic experiences in incentive policies in green SHP development, and makes reccommendations on proliferating incentive policies at local government level.",
+              "button": "Read summary",
               "locLink": true,
               "link": "/docs/summary-policy-recommendation-local-incentives-for-green-shp.pdf"
             },
             {
               "id": "green-shp-national-incentives",
-              "name": "国家级绿色小水电发展激励政策建议",
+              "name": "Recommendations on local incentive policies",
               "type": "document",
-              "desc": "通过梳理中国绿色小水电政策、国内外典型案例及做法，提出中国绿色小水电激励政策的总体思路和基本原则和激励政策建议。",
-              "button": "阅读要点分析",
+              "desc": "This study draws upon international and domestic experiences in green SHP development, and makes reccomendations on national incentive policies for green SHP development.",
+              "button": "Read summary",
               "locLink": true,
               "link": "/docs/summary-policy-recommendation-national-incentives-for-green-shp.pdf"
             }
@@ -636,11 +636,11 @@
       "name": "Capacity and Knowledge",
       "type": "section",
       "secClass": "section bg-light-subtle",
-      "desc": "项目开展了丰富的能力建设与知识分享活动",
+      "desc": "Extensive capacity building and knowledge sharing events have been organised under this UNIDO-GEF project.",
       "children": [
         {
           "id": "project-seminars",
-          "name": "研讨会",
+          "name": "Seminars",
           "type": "photo-group",
           "desc": "项目2022-2023年组织了3次国内研讨会（西安、南昌、昆明）和1次国际研讨会（北京，线上），在国内外深入分享项目执行取得的经验和知识。",
           "children": [
@@ -752,7 +752,7 @@
         },
         {
           "id": "technical-tours",
-          "name": "技术考察",
+          "name": "Technical tours",
           "type": "photo-group",
           "desc": "2019年，结合能力建设培训班内容，项目分别组织相关小水电业主、政府官员，赴美国、奥地利、瑞士进行技术考察，学习相关知识和经验。",
           "children": [
@@ -808,7 +808,7 @@
         },
         {
           "id": "technical-support",
-          "name": "技术支持",
+          "name": "Technical support",
           "type": "photo-group",
           "desc": "除试点电站外，项目还向小水电站提供技术支持，帮助完成绿色小水电示范电站创建和安全生产标准化达标各24座。",
           "children": [
@@ -2669,9 +2669,9 @@
           "children": [
             {
               "id": "partner-gef",
-              "name": "全球环境基金",
+              "name": "Global Environmental Facility",
               "type": "partner-logo",
-              "img": "/img/partner-logo-gef.jpg"
+              "img": "/img/partner-logo-gef-en.jpg"
             }
           ]
         },
@@ -2684,13 +2684,13 @@
               "id": "partner-unido",
               "name": "UNIDO",
               "type": "partner-logo",
-              "img": "/img/partner-logo-unido.jpg"
+              "img": "/img/partner-logo-unido-en.jpg"
             },
             {
               "id": "partner-mwr",
               "name": "MWR",
               "type": "partner-logo",
-              "img": "/img/partner-logo-mwr-name.jpg"
+              "img": "/img/partner-logo-mwr-name-en.jpg"
             },
             {
               "id": "partner-icshp",
@@ -2700,7 +2700,7 @@
             },
             {
               "id": "partner-icshp",
-              "name": "浙江、福建、广东、广西、云南、重庆、陕西、湖北省（市）水利厅（局）",
+              "name": "Zhejiang, Fujian, Guangdong, Guangxi, Yunnan, Chongqing, Shaanxi, Hubei Departments of Water Resources",
               "type": "partner-logo",
               "img": "/img/partner-logo-local-water-depts-names.jpg"
             }
@@ -2713,79 +2713,79 @@
           "children": [
             {
               "id": "partner-drc",
-              "name": "水利部发展研究中心",
+              "name": "MWR Development and Research Center",
               "type": "partner-logo",
               "img": "/img/partner-logo-drc.jpg"
             },
             {
               "id": "partner-zuwrep",
-              "name": "浙江水利水电学院",
+              "name": "Zhejiang University of Water Resources and Electric Power",
               "type": "partner-logo",
               "img": "/img/partner-logo-zuwrep.jpg"
             },
             {
               "id": "partner-hhu",
-              "name": "河海大学",
+              "name": "Hohai University",
               "type": "partner-logo",
               "img": "/img/partner-logo-hhu.jpg"
             },
             {
               "id": "partner-intce",
-              "name": "水利部国际经济技术合作交流中心",
+              "name": "MWR International Economic and Technical and Economic Cooperation and Exchange Center",
               "type": "partner-logo",
               "img": "/img/partner-logo-intce.jpg"
             },
             {
               "id": "partner-ches",
-              "name": "中国水利学会",
+              "name": "Chinese Hydraulic Engineering Society",
               "type": "partner-logo",
               "img": "/img/partner-logo-ches.jpg"
             },
             {
               "id": "partner-cju",
-              "name": "中国计量大学",
+              "name": "China Jiliang University",
               "type": "partner-logo",
               "img": "/img/partner-logo-cju.jpg"
             },
             {
               "id": "partner-zicc",
-              "name": "浙江国际交流",
+              "name": "Zhejiang International Communicaition",
               "type": "partner-logo",
               "img": "/img/partner-logo-zicc.jpg"
             },
             {
               "id": "partner-gz",
-              "name": "绿色浙江",
+              "name": "Green Zhejiang",
               "type": "partner-logo",
               "img": "/img/partner-logo-gz.jpg"
             },
             {
               "id": "partner-zjyx",
-              "name": "镇江雅讯软件",
+              "name": "Zhengjiang Yctionsoft",
               "type": "partner-logo",
               "img": "/img/partner-logo-zjyx.jpg"
             },
             {
               "id": "partner-nnsc",
-              "name": "北京年年三唱影视文化",
+              "name": "Beijing Nianniansanchang",
               "type": "partner-logo",
               "img": "/img/partner-logo-nnsc.jpg"
             },
             {
               "id": "partner-ttt",
-              "name": "新西兰培训和技术转移公司",
+              "name": "TTT New Zealand",
               "type": "partner-logo",
               "img": "/img/partner-logo-ttt.jpg"
             },
             {
               "id": "partner-lihi",
-              "name": "美国LIHI",
+              "name": "LIHI USA",
               "type": "partner-logo",
               "img": "/img/partner-logo-lihi.jpg"
             },
             {
               "id": "partner-nm",
-              "name": "瑞士 NatureMade",
+              "name": "NatureMade Switzerland",
               "type": "partner-logo",
               "img": "/img/partner-logo-nm.jpg"
             }
