@@ -578,7 +578,7 @@ if (photoLightbox) {
     const button = event.relatedTarget;
     // Extract info from data-bs-* attributes
     const hdPhotoSRC = button.getAttribute('data-hdsrc');
-    const photoDesc = button.getAttribute('data-photodesc');
+    const photoDesc = '<p class="px-2 py-1">' + button.getAttribute('data-photodesc') + '</p>';
 
     // Construct bootstrap spinner
     const progressBar = '<div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div>';
