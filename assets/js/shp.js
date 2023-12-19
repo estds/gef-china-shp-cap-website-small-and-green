@@ -378,7 +378,7 @@ function createSectionDemoPlants(json) {
     // Create a list item for each marker
     var listItem = document.createElement('li');
     listItem.className = 'list-group-item bg-transparent border-0 p-0';
-    listItem.innerHTML = `<a class="d-block text-truncate text-decoration-none text-light px-4 py-3" ds-mo-toggle="map-popup" ds-mo-target="$ll-popup-${item.id}" href="#">${item.name}<br><small class="text-secondary">${item.county}</small></a>`
+    listItem.innerHTML = `<a class="d-block text-truncate text-decoration-none text-light px-4 py-2" ds-mo-toggle="map-popup" ds-mo-target="$ll-popup-${item.id}" href="#">${item.name}<br><small class="text-secondary">${item.county}</small></a>`
     //
     listItem.addEventListener('click', function(event) {
     	event.preventDefault();
