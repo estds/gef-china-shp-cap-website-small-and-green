@@ -1,0 +1,2828 @@
+[
+  {
+    "home": {
+      "id": "home",
+      "name": "Small and Green",
+      "type": "section",
+      "secClass": "section overflow-hidden video-in-background",
+      "desc": "UNIDO-GEF Project on Upgrading of China Small Hydropower Capacity",
+      "children": [
+        {
+          "type": "logo",
+          "img": "/img/unido-gef-logos.svg",
+          "alt": "UNIDO and GEF Logos"
+        },
+        {
+          "type": "background-video",
+          "vid": "/vid/unido-gef-shp-landing-bg.mp4",
+          "poster": "/img/unido-gef-shp-landing-bg.jpg"
+        },
+        {
+          "type": "button",
+          "text": "Continue",
+          "bClass": "btn btn-primary btn-unido-blue rounded-0 mx-1",
+          "link": "#project-overview"
+        },
+        {
+          "type": "button",
+          "bClass": "btn btn-light rounded-0 mx-1",
+          "text": "中文",
+          "link": "index.html"
+        }
+      ]
+    },
+    "projOverview": {
+      "id": "project-overview",
+      "name": "Project Overview",
+      "type": "section",
+      "secClass": "section bg-unido-blue",
+      "desc": "The Project on Upgrading of China Small Hydropower Capacity is joinlty implemented by UNIDO, MOF, MWR and ICSHP. Funded by the Global Environment Facility (GEF), the Project leveraged funding from the rural hydropower (SHP) efficiency and expansion programme under China's 13th FYP, aiming at benefits in river ecosystem restoration, SHP safety, and automated operation. By adding these values to the Chinese programme, the Project contributes to the sustainability and quality development of the industry. Launched in 2017, the Project has carried out 19 demonstration projects in 8 provinces, showcasing success stories of the environmental and social benefits of safe and green SHP. Meanwhile, the Project has helped improve China's SHP policies and build professional capacity, which are meaningful for better utilization of this sustainable energy. The Project contributes to China's energy transition and accumulates experiences for global SHP development. Its outputs mainly include technical and financial feasibilities, policy and institutions, and capacity building and knowledge sharing.",
+      "richDesc": "<p>The Project on Upgrading of China Small Hydropower Capacity is <a href=\"#project-partners\" class=\"text-reset\">joinlty implemented</a> by UNIDO, MOF, MWR and ICSHP. Funded by the Global Environment Facility (GEF), the Project leveraged funding from the rural hydropower (SHP) efficiency and expansion programme under China's 13th FYP, aiming at benefits in river ecosystem restoration, SHP safety, and automated operation. By adding these values to the Chinese programme, the Project contributes to the sustainability and quality development of the industry.</p><p>Launched in 2017, the Project has carried out <a href=\"#demo-plants\" class=\"text-reset\">19 demonstration projects</a> in 8 provinces, showcasing success stories of the environmental and social benefits of safe and green SHP. Meanwhile, the Project has helped improve China's SHP policies and build professional capacity, which are meaningful for better utilization of this sustainable energy. The Project contributes to China's energy transition and accumulates experiences for global SHP development. Its outputs mainly include:</p><ul><li><a href=\"#tech-demo\" class=\"text-reset\">Technical and financial feasibilities</a></li><li><a href=\"#institutional-outputs\" class=\"text-reset\">Policy and institutions</a></li><li><a href=\"#capacity-and-knowledge\" class=\"text-reset\">Capacity building and knowledge sharing</a></li></ul>",
+      "children": [
+        {
+          "id": "project-film",
+          "name": "Project Film",
+          "type": "video",
+          "poster": "/img/unido-gef-shp-small-and-green-poster.jpg",
+          "desc": "Watch a short film about this UNIDO-GEF project",
+          "link": [
+            {
+              "src": "/vid/unido-gef-shp-small-and-green.mp4",
+              "type": "video/mp4",
+              "label": "HD"
+            }
+          ]
+        },
+        {
+          "id": "project-brochure",
+          "name": "Project Brochure",
+          "type": "button",
+          "desc": "Read the brochure of this UNIDO-GEF project",
+          "link": "/docs/project-brochure-in-English-compressed.pdf"
+        }
+      ]
+    },
+    "demoPlants": {
+      "id": "demo-plants",
+      "name": "Pilot Plants",
+      "type": "section",
+      "secClass": "section position-relative",
+      "desc": "26 SHP plants across 8 Chinese provinces underwent refurbishment and upgrades as technical demonstration",
+      "children": [
+        {
+          "id": "shp-plant-maoyandong",
+          "name": "Maoyandong II",
+          "type": "link",
+          "county": "Luxi, Yunnan",
+          "desc": "Maoyandong II SHP is located in Yongning, Luxi, Yunnan. It was first commissioned in December 1988 in a canal-penstock scheme. ",
+          "plantLat": 24.318056997796,
+          "plantLon": 103.728402699034,
+          "capBefore": 12600,
+          "outputBefore": 51960,
+          "capAfter": 15000,
+          "outputAfter": 71210,
+          "emCut": 13041,
+          "csReport": "/docs/pilot-plant-case-study-maoyandong-2-yunnan.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-mabozi",
+          "name": "Mabozi",
+          "type": "link",
+          "county": "Tonghai, Yunnan",
+          "desc": "Mabozi SHP is located in Gaoda Villege, Tonghai, Yuxi, Yunnan. First commissioned in May 1981, it is in a barrage layout. ",
+          "plantLat": 23.9907821435774,
+          "plantLon": 102.739126273567,
+          "capBefore": 3650,
+          "outputBefore": 4780,
+          "capAfter": 5300,
+          "outputAfter": 5530,
+          "emCut": 695,
+          "csReport": "/docs/pilot-plant-case-study-mabozi-yunnan.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-chahe",
+          "name": "Chahe",
+          "type": "link",
+          "county": "Shiping, Yunnan",
+          "desc": "Chahe SHP sits in Gebaikong Village, Baoxiu Town, Shiping, Yunnan. The plant is in a canal-penstock layout without storage capacity. It was first commissioned in 1988. ",
+          "plantLat": 23.7114856930099,
+          "plantLon": 102.211821488903,
+          "capBefore": 4000,
+          "outputBefore": 9500,
+          "capAfter": 4800,
+          "outputAfter": 10410,
+          "emCut": 1439,
+          "csReport": "/docs/pilot-plant-case-study-chahe-yunnan.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-zhoujialiang",
+          "name": "Zhoujialiang",
+          "type": "link",
+          "county": "Yunyang, Hubei",
+          "desc": "Zhoujiang SHP is located in Jiangwan Village, Yunyang, Shiyan, Hubei. It was first commissioned in 1986 in a canal-penstock layout. ",
+          "plantLat": 33.0482391690451,
+          "plantLon": 110.98825649486,
+          "capBefore": 2230,
+          "outputBefore": 9750,
+          "capAfter": 2630,
+          "outputAfter": 7830,
+          "emCut": 305,
+          "csReport": "/docs/pilot-plant-case-study-zhoujialiang-hubei.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-chaotianhou",
+          "name": "Yangdaohe",
+          "type": "link",
+          "county": "Xingshan, Hubei",
+          "desc": "Yangdaohe SHP is located in Xiakou, Xingshan, Yichang, Hubei. It was first commissioned in July 1997 in a canal-penstock layout. ",
+          "plantLat": 31.163392641229,
+          "plantLon": 110.852056061495,
+          "capBefore": 7500,
+          "outputBefore": 35050,
+          "capAfter": 7500,
+          "outputAfter": 25850,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-yangdaohe-cascade-hubei.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-yangdaohe",
+          "name": "Chaotianhou",
+          "type": "link",
+          "county": "Xingshan, Hubei",
+          "desc": "Chaotianhou SHP is located in Xiakou, Xingshan, Yichang, Hubei. It was first commissioned in April 1999 in a canal-penstock layout. ",
+          "plantLat": 31.2072358654018,
+          "plantLon": 110.867966203405,
+          "capBefore": 5000,
+          "outputBefore": 19300,
+          "capAfter": 5000,
+          "outputAfter": 14430,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-yangdaohe-cascade-hubei.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-shijiaba",
+          "name": "Shijiaba",
+          "type": "link",
+          "county": "Xingshan, Hubei",
+          "desc": "Chaotianhou SHP is located in Xiakou, Xingshan, Yichang, Hubei. It was first commissioned in April 1985 in a canal-penstock layout. ",
+          "plantLat": 31.1396950882973,
+          "plantLon": 110.840926279425,
+          "capBefore": 3750,
+          "outputBefore": 15780,
+          "capAfter": 4500,
+          "outputAfter": 15150,
+          "emCut": 493,
+          "csReport": "/docs/pilot-plant-case-study-yangdaohe-cascade-hubei.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-jiangjunzhu",
+          "name": "Jiangjunzhu",
+          "type": "link",
+          "county": "Xingshan, Hubei",
+          "desc": "Jiangjunzhu SHP is located in Xingshan, Yichang, Hubei. It was first commissioned in 1987 in a canal-penstock layout. ",
+          "plantLat": 31.2113743887524,
+          "plantLon": 110.881672628368,
+          "capBefore": 3000,
+          "outputBefore": 12890,
+          "capAfter": 3000,
+          "outputAfter": 10890,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-jiangjunzhu-hubei.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-majing",
+          "name": "Majing",
+          "type": "link",
+          "county": "Qijiang, Chongqing",
+          "desc": "Majing SHP is located in Qijiang, Chongqing on the Qingxi River. The plant was first commissioned in December 1986 in a canal-penstock scheme. ",
+          "plantLat": 28.9656451341123,
+          "plantLon": 106.462707262927,
+          "capBefore": 5000,
+          "outputBefore": 16060,
+          "capAfter": 6400,
+          "outputAfter": 22100,
+          "emCut": 4369,
+          "csReport": "/docs/pilot-plant-case-study-majing-chongqing.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-xiaokeng",
+          "name": "Xiaokeng",
+          "type": "link",
+          "county": "Beibei, Chongqing",
+          "desc": "Xiaokeng SHP is located Xiema, Beibei, Chongqing. It is a plant in a mixed layout and was first commissioned in 1942. ",
+          "plantLat": 29.7571863323141,
+          "plantLon": 106.397329882572,
+          "capBefore": 480,
+          "outputBefore": 1510,
+          "capAfter": 1200,
+          "outputAfter": 4240,
+          "emCut": 1972,
+          "csReport": "/docs/pilot-plant-case-study-xiaokeng-chongqing.pdf",
+          "emNote": "2021-2022"
+        },
+        {
+          "id": "shp-plant-gaokeng",
+          "name": "Gaokeng",
+          "type": "link",
+          "county": "Tongliang, Chongqing",
+          "desc": "Gaokeng SHP is located in Jiuxian, Tongliang, Chongqing. The plant was first commissioned in 1966 in a canal-penstock layout. ",
+          "plantLat": 29.8882316819874,
+          "plantLon": 106.192525480458,
+          "capBefore": 4060,
+          "outputBefore": 18980,
+          "capAfter": 4600,
+          "outputAfter": 20680,
+          "emCut": 1226,
+          "csReport": "/docs/pilot-plant-case-study-gaokeng-chongqing.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-taiping",
+          "name": "Taiping",
+          "type": "link",
+          "county": "Yunyang, Chongqing",
+          "desc": "Taiping SHP is located in Nixi, Yunyang, Chongqing. It was first commissioned in 1989 in a canal-penstock scheme. ",
+          "plantLat": 30.7401452344584,
+          "plantLon": 108.885282916036,
+          "capBefore": 2000,
+          "outputBefore": 10880,
+          "capAfter": 4000,
+          "outputAfter": 9160,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-taiping-chongqing.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-tangban",
+          "name": "Tangban",
+          "type": "link",
+          "county": "Lianjiang, Fujian",
+          "desc": "Tangban SHP is located in Pandu, Lianjiang, Fujian on the Aojiang River. It was first commissioned in 2000 in a barrage scheme. ",
+          "plantLat": 26.2885337545575,
+          "plantLon": 119.372470925293,
+          "capBefore": 11000,
+          "outputBefore": 32700,
+          "capAfter": 12000,
+          "outputAfter": 25150,
+          "emCut": 0,
+          "csReport": "pilot-plant-case-study-tangban-fujian.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-jiaosan",
+          "name": "Jiaosan",
+          "type": "link",
+          "county": "Taining, Fujian",
+          "desc": "Jiaosan SHP is located in Dalong, Taining, Fujian. It was first commissioned in 1997 in a barrage scheme. ",
+          "plantLat": 26.6212279908564,
+          "plantLon": 117.080432602317,
+          "capBefore": 4800,
+          "outputBefore": 18750,
+          "capAfter": 6000,
+          "outputAfter": 14710,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-jiaosan-tantou-fujian.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-tantou",
+          "name": "Tantou",
+          "type": "link",
+          "county": "Taining, Fujian",
+          "desc": "Tantou SHP is located in Dalong, Taining, Fujian. The plant is in a canal-penstock scheme, and was first commissioned in 1994. ",
+          "plantLat": 26.9117536936703,
+          "plantLon": 117.201641842194,
+          "capBefore": 2000,
+          "outputBefore": 8900,
+          "capAfter": 2520,
+          "outputAfter": 8830,
+          "emCut": 355,
+          "csReport": "/docs/pilot-plant-case-study-jiaosan-tantou-fujian.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-gaofang-ii",
+          "name": "Gaofang II",
+          "type": "link",
+          "county": "Pucheng, Fujian",
+          "desc": "Gaofang II SHP is located in northeast Pucheng, Nanping, Fujian. The plant was first commissioned in 1998 in a canal-penstock layout. ",
+          "plantLat": 27.8656703728014,
+          "plantLon": 118.760105930228,
+          "capBefore": 2000,
+          "outputBefore": 5000,
+          "capAfter": 2350,
+          "outputAfter": 4610,
+          "emCut": 176,
+          "csReport": "/docs/pilot-plant-case-study-gaofang-2-fujian.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-xinpingya",
+          "name": "Xinpingya",
+          "type": "link",
+          "county": "Ziyang, Shaanxi",
+          "desc": "Xinpingya SHP is located in Bantao, Ziyang, Shaanxi, on a tributarty of the Hanjiang River. It was first commissioned in December 1999 in a canal-penstock scheme. ",
+          "plantLat": 32.2915230897492,
+          "plantLon": 108.636021134263,
+          "capBefore": 2500,
+          "outputBefore": 9700,
+          "capAfter": 3200,
+          "outputAfter": 15720,
+          "emCut": 4238,
+          "csReport": "/docs/pilot-plant-case-study-xinpingya-shaanxi.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-guanxi",
+          "name": "Gaunxi",
+          "type": "link",
+          "county": "Ruyuan, Guangxi",
+          "desc": "Guanxi SHP is located in Hougongdu, Ruyuan, Shaoguan, Guangxi. The plant is in a barrage scheme and was first commissioned in 1986. ",
+          "plantLat": 24.7367320561668,
+          "plantLon": 113.357554360131,
+          "capBefore": 4800,
+          "outputBefore": 15000,
+          "capAfter": 6000,
+          "outputAfter": 13260,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-guanxi-guangdong.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-sandeliing",
+          "name": "Sandieling",
+          "type": "link",
+          "county": "Jingxi, Guangxi",
+          "desc": "Sandieling SHP is located in Hurun, Jingxi, Baise, Guangxi. It is a canal-penstock plant first commissioned in 1996. ",
+          "plantLat": 22.9876658970896,
+          "plantLon": 106.681169942109,
+          "capBefore": 13500,
+          "outputBefore": 27680,
+          "capAfter": 13500,
+          "outputAfter": 22030,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-sandieling-dongpai-guangxi.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-dongpai",
+          "name": "Dongpai",
+          "type": "link",
+          "county": "Jingxi, Guangxi",
+          "desc": "Dongpai SHP is located in Hurun, Jingxi, Baise, Guangxi. It is a canal-penstock plant first commissioned in 1999. ",
+          "plantLat": 23.0053922606984,
+          "plantLon": 106.615986626384,
+          "capBefore": 1500,
+          "outputBefore": 3400,
+          "capAfter": 1500,
+          "outputAfter": 1760,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-sandieling-dongpai-guangxi.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-aibu-ii",
+          "name": "Aibu II",
+          "type": "link",
+          "county": "Jingxi, Guangxi",
+          "desc": "Aibu II SHP is located in Huadong, Jingxi, Baise, Guangxi. It is a canal-penstock plant first commissioned in 1969. ",
+          "plantLat": 22.997027282151,
+          "plantLon": 106.492266034801,
+          "capBefore": 1260,
+          "outputBefore": 9060,
+          "capAfter": 3200,
+          "outputAfter": 7870,
+          "emCut": 44,
+          "csReport": "/docs/pilot-plant-case-study-aibu-2and3-guangxi.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-aibu-iii",
+          "name": "Aibu III",
+          "type": "link",
+          "county": "Jingxi, Guangxi",
+          "desc": "Aibu III SHP is located in Huadong, Jingxi, Baise, Guangxi. It is a canal-penstock plant first commissioned in 1973. ",
+          "plantLat": 22.9910173303555,
+          "plantLon": 106.492883471386,
+          "capBefore": 600,
+          "outputBefore": 2300,
+          "capAfter": 2400,
+          "outputAfter": 3800,
+          "emCut": 691,
+          "csReport": "/docs/pilot-plant-case-study-aibu-2and3-guangxi.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-qingshuitan",
+          "name": "Qingshuitan",
+          "type": "link",
+          "county": "Qujiang, Zhejiang",
+          "desc": "Qingshuitan SHP is located in Qujiang, Quzhou, Zhejiang. It is a canal-penstock plant first commissioned in July 1999. ",
+          "plantLat": 28.8382528704493,
+          "plantLon": 119.005513744259,
+          "capBefore": 960,
+          "outputBefore": 3720,
+          "capAfter": 1200,
+          "outputAfter": 2700,
+          "emCut": 0,
+          "csReport": "/docs/pilot-plant-case-study-qingshuitan-zhejiang.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-panxi-ii",
+          "name": "Panxi II",
+          "type": "link",
+          "county": "Jinyun, Zhejiang",
+          "desc": "Panxi II SHP is located in Huyuan, Jinyun, Lishui, Zhejiang. It is a canal-penstock plant first commissioned in 1974. ",
+          "plantLat": 28.5459469854383,
+          "plantLon": 120.228161285355,
+          "capBefore": 2400,
+          "outputBefore": 7300,
+          "capAfter": 2400,
+          "outputAfter": 11130,
+          "emCut": 2866,
+          "csReport": "pilot-plant-case-study-panxi-casecade-zhejiang.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-panxi-iii",
+          "name": "Panxi III",
+          "type": "link",
+          "county": "Jinyun, Zhejiang",
+          "desc": "Panxi II SHP is located in Huyuan, Jinyun, Lishui, Zhejiang. It is a canal-penstock plant first commissioned in 1977. ",
+          "plantLat": 28.5645277381262,
+          "plantLon": 120.225015900522,
+          "capBefore": 2400,
+          "outputBefore": 7700,
+          "capAfter": 3000,
+          "outputAfter": 11420,
+          "emCut": 2782,
+          "csReport": "/docs/pilot-plant-case-study-panxi-casecade-zhejiang.pdf",
+          "emNote": "2020-2022"
+        },
+        {
+          "id": "shp-plant-panxi-iv",
+          "name": "Panxi IV",
+          "type": "link",
+          "county": "Jinyun, Zhejiang",
+          "desc": "Panxi II SHP is located in Huyuan, Jinyun, Lishui, Zhejiang. It is a canal-penstock plant first commissioned in 1979. ",
+          "plantLat": 28.6052898111291,
+          "plantLon": 120.207295103475,
+          "capBefore": 1600,
+          "outputBefore": 4200,
+          "capAfter": 1600,
+          "outputAfter": 5540,
+          "emCut": 1004,
+          "csReport": "/docs/pilot-plant-case-study-panxi-casecade-zhejiang.pdf",
+          "emNote": "2020-2022"
+        }
+      ]
+    },
+    "techDemo": {
+      "id": "tech-demo",
+      "name": "Technical Demonstration",
+      "type": "section",
+      "secClass": "section bg-light-subtle",
+      "desc": "Technical demonstration through upgrades and refurbishment of SHP plants showcases the technical and economic feasibilities of green SHP development. These studies and analysis capture the changes, costs and benefits, social-environmental impacts and future scenarios under climate change.",
+      "children": [
+        {
+          "id": "ex-post-ex-ante",
+          "name": "Ex-Ante & Ex-Post Analysis",
+          "type": "document",
+          "img": "/img/report-demo-plants-ex-ante-ex-post-analysis.jpg",
+          "link": "/docs/report-demo-plants-ex-ante-ex-post-analysis.pdf",
+          "desc": "Ten pilot plants were studied to compare the environmental, social, economic situations before and after the refurbishment and therefore find changes and problems."
+        },
+        {
+          "id": "cost-benefit-analysis",
+          "name": "Cost Benefit Analysis",
+          "type": "document",
+          "img": "/img/report-demo-plant-cost-benefit-analysis.jpg",
+          "link": "/docs/report-demo-plant-cost-benefit-analysis.pdf",
+          "desc": "Four pilot plants were studied to quantitatively analyse the costs and (social, economic & environmental) benefits in monetary terms."
+        },
+        {
+          "id": "esmp-implementation",
+          "name": "ESMP Implementation",
+          "type": "document",
+          "img": "/img/report-demo-plants-esmp-monitoring.jpg",
+          "link": "/docs/report-demo-plants-esmp-monitoring.pdf",
+          "desc": "All plants were monitored and analysed for their implementation of ESMPs made before the start of their refurbishment."
+        },
+        {
+          "id": "hydrological-regime-assessment",
+          "name": "Hydrological Regime Analysis",
+          "type": "document",
+          "img": "/img/report-demo-plant-hydrological-regime-analysis.jpg",
+          "link": "/docs/report-demo-plant-hydrological-regime-analysis.pdf",
+          "desc": "Four pilot plants were studied to analyse their power outputs in future scenarios with their hydrological regimes under climate impacts."
+        }
+      ]
+    },
+    "instlOutputs": {
+      "id": "institutional-outputs",
+      "name": "Policy Outputs",
+      "type": "section",
+      "secClass": "section bg-unido-blue",
+      "desc": "Outputs from the UNIDO-GEF project contribute to China's SHP institutions, including technical standards, incentive policies and regulatory frameworks.",
+      "children": [
+        {
+          "id": "institution-and-standards",
+          "name": "Technical Standards & Policies",
+          "type": "list",
+          "desc": "Outputs in technical standards and policies",
+          "children": [
+            {
+              "id": "green-shp-standard",
+              "name": "Green SHP Assessment Standard",
+              "type": "document",
+              "desc": "This industrial standard lays out detailed requirements for green SHP certification, including those for its methodology and operation. It is the first-ever standard for green hydropower development in China. It is has an index number as SL/T752-2020.",
+              "button": "Read",
+              "locLink": true,
+              "link": "/docs/slt-752-2020-green-shp-certification-standard.pdf"
+            },
+            {
+              "id": "flow-recovery-standard",
+              "name": "Technical Guidelines for contril of flow reduction downstream of SHP stations",
+              "type": "document",
+              "desc": "This industrial standard addresses the need of measures to recover depleted river sections downstream SHP plants, including principal requirements and technical methodologies for these measures. It is a comprehensive package of technical measures and managerial practices. It is has an index number as SL/T796-2020.",
+              "button": "Read",
+              "locLink": true,
+              "link": "/docs/slt-796-2020-recovery-of-river-flow-downstream-shp-projects.pdf"
+            },
+            {
+              "id": "green-shp-technical-guide",
+              "name": "Technical Guidelines for green SHP certification",
+              "type": "document",
+              "desc": "This document is a manual for the certification of green SHP, including technical interpretations, key operational aspects, tutorials for the use of online management system, and case studies.",
+              "button": "Read summary",
+              "locLink": true,
+              "link": "/docs/summary-technical-guidelines-for-green-shp-certification.pdf"
+            },
+            {
+              "id": "green-shp-development-strategyu",
+              "name": "Green SHP development strategy and proposal",
+              "type": "document",
+              "desc": "Through studies of green SHP policies, technical measures, and managerial practices, this puts forward objectives, implementation plans and overal strategy that China's green SHP development could use.",
+              "button": "Read summary",
+              "locLink": true,
+              "link": "/docs/summary-green-shp-developmen-strategy-and-proposals.pdf"
+            },
+            {
+              "id": "green-shp-online-mis",
+              "name": "China Green SHP Online Management System",
+              "type": "document",
+              "desc": "The system was improved under this UNIDO-GEF project based on extensive consultation of stakeholders.",
+              "button": "Visit",
+              "link": "http://ncslsd.mwr.cn"
+            },
+            {
+              "id": "safety-measures-best-practice-cases",
+              "name": "Best practice manual in SHP operational safety",
+              "type": "document",
+              "desc": "This manual is based on case studies of 12 SHP plants among those with highest safety accreditations, highlighting their experiences in improving operational safety.",
+              "button": "Read",
+              "locLink": true,
+              "link": "/docs/full-report-best-practice-case-study-report-standardised-shp-operatonal-safety-measures.pdf"
+            }
+          ]
+        },
+        {
+          "id": "incentive-policies",
+          "name": "Incentive Policies",
+          "type": "list",
+          "desc": "Recommendations in incentive policies for green SHP",
+          "children": [
+            {
+              "id": "green-shp-nameling-scheme",
+              "name": "Recommendation on green SHP labelling",
+              "type": "document",
+              "desc": "This study is based on extensive studies of international and domestic experiences in labelling systems to come up with recommendations on labelling schemes of green SHP in China.",
+              "button": "Read summary",
+              "locLink": true,
+              "link": "/docs/summary-policy-recommendation-green-shp-nameling.pdf"
+            },
+            {
+              "id": "green-shp-local-incentives",
+              "name": "Recommendations on local incentive policies",
+              "type": "document",
+              "desc": "This study combs through international and domestic experiences in incentive policies in green SHP development, and makes reccommendations on proliferating incentive policies at local government level.",
+              "button": "Read summary",
+              "locLink": true,
+              "link": "/docs/summary-policy-recommendation-local-incentives-for-green-shp.pdf"
+            },
+            {
+              "id": "green-shp-national-incentives",
+              "name": "Recommendations on local incentive policies",
+              "type": "document",
+              "desc": "This study draws upon international and domestic experiences in green SHP development, and makes reccomendations on national incentive policies for green SHP development.",
+              "button": "Read summary",
+              "locLink": true,
+              "link": "/docs/summary-policy-recommendation-national-incentives-for-green-shp.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "CapAndKno": {
+      "id": "capacity-and-knowledge",
+      "name": "Capacity and Knowledge",
+      "type": "section",
+      "secClass": "section bg-light-subtle",
+      "desc": "Extensive capacity building and knowledge sharing events have been organised under this UNIDO-GEF project.",
+      "children": [
+        {
+          "id": "project-seminars",
+          "name": "Seminars",
+          "type": "photo-group",
+          "desc": "项目2022-2023年组织了3次国内研讨会（西安、南昌、昆明）和1次国际研讨会（北京，线上），在国内外深入分享项目执行取得的经验和知识。",
+          "children": [
+            {
+              "id": "photo-img_8437",
+              "name": "南昌研讨会",
+              "type": "photo",
+              "desc": "2022年11月，江西南昌，项目研讨会小水电绿色发展论坛作为第十七届中国（国际）水务高峰论坛系列活动之一举办。",
+              "hdimg": "/img/IMG_8437.JPG",
+              "thumb": "/img/thumb/IMG_8437.JPG"
+            },
+            {
+              "id": "photo-img_8456",
+              "name": "南昌研讨会",
+              "type": "photo",
+              "desc": "2022年11月，江西南昌，中国水力发电工程学会原副秘书长张博庭在项目研讨会作报告。",
+              "hdimg": "/img/IMG_8456.JPG",
+              "thumb": "/img/thumb/IMG_8456.JPG"
+            },
+            {
+              "id": "photo-img_8452",
+              "name": "南昌研讨会",
+              "type": "photo",
+              "desc": "2022年11月，江西南昌，水利部国际小水电中心主任岳梦华副主任在项目研讨会作报告。",
+              "hdimg": "/img/IMG_8452.JPG",
+              "thumb": "/img/thumb/IMG_8452.JPG"
+            },
+            {
+              "id": "photo-img_3295",
+              "name": "昆明研讨会",
+              "type": "photo",
+              "desc": "2023年4月，云南昆明，中国工程院院士马洪琪在项目研讨会做报告。",
+              "hdimg": "/img/IMG_3295.JPG",
+              "thumb": "/img/thumb/IMG_3295.JPG"
+            },
+            {
+              "id": "photo-img_3410",
+              "name": "昆明研讨会",
+              "type": "photo",
+              "desc": "2023年4月，云南昆明，行业专家在项目研讨会就小水电绿色发展机制展开讨论。",
+              "hdimg": "/img/IMG_3410.JPG",
+              "thumb": "/img/thumb/IMG_3410.JPG"
+            },
+            {
+              "id": "photo-img_0844",
+              "name": "西安研讨会",
+              "type": "photo",
+              "desc": "2022年8月，陕西西安，项目研讨会双碳目标下的小水电高质量发展论坛举办。",
+              "hdimg": "/img/IMG_1844.JPG",
+              "thumb": "/img/thumb/IMG_1844.JPG"
+            }
+          ]
+        },
+        {
+          "id": "training-workshops",
+          "name": "培训班",
+          "type": "photo-group",
+          "desc": "2020至2022年，项目累计开展了17期小水电行业能力建设培训班，为小水电业主、技术人员、政府官员等增强从业能力，服务行业绿色转型发展。",
+          "children": [
+            {
+              "id": "photo-15lia5li75oq",
+              "name": "南京培训班",
+              "type": "photo",
+              "desc": "2020年9月，江苏南京，针对小水电业主、开发和技术人员能力建设的第一期培训班举办。",
+              "hdimg": "/img/15Lia5Li75oq.jpg",
+              "thumb": "/img/thumb/15Lia5Li75oq.jpg"
+            },
+            {
+              "id": "photo-cp5rc055s15y",
+              "name": "杭州培训班",
+              "type": "photo",
+              "desc": "2020年9月，浙江杭州，针对小水电业主、开发和技术人员能力建设的第二期培训班举办。",
+              "hdimg": "/img/CP5rC055S15Y.jpg",
+              "thumb": "/img/thumb/CP5rC055S15Y.jpg"
+            },
+            {
+              "id": "photo-MOW5tDEy5pyI5r",
+              "name": "海口培训班",
+              "type": "photo",
+              "desc": "2020年12月，海南海口，针对绿色小水电站创建的第二期专项培训班举办。",
+              "hdimg": "/img/MOW5tDEy5pyI5r.jpg",
+              "thumb": "/img/thumb/MOW5tDEy5pyI5r.jpg"
+            },
+            {
+              "id": "photo-DEy5pyI5rWZ5rs",
+              "name": "海口培训班",
+              "type": "photo",
+              "desc": "2020年12月，浙江杭州，针对安全生产标准化建设的第一期专项培训班举办。",
+              "hdimg": "/img/DEy5pyI5rWZ5rs.jpg",
+              "thumb": "/img/thumb/DEy5pyI5rWZ5rs.jpg"
+            },
+            {
+              "id": "photo-HmnIjmtZnms3msL",
+              "name": "丽水培训班",
+              "type": "photo",
+              "desc": "2022年1月，浙江丽水，针对小水电业主、开发和技术人员能力建设的第五期培训班举办。",
+              "hdimg": "/img/HmnIjmtZnms3msL.jpg",
+              "thumb": "/img/thumb/HmnIjmtZnms3msL.jpg"
+            },
+            {
+              "id": "photo-W5tDjmnIjmt",
+              "name": "杭州培训班",
+              "type": "photo",
+              "desc": "2022年8月，浙江杭州，针对绿色小水电站创建的第四期专项培训班举办。",
+              "hdimg": "/img/W5tDjmnIjmt.jpg",
+              "thumb": "/img/thumb/W5tDjmnIjmt.jpg"
+            }
+          ]
+        },
+        {
+          "id": "technical-tours",
+          "name": "Technical tours",
+          "type": "photo-group",
+          "desc": "2019年，结合能力建设培训班内容，项目分别组织相关小水电业主、政府官员，赴美国、奥地利、瑞士进行技术考察，学习相关知识和经验。",
+          "children": [
+            {
+              "id": "photo-wimg172",
+              "name": "业主代表团",
+              "type": "photo",
+              "desc": "2019年6月，美国麻省大学洛威尔分校，项目组织的小水电从业者代表团参加由美国低影响水电协会LIHI举办的研讨会。",
+              "hdimg": "/img/WIMG172.jpg",
+              "thumb": "/img/thumb/WIMG172.jpeg"
+            },
+            {
+              "id": "photo-wimg233",
+              "name": "业主代表团",
+              "type": "photo",
+              "desc": "2019年6月，美国马萨诸塞州洛威尔市，代表团参观Lowell水电站，电站总装机22.6MW，于2017获得LIHI认证。",
+              "hdimg": "/img/WIMG233.jpg",
+              "thumb": "/img/thumb/WIMG233.jpeg"
+            },
+            {
+              "id": "photo-wimg205",
+              "name": "业主代表团",
+              "type": "photo",
+              "desc": "2019年6月，美国马萨诸塞州洛威尔市，代表团参观位于洛威尔市的Lowell水电站的垂直槽鱼梯。",
+              "hdimg": "/img/WIMG205.jpg",
+              "thumb": "/img/thumb/WIMG205.jpeg"
+            },
+            {
+              "id": "photo-20191217094137",
+              "name": "官员代表团",
+              "type": "photo",
+              "desc": "2019年11月，奥地利维也纳，项目组织小水电官员代表团访问UNIDO总部，UNIDO执行干事Philippe Scholtes先生向代表团致欢迎词。",
+              "hdimg": "/img/20191217094137.jpg",
+              "thumb": "/img/thumb/20191217094137.jpg"
+            },
+            {
+              "id": "photo-dsc01180",
+              "name": "官员代表团",
+              "type": "photo",
+              "desc": "2019年11月，奥地利维也纳，代表团参观多瑙河Freudenau水电站，电站建于1998年，总装机172MW。",
+              "hdimg": "/img/DSC01180.JPG",
+              "thumb": "/img/thumb/DSC01180.JPG"
+            },
+            {
+              "id": "photo-20191217094051",
+              "name": "官员代表团",
+              "type": "photo",
+              "desc": "2019年11月，瑞士伯尔尼，代表团参观瑞士KWO水电公司，电站装机250MW，获得瑞士Naturemade Star认证。",
+              "hdimg": "/img/20191217094051.jpg",
+              "thumb": "/img/thumb/20191217094051.jpg"
+            }
+          ]
+        },
+        {
+          "id": "technical-support",
+          "name": "Technical support",
+          "type": "photo-group",
+          "desc": "除试点电站外，项目还向小水电站提供技术支持，帮助完成绿色小水电示范电站创建和安全生产标准化达标各24座。",
+          "children": [
+            {
+              "id": "photo-6Ziz5LqM5rup5Z2d5rC055",
+              "name": "技术支持",
+              "type": "photo",
+              "desc": "浙江二滩坝水电站，装机2,520KW，2021年创建成为绿色小水电示范电站。",
+              "hdimg": "/img/6Ziz5LqM5rup5Z2d5rC055.jpg",
+              "thumb": "/img/thumb/6Ziz5LqM5rup5Z2d5rC055.jpg"
+            },
+            {
+              "id": "photo-K5bee5Liw5r2t5rC055S",
+              "name": "技术支持",
+              "type": "photo",
+              "desc": "浙江丰潭水电站，装机14,000KW，2021年创建成为绿色小水电示范电站。",
+              "hdimg": "/img/K5bee5Liw5r2t5rC055S.jpg",
+              "thumb": "/img/thumb/K5bee5Liw5r2t5rC055S.jpg"
+            },
+            {
+              "id": "photo-Gi5rGf5Yy66ZOc5bGx5",
+              "name": "技术支持",
+              "type": "photo",
+              "desc": "浙江铜山源水电站，装机4,800KW，2021年创建成为绿色小水电示范电站。",
+              "hdimg": "/img/Gi5rGf5Yy66ZOc5bGx5.jpg",
+              "thumb": "/img/thumb/Gi5rGf5Yy66ZOc5bGx5.jpg"
+            },
+            {
+              "id": "photo-R5YyW5bel6ZuG5Zui6",
+              "name": "技术支持",
+              "type": "photo",
+              "desc": "湖北古洞口水电站，装机49,800KW，2022年达成安全生产标准化一级。",
+              "hdimg": "/img/R5YyW5bel6ZuG5Zui6.jpg",
+              "thumb": "/img/thumb/R5YyW5bel6ZuG5Zui6.jpg"
+            },
+            {
+              "id": "photo-6YO05bee5qyn6Ziz5r",
+              "name": "技术支持",
+              "type": "photo",
+              "desc": "湖南欧阳海水电站，装机42,600KW，2022年达成安全生产标准化一级。",
+              "hdimg": "/img/6YO05bee5qyn6Ziz5r.jpg",
+              "thumb": "/img/thumb/6YO05bee5qyn6Ziz5r.jpg"
+            },
+            {
+              "id": "photo-5bee5biC6buE6b6Z5bim",
+              "name": "技术支持",
+              "type": "photo",
+              "desc": "广东黄龙带水库一级电站，装机2,400KW，2022年达成安全生产标准化一级。",
+              "hdimg": "/img/5bee5biC6buE6b6Z5bim.jpg",
+              "thumb": "/img/thumb/5bee5biC6buE6b6Z5bim.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    "projectStats": {
+      "id": "project-stats",
+      "name": "Project Stats",
+      "type": "section",
+      "secClass": "section bg-unido-blue",
+      "desc": "Key statistics about the UNIDO-GEF Project",
+      "children": [
+        {
+          "id": "demo-plant-annual-outputs",
+          "name": "Annual outputs of pilot plants",
+          "desc": "Annual outputs of pilot plants since 2010 (x10 MWh), which take evident dips when the plants underwent refurbishment and upgrades (mostly between 2017 and 2019) and recovers afterwards. Please see \"Pilot Plants\" and \"Technical Demonstration\" sections of the page. For clarity, only three plants are displayed by default. Please use the dropdown menu on the top-right of this figure to see more.",
+          "charType": "echarts",
+          "data": [
+            {
+              "plant": "Maoyandong II",
+              "id": "annual-output-maoyandong2",
+              "type": "line",
+              "numbers": {
+                "2010": null,
+                "2011": null,
+                "2012": 4407.3,
+                "2013": 5509.65,
+                "2014": 7497.03,
+                "2015": 8324.42,
+                "2016": 8522.21,
+                "2017": 7429.25,
+                "2018": 8671.26,
+                "2019": 7020.26,
+                "2020": 8282.06,
+                "2021": 7484.86,
+                "2022": 8014.38
+              }
+            },
+            {
+              "plant": "Mabozi",
+              "id": "annual-output-mabozi",
+              "type": "line",
+              "numbers": {
+                "2010": 302.74,
+                "2011": 305.9,
+                "2012": 369.8,
+                "2013": 461.12,
+                "2014": 602.71,
+                "2015": 661.1,
+                "2016": 1012.15,
+                "2017": 1348.92,
+                "2018": 1124.39,
+                "2019": 0,
+                "2020": 631.7,
+                "2021": 615.6,
+                "2022": 708
+              }
+            },
+            {
+              "plant": "Chahe",
+              "id": "annual-output-chahe",
+              "type": "line",
+              "numbers": {
+                "2010": 743.33,
+                "2011": 722.06,
+                "2012": 916.92,
+                "2013": 967.29,
+                "2014": 1211.76,
+                "2015": 997.74,
+                "2016": 1396.98,
+                "2017": 1950.48,
+                "2018": 1978.81,
+                "2019": 404.08,
+                "2020": 782.47,
+                "2021": 1108.89,
+                "2022": 1351.52
+              }
+            },
+            {
+              "plant": "Zhoujialiang",
+              "id": "annual-output-zhoujialiang",
+              "type": "line",
+              "numbers": {
+                "2010": 1300.9,
+                "2011": 967.4,
+                "2012": 900.9,
+                "2013": 533.68,
+                "2014": 481.83,
+                "2015": 473.97,
+                "2016": 407.4,
+                "2017": 879.6,
+                "2018": 857.15,
+                "2019": 502.9,
+                "2020": 630.87,
+                "2021": 1101.57,
+                "2022": 701.11
+              }
+            },
+            {
+              "plant": "Yangdaohe",
+              "id": "annual-output-yangdaohe",
+              "type": "line",
+              "numbers": {
+                "2010": 2490.46,
+                "2011": 2436.28,
+                "2012": 2168.07,
+                "2013": 2038.53,
+                "2014": 2293.4,
+                "2015": 3029.81,
+                "2016": 2965.44,
+                "2017": 2819.35,
+                "2018": 1815.45,
+                "2019": 1930.36,
+                "2020": 3722.53,
+                "2021": 3165.44,
+                "2022": 2016.12
+              }
+            },
+            {
+              "plant": "Chaotianhou",
+              "id": "annual-output-chaotianhou",
+              "type": "line",
+              "numbers": {
+                "2010": 1742.69,
+                "2011": 1533.23,
+                "2012": 1280.43,
+                "2013": 1141.00,
+                "2014": 1426.39,
+                "2015": 1934.77,
+                "2016": 2042.52,
+                "2017": 2163.72,
+                "2018": 877.76,
+                "2019": 1045.10,
+                "2020": 2387.28,
+                "2021": 1684.78,
+                "2022": 1028.61
+              }
+            },
+            {
+              "plant": "Shijiaba",
+              "id": "annual-output-shijiaba",
+              "type": "line",
+              "numbers": {
+                "2010": 1287.25,
+                "2011": 1511.59,
+                "2012": 1308.44,
+                "2013": 1290.45,
+                "2014": 1424.8,
+                "2015": 1768.94,
+                "2016": 1817.75,
+                "2017": 1943.78,
+                "2018": 895,
+                "2019": 1210.57,
+                "2020": 2055.79,
+                "2021": 1820.55,
+                "2022": 1252.89
+              }
+            },
+            {
+              "plant": "Jiangjunzhu",
+              "id": "annual-output-jiangjunzhu",
+              "type": "line",
+              "numbers": {
+                "2010": 877.12,
+                "2011": 828.08,
+                "2012": 839.22,
+                "2013": 808.74,
+                "2014": 1047.78,
+                "2015": 958.82,
+                "2016": 904.38,
+                "2017": 829.55,
+                "2018": 620.83,
+                "2019": 709.96,
+                "2020": 1588.01,
+                "2021": 1285.23,
+                "2022": 807.48
+              }
+            },
+            {
+              "plant": "Majing",
+              "id": "annual-output-majing",
+              "type": "line",
+              "numbers": {
+                "2010": 1995.35,
+                "2011": 736.14,
+                "2012": 2142.38,
+                "2013": 1831.87,
+                "2014": 2624.28,
+                "2015": 2350.1,
+                "2016": 2933.42,
+                "2017": 2016.14,
+                "2018": 988.07,
+                "2019": 2721.73,
+                "2020": 3192.25,
+                "2021": 3240.53,
+                "2022": 1627.01
+              }
+            },
+            {
+              "plant": "Xiaokeng",
+              "id": "annual-output-xiaokeng",
+              "type": "line",
+              "numbers": {
+                "2010": null,
+                "2011": null,
+                "2012": null,
+                "2013": null,
+                "2014": null,
+                "2015": null,
+                "2016": 158,
+                "2017": 165,
+                "2018": 185,
+                "2019": 85,
+                "2020": 0,
+                "2021": 460,
+                "2022": 450
+              }
+            },
+            {
+              "plant": "Gaokeng",
+              "id": "annual-output-gaokeng",
+              "type": "line",
+              "numbers": {
+                "2010": 2093.99,
+                "2011": 1587,
+                "2012": 2182.92,
+                "2013": 1914.52,
+                "2014": 2773.03,
+                "2015": 2290.39,
+                "2016": 2702.71,
+                "2017": 2249.06,
+                "2018": 1974,
+                "2019": 1883.07,
+                "2020": 2449.75,
+                "2021": 2331.9,
+                "2022": 1994.49
+              }
+            },
+            {
+              "plant": "Taiping",
+              "id": "annual-output-taiping",
+              "type": "line",
+              "numbers": {
+                "2010": 654.64,
+                "2011": 1744.38,
+                "2012": 702.47,
+                "2013": 685.47,
+                "2014": 732.46,
+                "2015": 676.54,
+                "2016": 654.52,
+                "2017": 0,
+                "2018": 414.09,
+                "2019": 772.33,
+                "2020": 1099.86,
+                "2021": 898.22,
+                "2022": 827.41
+              }
+            },
+            {
+              "plant": "Tangban",
+              "id": "annual-output-tangban",
+              "type": "line",
+              "numbers": {
+                "2010": 4513.92,
+                "2011": 3623.88,
+                "2012": 5011.3,
+                "2013": 3431.14,
+                "2014": 3887.8,
+                "2015": 3455.14,
+                "2016": 5986.84,
+                "2017": 3262.96,
+                "2018": 2251.48,
+                "2019": 3202.59,
+                "2020": 1936.56,
+                "2021": 3211.94,
+                "2022": 2963.91
+              }
+            },
+            {
+              "plant": "Jiaosan",
+              "id": "annual-output-jiaosan",
+              "type": "line",
+              "numbers": {
+                "2010": 2176.6,
+                "2011": 1048.89,
+                "2012": 2268.16,
+                "2013": 1616.96,
+                "2014": 1738.09,
+                "2015": 2497.76,
+                "2016": 3005.42,
+                "2017": 1324.79,
+                "2018": 1279.07,
+                "2019": 2486.96,
+                "2020": 1442.94,
+                "2021": 1143.9,
+                "2022": 1715
+              }
+            },
+            {
+              "plant": "Tantou",
+              "id": "annual-output-tantou",
+              "type": "line",
+              "numbers": {
+                "2010": 657.83,
+                "2011": 542.76,
+                "2012": 1004.63,
+                "2013": 845.47,
+                "2014": 975.55,
+                "2015": 1162.85,
+                "2016": 1057.04,
+                "2017": 982.67,
+                "2018": 684.99,
+                "2019": 1254.52,
+                "2020": 1016.02,
+                "2021": 815.05,
+                "2022": 1032.3
+              }
+            },
+            {
+              "plant": "Gaofang II",
+              "id": "annual-output-gaofang2",
+              "type": "line",
+              "numbers": {
+                "2010": 742.69,
+                "2011": 481.5,
+                "2012": 769.45,
+                "2013": 592.08,
+                "2014": 741.22,
+                "2015": 699.86,
+                "2016": 722.92,
+                "2017": 468.37,
+                "2018": 130.97,
+                "2019": 774.3,
+                "2020": 523.78,
+                "2021": 471.24,
+                "2022": 570.44
+              }
+            },
+            {
+              "plant": "Xinpingya",
+              "id": "annual-output-xinpingya",
+              "type": "line",
+              "numbers": {
+                "2010": 1216.31,
+                "2011": 1146.3,
+                "2012": 1276.34,
+                "2013": 844.83,
+                "2014": 1113.62,
+                "2015": 1104.99,
+                "2016": 1087.68,
+                "2017": 1342.68,
+                "2018": 1073.93,
+                "2019": 1276.63,
+                "2020": 1827.02,
+                "2021": 1886.5,
+                "2022": 1270.63
+              }
+            },
+            {
+              "plant": "Guanxi",
+              "id": "annual-output-guanxi",
+              "type": "line",
+              "numbers": {
+                "2010": 1763.04,
+                "2011": 1551.78,
+                "2012": 1716.1,
+                "2013": 1764.86,
+                "2014": 1537.22,
+                "2015": 1620.76,
+                "2016": 2346.43,
+                "2017": 1580.07,
+                "2018": 958.16,
+                "2019": 1858.88,
+                "2020": 1513.81,
+                "2021": 1166.45,
+                "2022": 1477.5
+              }
+            },
+            {
+              "plant": "Sandieling",
+              "id": "annual-output-sandieling",
+              "type": "line",
+              "numbers": {
+                "2010": 3421.3,
+                "2011": 2417.15,
+                "2012": 2851.71,
+                "2013": 1759.69,
+                "2014": 1995.9,
+                "2015": 2508.35,
+                "2016": 2200.6,
+                "2017": 2466.52,
+                "2018": 1986.9,
+                "2019": 3659.36,
+                "2020": 3960.94,
+                "2021": 2770.94,
+                "2022": 1925.14
+              }
+            },
+            {
+              "plant": "Dongpai",
+              "id": "annual-output-dongpai",
+              "type": "line",
+              "numbers": {
+                "2010": 377.29,
+                "2011": 249.88,
+                "2012": 274.07,
+                "2013": 183.84,
+                "2014": 334.56,
+                "2015": 228.4,
+                "2016": 221.9,
+                "2017": 439.29,
+                "2018": 330.43,
+                "2019": 278.48,
+                "2020": 330.55,
+                "2021": 220.07,
+                "2022": 143.65
+              }
+            },
+            {
+              "plant": "Aibu II",
+              "id": "annual-output-aibu2",
+              "type": "line",
+              "numbers": {
+                "2010": 596.11,
+                "2011": 677.35,
+                "2012": 610.2,
+                "2013": 565.49,
+                "2014": 646.06,
+                "2015": 515.36,
+                "2016": 523.45,
+                "2017": 393.75,
+                "2018": 0,
+                "2019": 94.48,
+                "2020": 1009.41,
+                "2021": 1031.9,
+                "2022": 925.58
+              }
+            },
+            {
+              "plant": "Aibu III",
+              "id": "annual-output-aibu3",
+              "type": "line",
+              "numbers": {
+                "2010": 125.25,
+                "2011": 114.27,
+                "2012": 109.83,
+                "2013": 104.96,
+                "2014": 114.97,
+                "2015": 122.47,
+                "2016": 106.17,
+                "2017": 75.32,
+                "2018": 0,
+                "2019": 0,
+                "2020": 657.9,
+                "2021": 450.35,
+                "2022": 432.87
+              }
+            },
+            {
+              "plant": "Qingshuitan",
+              "id": "annual-output-qingshuitan",
+              "type": "line",
+              "numbers": {
+                "2010": 419.5,
+                "2011": 220.9,
+                "2012": 448.37,
+                "2013": 318.15,
+                "2014": 348.5,
+                "2015": 421.85,
+                "2016": 396.67,
+                "2017": 100.9,
+                "2018": 291.29,
+                "2019": 369.59,
+                "2020": 292.78,
+                "2021": 355.79,
+                "2022": 305.39
+              }
+            },
+            {
+              "plant": "Panxi II",
+              "id": "annual-output-panxi2",
+              "type": "line",
+              "numbers": {
+                "2010": 152.55,
+                "2011": 637.65,
+                "2012": 1117.53,
+                "2013": 952.09,
+                "2014": 713.64,
+                "2015": 1101.91,
+                "2016": 935.42,
+                "2017": 693.14,
+                "2018": 0,
+                "2019": 733.5,
+                "2020": 1519.72,
+                "2021": 1011.39,
+                "2022": 957.06
+              }
+            },
+            {
+              "plant": "Panxi III",
+              "id": "annual-output-panxi3",
+              "type": "line",
+              "numbers": {
+                "2010": 157.59,
+                "2011": 607.76,
+                "2012": 1085.83,
+                "2013": 877.36,
+                "2014": 591.89,
+                "2015": 1172.65,
+                "2016": 1031.86,
+                "2017": 684.93,
+                "2018": 0,
+                "2019": 718.04,
+                "2020": 1569.08,
+                "2021": 1022.65,
+                "2022": 974.98
+              }
+            },
+            {
+              "plant": "Panxi IV",
+              "id": "annual-output-panxi4",
+              "type": "line",
+              "numbers": {
+                "2010": 76.09,
+                "2011": 317.67,
+                "2012": 544.65,
+                "2013": 460.82,
+                "2014": 352.71,
+                "2015": 604.04,
+                "2016": 407.32,
+                "2017": 280.63,
+                "2018": 0,
+                "2019": 383.48,
+                "2020": 688.39,
+                "2021": 509.68,
+                "2022": 527.06
+              }
+            }
+          ]
+        },
+        {
+          "id": "demo-plant-annual-ghg-emmission-cuts",
+          "name": "GHG Emission Cuts",
+          "desc": "Greenhouse gas cuts (ton) because of the marginal increase in power output from the pilot plants after refurbishment compared to long-term average before. When output is below the long-term average before, no cut is accounted at that plant. Please see \"Pilot Plants\" and \"Technical Demonstration\" sections of the page for more details. Please select plants in the dropdown menu of the top-right of the figure.",
+          "charType": "echarts",
+          "data": [
+            {
+              "plant": "Maoyandong II",
+              "id": "annual-emm-cut-maoyandong2",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 6945.93,
+                "2021": 13081.78,
+                "2022": 19094.5,
+                "2023": null
+              }
+            },
+            {
+              "plant": "Mabozi",
+              "id": "annual-emm-cut-mabozi",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 526.96,
+                "2022": 1558.25
+              }
+            },
+            {
+              "plant": "Chahe",
+              "id": "annual-emm-cut-chahe",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 1594.23,
+                "2022": 2723.08
+              }
+            },
+            {
+              "plant": "Zhoujialiang",
+              "id": "annual-emm-cut-zhoujialiang",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 915.16,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Yangdaohe",
+              "id": "annual-emm-cut-yangdaohe",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Chaotianhou",
+              "id": "annual-emm-cut-chaotianhou",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Shijiaba",
+              "id": "annual-emm-cut-shijiaba",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 1478.93,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Jiangjunzhu",
+              "id": "annual-emm-cut-jiangjunzhu",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Majing",
+              "id": "annual-emm-cut-majing",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 8067.26,
+                "2020": 5341.93,
+                "2021": 7612.27,
+                "2022": 151.89
+              }
+            },
+            {
+              "plant": "Xiaokeng",
+              "id": "annual-emm-cut-xiaokeng",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 1782.75,
+                "2022": 2161.92
+              }
+            },
+            {
+              "plant": "Gaokeng",
+              "id": "annual-emm-cut-gaokeng",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 407.25,
+                "2021": 2572.83,
+                "2022": 697.69
+              }
+            },
+            {
+              "plant": "Taiping",
+              "id": "annual-emm-cut-taiping",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Tangban",
+              "id": "annual-emm-cut-tangban",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Jiaosan",
+              "id": "annual-emm-cut-jiaosan",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 4778.19,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Tantou",
+              "id": "annual-emm-cut-tantou",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 2725.88,
+                "2020": 0,
+                "2021": 0,
+                "2022": 1064.12
+              }
+            },
+            {
+              "plant": "Gaofang II",
+              "id": "annual-emm-cut-gaofang",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 2051.18,
+                "2020": 0,
+                "2021": 0,
+                "2022": 526.72
+              }
+            },
+            {
+              "plant": "Xinpingya",
+              "id": "annual-emm-cut-xinpingya",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 4139.39,
+                "2021": 6455.97,
+                "2022": 2117.95
+              }
+            },
+            {
+              "plant": "Guanxi",
+              "id": "annual-emm-cut-guanxi",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 2427.08,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Sandieling",
+              "id": "annual-emm-cut-sandieling",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Dongpai",
+              "id": "annual-emm-cut-dongpai",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Aibu II",
+              "id": "annual-emm-cut-aibu2",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 132.65
+              }
+            },
+            {
+              "plant": "Aibu III",
+              "id": "annual-emm-cut-aibu3",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 697.69,
+                "2022": 1374.44
+              }
+            },
+            {
+              "plant": "Qingshuitan",
+              "id": "annual-emm-cut-qingshuitan",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 0,
+                "2021": 0,
+                "2022": 0
+              }
+            },
+            {
+              "plant": "Panxi II",
+              "id": "annual-emm-cut-panxi2",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 5514.47,
+                "2021": 1385.45,
+                "2022": 1697.93
+              }
+            },
+            {
+              "plant": "Panxi III",
+              "id": "annual-emm-cut-panxi3",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 5649.1,
+                "2021": 1165.15,
+                "2022": 1532.69
+              }
+            },
+            {
+              "plant": "Panxi IV",
+              "id": "annual-emm-cut-panxi4",
+              "type": "bar",
+              "stack": "x",
+              "numbers": {
+                "2019": 0,
+                "2020": 1865.43,
+                "2021": 346.68,
+                "2022": 800.5
+              }
+            }
+          ]
+        },
+        {
+          "id": "demo-plant-employee-gender",
+          "name": "Eployee Genders of Pilot Plants",
+          "desc": "Genders of the employees of the pilot plants before and after the refurbishment. Data from monitoring and analysis (Zhejiang Univerisity of Water Resources and Electric Power, 2021). Female leaders are female employees higher than team leaders, and not included in female employees in the figures. Please select plants in the dropdown menu of the top-right of the figure.",
+          "charType": "echarts",
+          "phases": [
+            "Before",
+            "After"
+          ],
+          "cates": [
+            "Male",
+            "Female",
+            "Female Leaders"
+          ],
+          "type": "pie",
+          "data": [
+            {
+              "id": "demo-plant-employee-gender-all-plants",
+              "plant": "All plants",
+              "records": [
+                [
+                  279,
+                  86,
+                  29
+                ],
+                [
+                  264,
+                  74,
+                  30
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-maoyandong2",
+              "plant": "Maoyandong II",
+              "records": [
+                [
+                  12,
+                  2,
+                  3
+                ],
+                [
+                  14,
+                  2,
+                  3
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-mabozi",
+              "plant": "Mabozi",
+              "records": [
+                [
+                  13,
+                  11,
+                  null
+                ],
+                [
+                  10,
+                  7,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-chahe",
+              "plant": "Chahe",
+              "records": [
+                [
+                  9,
+                  2,
+                  null
+                ],
+                [
+                  9,
+                  2,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-zhoujialiang",
+              "plant": "Zhoujialiang",
+              "records": [
+                [
+                  7,
+                  null,
+                  3
+                ],
+                [
+                  7,
+                  null,
+                  3
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-yangdaohe",
+              "plant": "Yangdaohe",
+              "records": [
+                [
+                  7,
+                  3,
+                  1
+                ],
+                [
+                  6,
+                  2,
+                  2
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-chaotianhou",
+              "plant": "Chaotianhou",
+              "records": [
+                [
+                  5,
+                  null,
+                  2
+                ],
+                [
+                  5,
+                  null,
+                  2
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-shijiaba",
+              "plant": "Shijiaba",
+              "records": [
+                [
+                  5,
+                  null,
+                  1
+                ],
+                [
+                  6,
+                  null,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-jiangjunzhu",
+              "plant": "Jiangjunzhu",
+              "records": [
+                [
+                  7,
+                  2,
+                  null
+                ],
+                [
+                  6,
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-majing",
+              "plant": "Majing",
+              "records": [
+                [
+                  34,
+                  4,
+                  null
+                ],
+                [
+                  34,
+                  4,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-xiaokeng",
+              "plant": "Xiaokeng",
+              "records": [
+                [
+                  8,
+                  2,
+                  null
+                ],
+                [
+                  8,
+                  2,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-gaokeng",
+              "plant": "Gaokeng",
+              "records": [
+                [
+                  12,
+                  1,
+                  1
+                ],
+                [
+                  12,
+                  1,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-taiping",
+              "plant": "Taiping",
+              "records": [
+                [
+                  8,
+                  5,
+                  null
+                ],
+                [
+                  8,
+                  5,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-tangban",
+              "plant": "Tangban",
+              "records": [
+                [
+                  44,
+                  10,
+                  1
+                ],
+                [
+                  44,
+                  16,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-jiaosan",
+              "plant": "Jiaosan",
+              "records": [
+                [
+                  6,
+                  3,
+                  null
+                ],
+                [
+                  4,
+                  3,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-tantou",
+              "plant": "Tantou",
+              "records": [
+                [
+                  11,
+                  2,
+                  1
+                ],
+                [
+                  11,
+                  2,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-gaofang2",
+              "plant": "Gaofang II",
+              "records": [
+                [
+                  10,
+                  12,
+                  null
+                ],
+                [
+                  6,
+                  9,
+                  3
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-xinpingya",
+              "plant": "Xinpingya",
+              "records": [
+                [
+                  5,
+                  3,
+                  2
+                ],
+                [
+                  5,
+                  3,
+                  2
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-guanxi",
+              "plant": "Guanxi",
+              "records": [
+                [
+                  14,
+                  9,
+                  3
+                ],
+                [
+                  11,
+                  6,
+                  3
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-sandieling",
+              "plant": "Sandieling",
+              "records": [
+                [
+                  17,
+                  2,
+                  null
+                ],
+                [
+                  15,
+                  1,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-dongpai",
+              "plant": "Dongpai",
+              "records": [
+                [
+                  6,
+                  3,
+                  3
+                ],
+                [
+                  5,
+                  2,
+                  2
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-aibu2",
+              "plant": "Aibu II",
+              "records": [
+                [
+                  8,
+                  1,
+                  2
+                ],
+                [
+                  8,
+                  2,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-aibu3",
+              "plant": "Aibu III",
+              "records": [
+                [
+                  8,
+                  1,
+                  1
+                ],
+                [
+                  8,
+                  1,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-qingshuitan",
+              "plant": "Qingshuitan",
+              "records": [
+                [
+                  1,
+                  1,
+                  null
+                ],
+                [
+                  1,
+                  1,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-panxi2",
+              "plant": "Panxi II",
+              "records": [
+                [
+                  6,
+                  3,
+                  2
+                ],
+                [
+                  6,
+                  2,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-panxi3",
+              "plant": "Panxi III",
+              "records": [
+                [
+                  8,
+                  2,
+                  2
+                ],
+                [
+                  7,
+                  null,
+                  2
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-gender-panxi4",
+              "plant": "Panxi IV",
+              "records": [
+                [
+                  8,
+                  2,
+                  1
+                ],
+                [
+                  5,
+                  3,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "demo-plant-employee-income",
+          "name": "Employee Incomes of Pilot Plants",
+          "desc": "Averaged incomes of employees of the pilot plants before and after refurbishment. Data from monitoring and analysis (Zhejiang Univerisity of Water Resources and Electric Power, 2021). Female leaders are female employees higher than team leaders, and not included in female employees in the figures. Please select plants in the dropdown menu of the top-right of the figure.",
+          "charType": "echarts",
+          "phases": [
+            "Before",
+            "After"
+          ],
+          "cates": [
+            "Male",
+            "Female",
+            "Female Leaders"
+          ],
+          "type": "bar",
+          "data": [
+            {
+              "id": "demo-plant-employee-income-all-plants",
+              "plant": "All plants",
+              "records": [
+                [
+                  4.47,
+                  3.31,
+                  4.91
+                ],
+                [
+                  5.56,
+                  4.72,
+                  5.44
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-maoyandong2",
+              "plant": "Maoyandong II",
+              "records": [
+                [
+                  4.12,
+                  1.57,
+                  4.64
+                ],
+                [
+                  5.58,
+                  1.96,
+                  6.48
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-mabozi",
+              "plant": "Mabozi",
+              "records": [
+                [
+                  2.79,
+                  2.73,
+                  null
+                ],
+                [
+                  3.34,
+                  3.39,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-chahe",
+              "plant": "Chahe",
+              "records": [
+                [
+                  3.23,
+                  2.83,
+                  null
+                ],
+                [
+                  3.92,
+                  3.48,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-zhoujialiang",
+              "plant": "Zhoujialiang",
+              "records": [
+                [
+                  3.64,
+                  null,
+                  3.44
+                ],
+                [
+                  4.94,
+                  null,
+                  4.91
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-yangdaohe",
+              "plant": "Yangdaohe",
+              "records": [
+                [
+                  4.62,
+                  3.81,
+                  4.5
+                ],
+                [
+                  4.77,
+                  3.8,
+                  4.5
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-chaotianhou",
+              "plant": "Chaotianhou",
+              "records": [
+                [
+                  5.44,
+                  null,
+                  4.5
+                ],
+                [
+                  4.68,
+                  null,
+                  4.5
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-shijiaba",
+              "plant": "Shijiaba",
+              "records": [
+                [
+                  5.3,
+                  null,
+                  3.8
+                ],
+                [
+                  5.05,
+                  null,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-jiangjunzhu",
+              "plant": "Jiangjunzhu",
+              "records": [
+                [
+                  3.83,
+                  2.8,
+                  null
+                ],
+                [
+                  3.97,
+                  3,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-majing",
+              "plant": "Majing",
+              "records": [
+                [
+                  3.18,
+                  3.08,
+                  null
+                ],
+                [
+                  4.11,
+                  4.23,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-xiaokeng",
+              "plant": "Xiaokeng",
+              "records": [
+                [
+                  4.13,
+                  4,
+                  null
+                ],
+                [
+                  6.08,
+                  5.07,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-gaokeng",
+              "plant": "Gaokeng",
+              "records": [
+                [
+                  6.55,
+                  6.52,
+                  8.02
+                ],
+                [
+                  6.78,
+                  6.14,
+                  8.32
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-taiping",
+              "plant": "Taiping",
+              "records": [
+                [
+                  2.81,
+                  1.74,
+                  null
+                ],
+                [
+                  3.95,
+                  3.2,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-tangban",
+              "plant": "Tangban",
+              "records": [
+                [
+                  6.29,
+                  3.93,
+                  7.8
+                ],
+                [
+                  8.76,
+                  6.02,
+                  10.95
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-jiaosan",
+              "plant": "Jiaosan",
+              "records": [
+                [
+                  2.25,
+                  2.1,
+                  null
+                ],
+                [
+                  4.78,
+                  4.6,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-tantou",
+              "plant": "Tantou",
+              "records": [
+                [
+                  2.3,
+                  2.1,
+                  2.4
+                ],
+                [
+                  2.81,
+                  2.56,
+                  2.9
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-gaofang2",
+              "plant": "Gaofang II",
+              "records": [
+                [
+                  3.2,
+                  1.79,
+                  null
+                ],
+                [
+                  4.57,
+                  2.39,
+                  3.31
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-xinpingya",
+              "plant": "Xinpingya",
+              "records": [
+                [
+                  6.45,
+                  3.88,
+                  3.71
+                ],
+                [
+                  8.34,
+                  5.77,
+                  6.45
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-guanxi",
+              "plant": "Guanxi",
+              "records": [
+                [
+                  6.58,
+                  5.5,
+                  6.17
+                ],
+                [
+                  7.75,
+                  6.55,
+                  6.56
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-sandieling",
+              "plant": "Sandieling",
+              "records": [
+                [
+                  3.22,
+                  3.33,
+                  null
+                ],
+                [
+                  5.04,
+                  5.04,
+                  5.04
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-dongpai",
+              "plant": "Dongpai",
+              "records": [
+                [
+                  3.22,
+                  2.07,
+                  3.01
+                ],
+                [
+                  5.04,
+                  5.04,
+                  5.04
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-aibu2",
+              "plant": "Aibu II",
+              "records": [
+                [
+                  3.79,
+                  3.25,
+                  3.85
+                ],
+                [
+                  5.04,
+                  5.04,
+                  5.04
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-aibu3",
+              "plant": "Aibu III",
+              "records": [
+                [
+                  3.26,
+                  2.73,
+                  3.53
+                ],
+                [
+                  5.04,
+                  5.04,
+                  5.04
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-qingshuitan",
+              "plant": "Qingshuitan",
+              "records": [
+                [
+                  5.35,
+                  5.35,
+                  null
+                ],
+                [
+                  5.75,
+                  5.75,
+                  null
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-panxi2",
+              "plant": "Panxi II",
+              "records": [
+                [
+                  6.44,
+                  5.1,
+                  7.3
+                ],
+                [
+                  5.5,
+                  5.09,
+                  5.33
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-panxi3",
+              "plant": "Panxi III",
+              "records": [
+                [
+                  6.66,
+                  5.26,
+                  7.3
+                ],
+                [
+                  5.87,
+                  null,
+                  5.33
+                ]
+              ]
+            },
+            {
+              "id": "demo-plant-employee-income-panxi4",
+              "plant": "Panxi IV",
+              "records": [
+                [
+                  6.66,
+                  5.25,
+                  7.3
+                ],
+                [
+                  5.6,
+                  5.2,
+                  5.09
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "capacity-building-tranees",
+          "name": "Trainees of Capacity Building Workshops",
+          "desc": "Number of trainees in the training workshops for capacity building.",
+          "charType": "aniNumber",
+          "data": [
+            {
+              "id": "capacity-building-tranees-shp-owners",
+              "name": "SHP owners, managers, etc.",
+              "number": 1226
+            },
+            {
+              "id": "capacity-building-tranees-shp-officials",
+              "name": "SHP officials",
+              "number": 211
+            },
+            {
+              "id": "capacity-building-tranees-shp-trainers",
+              "name": "Trainers",
+              "number": 50
+            },
+            {
+              "id": "capacity-building-tranees-green-shp-certification",
+              "name": "Trainees for green SHP ceritification",
+              "number": 374
+            },
+            {
+              "id": "capacity-building-tranees-shp-safety",
+              "name": "Trainees for operational safety",
+              "number": 202
+            }
+          ]
+        }
+      ]
+    },
+    "projPartners": {
+      "id": "project-partners",
+      "name": "Partnership",
+      "type": "section",
+      "secClass": "section bg-unido-orange",
+      "desc": "We would also like to express our sincere gratitudes towards individual consultants and experts who took part in the project.",
+      "children": [
+        {
+          "id": "partner-group-donor",
+          "name": "Donor",
+          "type": "partner-group",
+          "children": [
+            {
+              "id": "partner-gef",
+              "name": "Global Environmental Facility",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-gef-en.jpg"
+            }
+          ]
+        },
+        {
+          "id": "partner-group-implementor",
+          "name": "Execution",
+          "type": "partner-group",
+          "children": [
+            {
+              "id": "partner-unido",
+              "name": "UNIDO",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-unido-en.jpg"
+            },
+            {
+              "id": "partner-mwr",
+              "name": "MWR",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-mwr-prc-name-en.jpg"
+            },
+            {
+              "id": "partner-icshp",
+              "name": "ICSHP",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-icshp-en.jpg"
+            },
+            {
+              "id": "partner-icshp",
+              "name": "Zhejiang, Fujian, Guangdong, Guangxi, Yunnan, Chongqing, Shaanxi, Hubei Departments of Water Resources",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-local-water-dept-names-en.jpg"
+            }
+          ]
+        },
+        {
+          "id": "partner-group-partners",
+          "name": "Partners",
+          "type": "partner-group",
+          "children": [
+            {
+              "id": "partner-drc",
+              "name": "MWR Development and Research Center",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-drc-en.jpg"
+            },
+            {
+              "id": "partner-zuwrep",
+              "name": "Zhejiang University of Water Resources and Electric Power",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-zuwrep.jpg"
+            },
+            {
+              "id": "partner-hhu",
+              "name": "Hohai University",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-hhu.jpg"
+            },
+            {
+              "id": "partner-intce",
+              "name": "MWR International Economic and Technical and Economic Cooperation and Exchange Center",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-intce-en.jpg"
+            },
+            {
+              "id": "partner-ches",
+              "name": "Chinese Hydraulic Engineering Society",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-ches.jpg"
+            },
+            {
+              "id": "partner-cju",
+              "name": "China Jiliang University",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-cju.jpg"
+            },
+            {
+              "id": "partner-zicc",
+              "name": "Zhejiang International Communicaition",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-zicc.jpg"
+            },
+            {
+              "id": "partner-gz",
+              "name": "Green Zhejiang",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-gz.jpg"
+            },
+            {
+              "id": "partner-zjyx",
+              "name": "Zhengjiang Yctionsoft",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-zjyx-en.jpg"
+            },
+            {
+              "id": "partner-nnsc",
+              "name": "Beijing Nianniansanchang",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-nnsc.jpg"
+            },
+            {
+              "id": "partner-ttt",
+              "name": "TTT New Zealand",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-ttt.jpg"
+            },
+            {
+              "id": "partner-lihi",
+              "name": "LIHI USA",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-lihi.jpg"
+            },
+            {
+              "id": "partner-nm",
+              "name": "NatureMade Switzerland",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-nm.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    "projContact": {
+      "id": "follow-us",
+      "name": "Follow Us",
+      "type": "section",
+      "secClass": "section bg-dark",
+      "desc": " This page and its linked documents have been produced without formal United Nations editing. The designations employed and the presentation of the material in this document do not imply the expression of any opinion whatsoever on the part of the Secretariat of the United Nations Industrial Development Organization (UNIDO) concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries, or its economic system or degree of development. Designations such as “developed”, “industrialized” or “developing” are intended for statistical convenience and do not necessarily express a judgement about the stage reached by a particular country or area in the development process. Mention of firm names or commercial products does not constitute an endorsement by UNIDO. The information provided on this page and in the linked documents is obtained during the execution of the project and is subject to potential changes in validity. The categorisation and presentation of this information should not be interpreted as reflecting any viewpoint, opinion, or position of any government entity or public institution.",
+      "children": [
+        {
+          "id": "unido-shp-page",
+          "name": "UNIDO Small Hydropower",
+          "type": "qr-code",
+          "img": "/img/qr-code-unido-shp.svg",
+          "link": "https://www.unido.org/small-hydropower"
+        },
+        {
+          "id": "unido-gef-china-shp-page",
+          "name": "Project Website Small & Green",
+          "type": "qr-code",
+          "img": "/img/qr-code-shp-website.svg",
+          "link": "http://www.icshp.org/small-and-green"
+        },
+        {
+          "id": "green-shp-weixin",
+          "name": "Green SHP on Wechat",
+          "type": "qr-code",
+          "img": "/img/qr-code-green-shp-weixin.svg"
+        }
+      ]
+    }
+  }
+]
