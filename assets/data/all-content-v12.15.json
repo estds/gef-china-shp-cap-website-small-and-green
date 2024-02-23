@@ -27,7 +27,7 @@
           "type": "button",
           "bClass": "btn btn-light rounded-0 mx-1",
           "text": "English",
-          "link": "/en"
+          "link": "en.html"
         }
       ]
     },
