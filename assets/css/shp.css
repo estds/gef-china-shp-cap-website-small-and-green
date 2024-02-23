@@ -1,4 +1,15 @@
 /* ----------- Overrides ----------- */
+.btn-unido-blue {
+  background-color: #009cdc !important;
+  border-color: #009cdc !important;
+}
+
+.btn-unido-blue:active,
+.btn-unido-blue:hover {
+  background-color: #008ac3 !important;
+  border-color: #008ac3 !important;
+}
+
 .btn-unido-orange {
   background-color: #f47a42 !important;
   border-color: #f47a42 !important;
