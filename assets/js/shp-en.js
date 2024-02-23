@@ -271,6 +271,18 @@ function createNavMenu(json, elementID) {
 function createSectionHome(json) {
   var selector = '[data-anchor="' + json.id + '"]';
   var homeElement = document.querySelector(selector);
+  var eleChildren = json.children;
+  var buttons = eleChildren.filter(function(item) {
+    return item.type === 'button';
+  });
+  var buttonsHTML = ``;
+  var buttonsLine = ``;
+  for (const item of buttons) {
+    buttonsHTML += `<a href="${item.link}" class="${item.bClass}">${item.text}</a>`;
+  }
+  if (buttons.length > 0) {
+  	buttonsLine = `<p>${buttonsHTML}</p>`;
+  }
 
   var homeHTML = `<video class="bg-video" loop muted data-autoplay playsinline poster="${assetsURL+json.children[1].poster}">
                    <source src="${assetsURL+json.children[1].vid}" type="video/mp4">
@@ -281,7 +293,7 @@ function createSectionHome(json) {
                  <div class="layer">
                    <div class="container text-white text-center">
                      <h1 class="display-3 fw-bolder">${json.name}</h1>
-                     <p>${json.desc}</p>
+                     <p>${json.desc}</p>${buttonsLine}
                    </div>
                  </div>`;
 
