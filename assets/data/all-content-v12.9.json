@@ -16,6 +16,16 @@
           "type": "background-video",
           "vid": "/vid/unido-gef-shp-landing-bg.mp4",
           "poster": "/img/unido-gef-shp-landing-bg.jpg"
+        },
+        {
+          "type": "button",
+          "text": "继续了解",
+          "link": "#project-overview"
+        },
+        {
+          "type": "button",
+          "text": "English",
+          "link": "/en"
         }
       ]
     },
