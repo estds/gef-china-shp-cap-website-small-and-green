@@ -48,7 +48,7 @@
           "link": [
             {
               "src": "/vid/unido-gef-shp-small-and-green-720p/playlist.m3u8",
-              "type": "video/mp4",
+              "type": "application/x-mpegURL",
               "label": "HD"
             }
           ]
@@ -552,16 +552,16 @@
             },
             {
               "id": "flow-recovery-standard",
-              "name": "Technical Guidelines for contril of flow reduction downstream of SHP stations",
+              "name": "Technical guidelines for control of flow reduction downstream of SHP stations",
               "type": "document",
-              "desc": "This industrial standard addresses the need of measures to recover depleted river sections downstream SHP plants, including principal requirements and technical methodologies for these measures. It is a comprehensive package of technical measures and managerial practices. It is has an index number as SL/T796-2020.",
+              "desc": "This industrial standard addresses the need of measures to recover depleted river sections downstream SHP plants, including their principles and technical methods. It is a comprehensive package of technical measures and managerial practices. It is has an index number as SL/T796-2020.",
               "button": "Read",
               "locLink": true,
               "link": "/docs/slt-796-2020-recovery-of-river-flow-downstream-shp-projects.pdf"
             },
             {
               "id": "green-shp-technical-guide",
-              "name": "Technical Guidelines for green SHP certification",
+              "name": "Technical guidelines for green SHP certification",
               "type": "document",
               "desc": "This document is a manual for the certification of green SHP, including technical interpretations, key operational aspects, tutorials for the use of online management system, and case studies.",
               "button": "Read summary",
@@ -644,53 +644,53 @@
           "id": "project-seminars",
           "name": "Seminars",
           "type": "photo-group",
-          "desc": "项目2022-2023年组织了3次国内研讨会（西安、南昌、昆明）和1次国际研讨会（北京，线上），在国内外深入分享项目执行取得的经验和知识。",
+          "desc": "Three domestic seminars (Xi'an, Nanchang, Kunming) and one international seminar (Beijing, online) were organised between 2022 and 2023 to extensively share the experiences and knowledge gained under the Project .",
           "children": [
             {
               "id": "photo-img_8437",
-              "name": "南昌研讨会",
+              "name": "Seminar in Nanchang",
               "type": "photo",
-              "desc": "2022年11月，江西南昌，项目研讨会小水电绿色发展论坛作为第十七届中国（国际）水务高峰论坛系列活动之一举办。",
+              "desc": "November 2022, Nanchang, Jiangxi. A project seminar was held during the 17th China Water Expo. Over fifty professionals from institutions including universities, government agencies, research institutes, financial institutions, and non-governmental organizations participated in the seminar.",
               "hdimg": "/img/IMG_8437.JPG",
               "thumb": "/img/thumb/IMG_8437.JPG"
             },
             {
               "id": "photo-img_8456",
-              "name": "南昌研讨会",
+              "name": "Boting Zhang, Prof",
               "type": "photo",
-              "desc": "2022年11月，江西南昌，中国水力发电工程学会原副秘书长张博庭在项目研讨会作报告。",
+              "desc": "November 2022, Nanchang, Jiangxi. Zhang Boting, former Deputy Secretary-General of China Hydropower Engineering Society, delivered a speech at a project seminar. He highlighted the strategic value of SHP in energy storage and regulation with growing uptake of sustainable energy in the coming decades.",
               "hdimg": "/img/IMG_8456.JPG",
               "thumb": "/img/thumb/IMG_8456.JPG"
             },
             {
-              "id": "photo-img_8452",
-              "name": "南昌研讨会",
+              "id": "photo-img_8647",
+              "name": "Panel discussion",
               "type": "photo",
-              "desc": "2022年11月，江西南昌，水利部国际小水电中心主任岳梦华副主任在项目研讨会作报告。",
-              "hdimg": "/img/IMG_8452.JPG",
-              "thumb": "/img/thumb/IMG_8452.JPG"
+              "desc": "November 2022, Nanchang, Jiangxi. National experts discussed incentive measures for the green turn and development of SHP in China at a project seminar. They believed that more targeted incentive policies need to be formulated to fully leverage the dual role of the government and the market.",
+              "hdimg": "/img/IMG_8647.JPG",
+              "thumb": "/img/thumb/IMG_8647.JPG"
             },
             {
               "id": "photo-img_3295",
-              "name": "昆明研讨会",
+              "name": "Ma Hongqi, Prof",
               "type": "photo",
-              "desc": "2023年4月，云南昆明，中国工程院院士马洪琪在项目研讨会做报告。",
+              "desc": "April 2023, Kunming, Yunnan. Prof Ma Hongqi of Chinese Academy of Engineering delivered a speech at a project seminar. He believes that the potential of small hydropower in grid regulation and energy storage deserves attention, which will benefit the uptake of renewable energy. He also hoped that green certificates and carbon trading can revitalize the SHP industry.",
               "hdimg": "/img/IMG_3295.JPG",
               "thumb": "/img/thumb/IMG_3295.JPG"
             },
             {
               "id": "photo-img_3410",
-              "name": "昆明研讨会",
+              "name": "Panel discussion",
               "type": "photo",
-              "desc": "2023年4月，云南昆明，行业专家在项目研讨会就小水电绿色发展机制展开讨论。",
+              "desc": "April 2023, Kunming, Yunnan. National experts discussed policy tools for the green turn of SHP at a project seminar. They believed that SHP development generates multiple values but requires more policy support to fully tap into its ecological, economic, and social potential.",
               "hdimg": "/img/IMG_3410.JPG",
               "thumb": "/img/thumb/IMG_3410.JPG"
             },
             {
-              "id": "photo-img_0844",
-              "name": "西安研讨会",
+              "id": "photo-img_1844",
+              "name": "Seminar in Xiﾕan",
               "type": "photo",
-              "desc": "2022年8月，陕西西安，项目研讨会双碳目标下的小水电高质量发展论坛举办。",
+              "desc": "August 2022, Xi'an, Shaanxi. A project seminar was held and attracted over 60 professionals from the water resources, hydropower, and clean energy fields. Additionally, approximately 11,000 participants joined the seminar online.",
               "hdimg": "/img/IMG_1844.JPG",
               "thumb": "/img/thumb/IMG_1844.JPG"
             }
@@ -698,55 +698,55 @@
         },
         {
           "id": "training-workshops",
-          "name": "培训班",
+          "name": "Training workshops",
           "type": "photo-group",
-          "desc": "2020至2022年，项目累计开展了17期小水电行业能力建设培训班，为小水电业主、技术人员、政府官员等增强从业能力，服务行业绿色转型发展。",
+          "desc": "Between 2020 and 2022, a total of 17 capacity building training workshops were organised for the SHP industry in China, aiming to enhance the professional skillsets of SHP owners, technical personnel, and government officials, to support the green turn and development of the industry.",
           "children": [
             {
               "id": "photo-15lia5li75oq",
-              "name": "南京培训班",
+              "name": "Training workshop in Nanjing",
               "type": "photo",
-              "desc": "2020年9月，江苏南京，针对小水电业主、开发和技术人员能力建设的第一期培训班举办。",
+              "desc": "September 2020, Nanjing, Jiangsu, the first training workshop for capacity building of small hydropower owners, developers, and technical personnel",
               "hdimg": "/img/15Lia5Li75oq.jpg",
               "thumb": "/img/thumb/15Lia5Li75oq.jpg"
             },
             {
               "id": "photo-cp5rc055s15y",
-              "name": "杭州培训班",
+              "name": "Training workshop in Hangzhou (ii)",
               "type": "photo",
-              "desc": "2020年9月，浙江杭州，针对小水电业主、开发和技术人员能力建设的第二期培训班举办。",
+              "desc": "September 2020, Hangzhou, Zhejiang, the second training workshop for capacity building of small hydropower owners, developers, and technical personnel",
               "hdimg": "/img/CP5rC055S15Y.jpg",
               "thumb": "/img/thumb/CP5rC055S15Y.jpg"
             },
             {
               "id": "photo-MOW5tDEy5pyI5r",
-              "name": "海口培训班",
+              "name": "Training workshop in Haikou",
               "type": "photo",
-              "desc": "2020年12月，海南海口，针对绿色小水电站创建的第二期专项培训班举办。",
+              "desc": "December 2020, Haikou, Hainan, the second specialized training workshop for the certification of green small hydropower plants",
               "hdimg": "/img/MOW5tDEy5pyI5r.jpg",
               "thumb": "/img/thumb/MOW5tDEy5pyI5r.jpg"
             },
             {
               "id": "photo-DEy5pyI5rWZ5rs",
-              "name": "海口培训班",
+              "name": "Training workshop in Hangzhou (i)",
               "type": "photo",
-              "desc": "2020年12月，浙江杭州，针对安全生产标准化建设的第一期专项培训班举办。",
+              "desc": "December 2020, Hangzhou, Zhejiang, the first specialized training workshop for standardising operational safety of SHP",
               "hdimg": "/img/DEy5pyI5rWZ5rs.jpg",
               "thumb": "/img/thumb/DEy5pyI5rWZ5rs.jpg"
             },
             {
               "id": "photo-HmnIjmtZnms3msL",
-              "name": "丽水培训班",
+              "name": "Training workshop in Lishui",
               "type": "photo",
-              "desc": "2022年1月，浙江丽水，针对小水电业主、开发和技术人员能力建设的第五期培训班举办。",
+              "desc": "January 2022, Lishui, Zhejiang, the fifth training workshop for capacity building of small hydropower owners, developers, and technical personnel",
               "hdimg": "/img/HmnIjmtZnms3msL.jpg",
               "thumb": "/img/thumb/HmnIjmtZnms3msL.jpg"
             },
             {
               "id": "photo-W5tDjmnIjmt",
-              "name": "杭州培训班",
+              "name": "Training workshop in Hangzhou (iv)",
               "type": "photo",
-              "desc": "2022年8月，浙江杭州，针对绿色小水电站创建的第四期专项培训班举办。",
+              "desc": "August 2022, Hangzhou, Zhejiang, the fourth specialized training workshop for the certification of green small hydropower plants",
               "hdimg": "/img/W5tDjmnIjmt.jpg",
               "thumb": "/img/thumb/W5tDjmnIjmt.jpg"
             }
@@ -756,53 +756,53 @@
           "id": "technical-tours",
           "name": "Technical tours",
           "type": "photo-group",
-          "desc": "2019年，结合能力建设培训班内容，项目分别组织相关小水电业主、政府官员，赴美国、奥地利、瑞士进行技术考察，学习相关知识和经验。",
+          "desc": "In 2019, combined with capacity building training workshops, SHP owners and government officials were organised to visit the United States, Austria, and Switzerland for technical tours, where they learned first-hand knowledge and experience.",
           "children": [
             {
               "id": "photo-wimg172",
-              "name": "业主代表团",
+              "name": "Visit LIHI",
               "type": "photo",
-              "desc": "2019年6月，美国麻省大学洛威尔分校，项目组织的小水电从业者代表团参加由美国低影响水电协会LIHI举办的研讨会。",
+              "desc": "June 2019, University of Massachusetts Lowell, USA, a delegation of SHP professionals attending seminar hosted by the Low Impact Hydropower Institute (LIHI)",
               "hdimg": "/img/WIMG172.jpg",
               "thumb": "/img/thumb/WIMG172.jpeg"
             },
             {
               "id": "photo-wimg233",
-              "name": "业主代表团",
+              "name": "Tour Lowell Hydropower Plant",
               "type": "photo",
-              "desc": "2019年6月，美国马萨诸塞州洛威尔市，代表团参观Lowell水电站，电站总装机22.6MW，于2017获得LIHI认证。",
+              "desc": "June 2019, Lowell, Massachusetts, USA, a delegation of SHP professionals touring the Lowell Hydropower Plant, with a total installed capacity of 22.6 MW, which received LIHI certification in 2017",
               "hdimg": "/img/WIMG233.jpg",
               "thumb": "/img/thumb/WIMG233.jpeg"
             },
             {
               "id": "photo-wimg205",
-              "name": "业主代表团",
+              "name": "Tour Vertical Fish Ladder",
               "type": "photo",
-              "desc": "2019年6月，美国马萨诸塞州洛威尔市，代表团参观位于洛威尔市的Lowell水电站的垂直槽鱼梯。",
-              "hdimg": "/img/WIMG205.jpg",
-              "thumb": "/img/thumb/WIMG205.jpeg"
+              "desc": "June 2019, Lowell, Massachusetts, USA, a delegation of SHP professionals touring the vertical fish lift at the Lowell Hydropower Plant in Lowell",
+              "hdimg": "/img/V2VjaGF0SU1HMjA2LmpwZWc.jpg",
+              "thumb": "/img/thumb/V2VjaGF0SU1HMjA2LmpwZWc.jpg"
             },
             {
               "id": "photo-20191217094137",
-              "name": "官员代表团",
+              "name": "Visit UNIDO Headquarters",
               "type": "photo",
-              "desc": "2019年11月，奥地利维也纳，项目组织小水电官员代表团访问UNIDO总部，UNIDO执行干事Philippe Scholtes先生向代表团致欢迎词。",
+              "desc": "November 2019, Vienna, Austria, a delegation of SHP officials visiting the headquarters of UNIDO, where they were welcomed by Mr. Philippe Scholtes, UNIDO Managing Director",
               "hdimg": "/img/20191217094137.jpg",
               "thumb": "/img/thumb/20191217094137.jpg"
             },
             {
               "id": "photo-dsc01180",
-              "name": "官员代表团",
+              "name": "Tour Freudenau Hydropower Plant",
               "type": "photo",
-              "desc": "2019年11月，奥地利维也纳，代表团参观多瑙河Freudenau水电站，电站建于1998年，总装机172MW。",
+              "desc": "November 2019, Vienna, Austria, a delegation of SHP officials visiting the Freudenau Hydropower Plant on the Danube River, which was built in 1998 and has a total installed capacity of 172 MW",
               "hdimg": "/img/DSC01180.JPG",
               "thumb": "/img/thumb/DSC01180.JPG"
             },
             {
               "id": "photo-20191217094051",
-              "name": "官员代表团",
+              "name": "Tour KWO Hydropower Company",
               "type": "photo",
-              "desc": "2019年11月，瑞士伯尔尼，代表团参观瑞士KWO水电公司，电站装机250MW，获得瑞士Naturemade Star认证。",
+              "desc": "November 2019, Bern, Switzerland, a delegation of SHP officials visiting the KWO Hydroelectric Company in Switzerland, where they run a 250 MW hydropower plant and obtained the Swiss Naturemade Star certification",
               "hdimg": "/img/20191217094051.jpg",
               "thumb": "/img/thumb/20191217094051.jpg"
             }
@@ -812,53 +812,53 @@
           "id": "technical-support",
           "name": "Technical support",
           "type": "photo-group",
-          "desc": "除试点电站外，项目还向小水电站提供技术支持，帮助完成绿色小水电示范电站创建和安全生产标准化达标各24座。",
+          "desc": "In addition to the pilot plants, technical support was provided to additional SHP plants, 24 respectively, to assist them in green SHP and safety certifications.",
           "children": [
             {
-              "id": "photo-6Ziz5LqM5rup5Z2d5rC055",
-              "name": "技术支持",
+              "id": "photo-aw1hz2uwndeuanbn",
+              "name": "Consultation for green SHP certification",
               "type": "photo",
-              "desc": "浙江二滩坝水电站，装机2,520KW，2021年创建成为绿色小水电示范电站。",
+              "desc": "Project commissioned experts providing technical advice on site for green SHP certification. Inspections were conducted for ecological flow discharging facilities and conditions.",
+              "hdimg": "/img/aW1hZ2UwNDEuanBn.jpg",
+              "thumb": "/img/thumb/aW1hZ2UwNDEuanBn.jpg"
+            },
+            {
+              "id": "photo-mde1aw1hz2uuanbn",
+              "name": "Consultation for green SHP certification",
+              "type": "photo",
+              "desc": "Project commissioned experts providing technical advice on site for green SHP certification. Inspections were conducted to review documents, identify problems, and provided guidance.",
+              "hdimg": "/img/MDE1aW1hZ2UuanBn.jpg",
+              "thumb": "/img/thumb/MDE1aW1hZ2UuanBn.jpg"
+            },
+            {
+              "id": "photo-su1hxzazkdeplmpwzw",
+              "name": "Consultation for operational safety",
+              "type": "photo",
+              "desc": "Project commissioned experts providing technical advice on operational safety improvements at the Tianfumiao SHP (5000KW) in Yichang, Hubei. They evaluated the safety standards at the substation and provided recommendations for improvement. The power station passed Tier 1 safety accreditation in 2022.",
+              "hdimg": "/img/SU1HXzAzKDEpLmpwZw.jpg",
+              "thumb": "/img/thumb/SU1HXzAzKDEpLmpwZw.jpg"
+            },
+            {
+              "id": "photo-6ziz5lqm5rup5z2d5rc055",
+              "name": "Zhejiang Ertanba SHP, certified green SHP",
+              "type": "photo",
+              "desc": "Ertanba SHP in Lishui, Zhejiang, installed capacity 2,520KW, certified green SHP plant since 2021.",
               "hdimg": "/img/6Ziz5LqM5rup5Z2d5rC055.jpg",
               "thumb": "/img/thumb/6Ziz5LqM5rup5Z2d5rC055.jpg"
             },
             {
-              "id": "photo-K5bee5Liw5r2t5rC055S",
-              "name": "技术支持",
+              "id": "photo-r5yyw5bel6zug5zui6",
+              "name": "Hubei Gudongkou SHP, Tier 1 safety accredited",
               "type": "photo",
-              "desc": "浙江丰潭水电站，装机14,000KW，2021年创建成为绿色小水电示范电站。",
-              "hdimg": "/img/K5bee5Liw5r2t5rC055S.jpg",
-              "thumb": "/img/thumb/K5bee5Liw5r2t5rC055S.jpg"
-            },
-            {
-              "id": "photo-Gi5rGf5Yy66ZOc5bGx5",
-              "name": "技术支持",
-              "type": "photo",
-              "desc": "浙江铜山源水电站，装机4,800KW，2021年创建成为绿色小水电示范电站。",
-              "hdimg": "/img/Gi5rGf5Yy66ZOc5bGx5.jpg",
-              "thumb": "/img/thumb/Gi5rGf5Yy66ZOc5bGx5.jpg"
-            },
-            {
-              "id": "photo-R5YyW5bel6ZuG5Zui6",
-              "name": "技术支持",
-              "type": "photo",
-              "desc": "湖北古洞口水电站，装机49,800KW，2022年达成安全生产标准化一级。",
+              "desc": "Gudongkou SHP in Hubei, installed capacity 49,800KW, Tier 1 safety accreditation since 2022.",
               "hdimg": "/img/R5YyW5bel6ZuG5Zui6.jpg",
               "thumb": "/img/thumb/R5YyW5bel6ZuG5Zui6.jpg"
             },
             {
-              "id": "photo-6YO05bee5qyn6Ziz5r",
-              "name": "技术支持",
+              "id": "photo-5bee5bic6bue6b6z5bim",
+              "name": "Guangdong Huanglongdai I SHP, Tier 1 safety accredited",
               "type": "photo",
-              "desc": "湖南欧阳海水电站，装机42,600KW，2022年达成安全生产标准化一级。",
-              "hdimg": "/img/6YO05bee5qyn6Ziz5r.jpg",
-              "thumb": "/img/thumb/6YO05bee5qyn6Ziz5r.jpg"
-            },
-            {
-              "id": "photo-5bee5biC6buE6b6Z5bim",
-              "name": "技术支持",
-              "type": "photo",
-              "desc": "广东黄龙带水库一级电站，装机2,400KW，2022年达成安全生产标准化一级。",
+              "desc": "Huanglongdai I SHP in Guangzhou, Guangdong, installed capacity 2,400KW, Tier 1 safety accreditation since 2022",
               "hdimg": "/img/5bee5biC6buE6b6Z5bim.jpg",
               "thumb": "/img/thumb/5bee5biC6buE6b6Z5bim.jpg"
             }
@@ -2689,6 +2689,12 @@
               "img": "/img/partner-logo-unido-en.jpg"
             },
             {
+              "id": "partner-mof",
+              "name": "MOF",
+              "type": "partner-logo",
+              "img": "/img/partner-logo-mof-prc-name.jpg"
+            },
+            {
               "id": "partner-mwr",
               "name": "MWR",
               "type": "partner-logo",
@@ -2813,8 +2819,8 @@
           "id": "unido-gef-china-shp-page",
           "name": "Project Website Small & Green",
           "type": "qr-code",
-          "img": "/img/qr-code-shp-website.svg",
-          "link": "http://www.icshp.org/small-and-green"
+          "img": "/img/qr-code-green-shp-website.svg",
+          "link": "https://small-and-green.icshp.org/"
         },
         {
           "id": "green-shp-weixin",
