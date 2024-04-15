@@ -48,7 +48,7 @@
           "link": [
             {
               "src": "/vid/unido-gef-shp-small-and-green-720p/playlist.m3u8",
-              "type": "video/mp4",
+              "type": "application/x-mpegURL",
               "label": "HD"
             }
           ]
