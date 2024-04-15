@@ -1,6 +1,6 @@
 var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
 
-const jsonURL = assetsURL + '/data/all-content-v12.15.json';
+const jsonURL = assetsURL + '/data/all-content-v12.18.json';
 
 let translation = {
   "caseStudy": "案例分析",
