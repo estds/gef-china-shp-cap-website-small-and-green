@@ -1,4 +1,4 @@
-var assetsURL = 'https://fastly.jsdelivr.net/gh/estds/gef-china-shp-cap-website-small-and-green/assets';
+var assetsURL = 'https://small-and-green.icshp.org/assets';
 
 const jsonURL = assetsURL + '/data/all-content-en-v12.21.json';
 
