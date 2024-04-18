@@ -2674,6 +2674,7 @@
               "id": "folder-1-2",
               "name": "政策文件",
               "type": "kh-folder",
+              "expanded": true,
               "children": [
                 {
                   "id": "folder-1-2-1",
