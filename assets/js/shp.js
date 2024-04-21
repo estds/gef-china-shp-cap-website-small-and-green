@@ -1,6 +1,6 @@
 var assetsURL = 'https://small-and-green.icshp.org/assets';
 
-const jsonURL = assetsURL + '/data/all-content-v12.23.json';
+const jsonURL = assetsURL + '/data/all-content.json';
 
 let translation = {
   "caseStudy": "案例分析",
