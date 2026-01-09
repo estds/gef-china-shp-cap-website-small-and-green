@@ -1,6 +1,6 @@
 var assetsURL = '/assets';
 
-const jsonURL = '/data/all-content.json';
+const jsonURL = assetsURL + '/data/all-content.json';
 
 let translation = {
   "caseStudy": "案例分析",
